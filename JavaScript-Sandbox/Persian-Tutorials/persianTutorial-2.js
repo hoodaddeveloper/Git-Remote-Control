@@ -110,9 +110,13 @@ function myFunction() {
 myFunction();
 
 for (let counter = 0; counter < 11; counter++) {
-  console.log(counter);
-
-  if (counter === 5) {
+  
+  if (counter === 6) {
     break;
   }
+  
+  else if (counter === 3) {
+    continue;
+  }
+  console.log(counter);
 }
