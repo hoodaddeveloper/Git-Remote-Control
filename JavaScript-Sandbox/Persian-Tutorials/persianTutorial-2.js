@@ -120,3 +120,13 @@ for (let counter = 0; counter < 11; counter++) {
   }
   console.log(counter);
 }
+
+///// Use the Conditional (Ternary) Operator /////
+
+function checkEqual(a, b) { // a and b are parameters
+  return a === b ? "They are equal" : "They are not equal"; //ternary operator
+}
+
+data = checkEqual(1, 2);
+
+console.log(data); // "They are not equal"
