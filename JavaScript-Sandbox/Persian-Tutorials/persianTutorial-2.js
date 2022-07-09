@@ -124,7 +124,7 @@ for (let counter = 0; counter < 11; counter++) {
 ///// Use the Conditional (Ternary) Operator /////
 
 function checkEqual(a, b) { // a and b are parameters
-  return a === b ? "They are equal" : "They are not equal"; //ternary operator
+  return a === b ? "Equal" : "Not Equal"; //ternary operator
 }
 
 data = checkEqual(1, 2);
