@@ -111,7 +111,7 @@ myFunction();
 
 for (let counter = 0; counter < 11; counter++) {
   
-  if (counter === 6) {
+  if (counter === 5) {
     break;
   }
   
