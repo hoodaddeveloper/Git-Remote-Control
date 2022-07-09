@@ -130,3 +130,15 @@ function checkEqual(a, b) { // a and b are parameters
 data = checkEqual(1, 2);
 
 console.log(data); // "They are not equal"
+
+// Use Multiple Conditional (Ternary) Operators
+
+function checkSign(num) {
+  return num > 0 ? "positive"
+  : num < 0 ? "negative"
+  : "zero";
+}
+
+data = checkSign(10);
+
+console.log(data); // "positive"
