@@ -26,10 +26,12 @@ console.log(number1);
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-function myFunction3(num3, num4) {
-  var num3 = 2;
-  var num4 = 4;
-  console.log(num3 === num4);
-}
+  let num3 = 2;
+  let num4 = 4;
+  console.log(num3 < num4); // true
+  console.log(num3 > num4); // false
+  console.log(num3 === num4); // false
+  console.log(num3 !== num4); // true
 
-myFunction3();
+//////////////////////////////////////////////////////////////////////////////////////////////
+
