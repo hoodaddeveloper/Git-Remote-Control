@@ -37,3 +37,23 @@ console.log(number1);
 
 // Ternary Operator
 
+let isRegistered = true;
+let age2 = 20;
+
+let control = isRegistered === true && age2 >= 18 ? "Allowed" : "Not Allowed";
+
+console.log(control); // Allowed
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+let age = 18;
+let money = 1100;
+let schufa = false;
+let anzahlung = 2000;
+
+kredit = schufa === false && age >= 18 && (money >= 1500 || anzahlung >= 2000) ? "10,000 Euro Allowed" : " 10,000 Euro Not Allowed";
+
+console.log(kredit); // 1000 Euro Allowed
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
