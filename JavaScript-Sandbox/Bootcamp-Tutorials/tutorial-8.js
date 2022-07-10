@@ -103,3 +103,12 @@ console.log(countdown2(6)); // [6, 5, 4, 3, 2, 1]
 
 ///// Use Recursion to Create a Range of Numbers /////
 
+function rangeOfNumbers(startNum, endNum) {
+  return startNum === endNum
+    ? [startNum]
+    : [...rangeOfNumbers(startNum, endNum - 1), endNum ];
+}
+
+console.log(rangeOfNumbers(6, 7));
+
+// Continue in tutorial-9.js ...
