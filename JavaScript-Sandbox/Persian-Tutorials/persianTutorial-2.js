@@ -142,3 +142,5 @@ function checkSign(num) {
 data = checkSign(10);
 
 console.log(data); // "positive"
+
+// Contine in persianTutorial-3.js ...
