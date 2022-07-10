@@ -79,3 +79,27 @@ console.log(data);
 
 ///// Use Recursion to Create a Countdown /////
 
+// Example 1:
+
+function countdown1(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown1(n - 1);
+    arr.unshift(n); // Adds the number to the beginning of the array
+    return arr;
+  }
+}
+
+console.log(countdown1(6)); // [6, 5, 4, 3, 2, 1]
+
+// Example 2:
+
+function countdown2(n) {
+  return n < 1 ? [] : [n].concat(countdown2(n - 1));
+}
+
+console.log(countdown2(6)); // [6, 5, 4, 3, 2, 1]
+
+///// Use Recursion to Create a Range of Numbers /////
+
