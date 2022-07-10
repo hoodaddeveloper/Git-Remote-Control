@@ -13,4 +13,3 @@ function checkScope() {
 }
 
 // Mutate an Array Declared with const
-
