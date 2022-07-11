@@ -55,7 +55,7 @@ console.log(greeting()); // "Hello Anonymous"
 
 // 2:
 
-const increment = (number, value) => number + value; 
+const increment = (number, value = 1) => number + value; 
 
-console.log(increment());
-console.log(increment());
+console.log(increment(5, 2)); // 7
+console.log(increment(5)); // 6
