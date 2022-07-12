@@ -60,12 +60,26 @@ console.log(kredit); // 1000 Euro Allowed
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numbers = [1, 5, -4, 54, 33, 12, -1, 0, 10];
 let result;
 
-result = numbers.sort(function (x, y) {
+result = numbers.sort(function(x, y) { // sort() method sorts the array in ascending order
   return x - y;
 });
 
-console.log(result);
-console.log(numbers);
+console.log(result); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+function com(x, y) {
+  if (x - y > 0) {
+    return 1;
+  } else if (x > y) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+console.log(com(2, 3)); // -1
+console.log(numbers.sort(com)); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
