@@ -83,3 +83,8 @@ function com(x, y) {
 
 console.log(com(2, 3)); // -1
 console.log(numbers.sort(com)); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+res = numbers.sort((x, y) => x - y); // single line ES6 arrow function
+console.log(res); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
