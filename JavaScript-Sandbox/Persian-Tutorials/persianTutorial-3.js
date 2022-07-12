@@ -86,5 +86,15 @@ console.log(numbers.sort(com)); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-res = numbers.sort((x, y) => x - y); // single line ES6 arrow function
-console.log(res); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
+ress = numbers.sort((x, y) => x - y); // single line ES6 arrow function
+console.log(ress); // [-1, -4, 0, 1, 10, 12, 33, 54, 54]
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+let adadHa = [-1, 2, 3, -4, 5, -6, 7, -8, 9, 10];
+let res2;
+
+res2 = adadHa.filter(function(adad) {
+  return adad > 0; // filter() method filters the array and returns the array of positive numbers
+});
+
+console.log(res2);
