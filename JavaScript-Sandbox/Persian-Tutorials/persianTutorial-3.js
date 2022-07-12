@@ -4,7 +4,7 @@ function myFunction(name, age) {
   console.log(`Hello ${name}, you are ${age} years old.`);
 }
 
-console.log(myFunction('John', 30)); // "Hello John, you are 30 years old."
+console.log(myFunction("John", 30)); // "Hello John, you are 30 years old."
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -13,7 +13,7 @@ function myFunction2(name2, age2) {
   return message;
 }
 
-let message = myFunction2('Ali', 20);
+let message = myFunction2("Ali", 20);
 console.log(message); // "Hello Ali, you are 20 years old."
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -26,12 +26,12 @@ console.log(number1);
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-  let num3 = 2;
-  let num4 = 4;
-  console.log(num3 < num4); // true
-  console.log(num3 > num4); // false
-  console.log(num3 === num4); // false
-  console.log(num3 !== num4); // true
+let num3 = 2;
+let num4 = 4;
+console.log(num3 < num4); // true
+console.log(num3 > num4); // false
+console.log(num3 === num4); // false
+console.log(num3 !== num4); // true
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -51,9 +51,21 @@ let money = 1100;
 let schufa = false;
 let anzahlung = 2000;
 
-kredit = schufa === false && age >= 18 && (money >= 1500 || anzahlung >= 2000) ? "10,000 Euro Allowed" : " 10,000 Euro Not Allowed";
+kredit =
+  schufa === false && age >= 18 && (money >= 1500 || anzahlung >= 2000)
+    ? "10,000 Euro Allowed"
+    : " 10,000 Euro Not Allowed";
 
 console.log(kredit); // 1000 Euro Allowed
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result;
+
+result = numbers.sort(function (x, y) {
+  return x - y;
+});
+
+console.log(result);
+console.log(numbers);
