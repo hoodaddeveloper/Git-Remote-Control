@@ -66,3 +66,24 @@ const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
 console.log(sum(1, 2, 3)); // 6
+
+///// Blocks and Scope /////
+
+const logSkyColor = () => {
+  let color = 'lightblue'; 
+  console.log(color); // blue 
+}
+
+logSkyColor();
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+const city = 'New York City';
+
+function logCitySkyline() {
+  let skyscraper = 'Empire State Building';
+  return `The stars over the ${skyscraper} in ${city}`;
+}
+
+console.log(logCitySkyline());
+
