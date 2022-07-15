@@ -55,7 +55,7 @@ console.log(greeting()); // "Hello Anonymous"
 
 // 2:
 
-const increment = (number, value = 1) => number + value; 
+const increment = (number, value = 1) => number + value;
 
 console.log(increment(5, 2)); // 7
 console.log(increment(5)); // 6
@@ -64,24 +64,24 @@ console.log(increment(5)); // 6
 
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
-}
+};
 console.log(sum(1, 2, 3)); // 6
 
 ///// Blocks and Scope /////
 
 const logSkyColor = () => {
-  let color = 'lightblue'; 
-  console.log(color); // blue 
-}
+  let color = "lightblue";
+  console.log(color); // blue
+};
 
 logSkyColor();
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-const city = 'New York City';
+const city = "New York City";
 
 function logCitySkyline() {
-  let skyscraper = 'Empire State Building';
+  let skyscraper = "Empire State Building";
   return `The stars over the ${skyscraper} in ${city}`;
 }
 
@@ -89,20 +89,22 @@ console.log(logCitySkyline());
 
 ///// Global Scope /////
 
-const color = 'blue'; // global scope
- 
+const color = "blue"; // global scope
+
 //1:
 
 const returnSkyColor = () => {
-  return color; // blue 
+  return color; // blue
 };
- 
+
 console.log(returnSkyColor()); // blue
 
 // 2:
 
 const returnSkyColor2 = () => {
-  return color; // blue 
+  return color; // blue
 };
 
 console.log(returnSkyColor2()); // blue
+
+// 3:
