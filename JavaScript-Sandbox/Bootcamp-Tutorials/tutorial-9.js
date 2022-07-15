@@ -154,3 +154,16 @@ const logNum = () => {
 logNum(); // Prints 110
 console.log(num); // Prints 110
 
+// 2:
+
+const satellite2 = 'The Moon';
+const galaxy2 = 'The Milky Way';
+let stars2 = 'North Star';
+
+const callMyNightSky2 = () => {
+  stars2 = 'Sirius';
+	return 'Night Sky: ' + satellite2 + ', ' + stars2 + ', ' + galaxy2;
+};
+
+console.log(callMyNightSky2());
+console.log(callMyNightSky2(stars2));
