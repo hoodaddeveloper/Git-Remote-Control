@@ -167,3 +167,36 @@ const callMyNightSky2 = () => {
 
 console.log(callMyNightSky2());
 console.log(callMyNightSky2(stars2));
+
+///// Practice Good Scoping /////
+
+
+// 1:
+
+const logSkyColor3 = () => {
+  const dusk = true;
+  let color3 = 'orange'; 
+  if (dusk) {
+    let color3 = 'pink';
+    console.log(color3); // pink
+  }
+  console.log(color3); // blue 
+};
+ 
+logSkyColor3();
+// console.log(color3); // ReferenceError
+
+// 2:
+
+const logVisibleLightWaves2 = () => {
+  let lightWaves2 = 'Moonlight';
+	let region2 = 'The Arctic';
+  // Add if statement here:
+  if (region2 === 'The Arctic') {
+    let lightWaves2 = 'Northern Lights';
+    console.log(lightWaves2);
+  }
+  console.log('The Arctic');
+};
+
+logVisibleLightWaves2();
