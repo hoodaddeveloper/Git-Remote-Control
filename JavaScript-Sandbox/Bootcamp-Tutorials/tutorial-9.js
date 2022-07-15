@@ -191,7 +191,6 @@ logSkyColor3();
 const logVisibleLightWaves2 = () => {
   let lightWaves2 = 'Moonlight';
 	let region2 = 'The Arctic';
-  // Add if statement here:
   if (region2 === 'The Arctic') {
     let lightWaves2 = 'Northern Lights';
     console.log(lightWaves2);
@@ -200,3 +199,5 @@ const logVisibleLightWaves2 = () => {
 };
 
 logVisibleLightWaves2();
+
+// Continue ...
