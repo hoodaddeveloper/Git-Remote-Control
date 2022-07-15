@@ -89,12 +89,12 @@ console.log(logCitySkyline());
 
 ///// Global Scope /////
 
-const color = "blue"; // global scope
+const color2 = "yellow"; // global scope
 
 //1:
 
 const returnSkyColor = () => {
-  return color; // blue
+  return color2; // blue
 };
 
 console.log(returnSkyColor()); // blue
@@ -102,7 +102,7 @@ console.log(returnSkyColor()); // blue
 // 2:
 
 const returnSkyColor2 = () => {
-  return color; // blue
+  return color2; // blue
 };
 
 console.log(returnSkyColor2()); // blue
@@ -119,5 +119,23 @@ const callMyNightSky = () => {
 
 console.log(callMyNightSky());
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+///// Block Scope /////
 
+// 1:
+
+const logSkyColor2 = () => {
+  let color3 = 'green'; 
+  console.log(color3); // blue 
+};
+ 
+logSkyColor2(); // blue 
+// console.log(color3); // ReferenceError
+
+// 2:
+
+const logVisibleLightWaves = () => {
+  const lightWaves = "Moonlight";
+  console.log(lightWaves);
+}
+
+logVisibleLightWaves();
