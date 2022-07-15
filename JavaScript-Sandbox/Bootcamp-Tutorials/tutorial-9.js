@@ -87,3 +87,22 @@ function logCitySkyline() {
 
 console.log(logCitySkyline());
 
+///// Global Scope /////
+
+const color = 'blue'; // global scope
+ 
+//1:
+
+const returnSkyColor = () => {
+  return color; // blue 
+};
+ 
+console.log(returnSkyColor()); // blue
+
+// 2:
+
+const returnSkyColor2 = () => {
+  return color; // blue 
+};
+
+console.log(returnSkyColor2()); // blue
