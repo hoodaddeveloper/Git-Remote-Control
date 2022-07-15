@@ -80,10 +80,10 @@ logSkyColor();
 
 const city = "New York City";
 
-function logCitySkyline() {
+const logCitySkyline = () => {
   let skyscraper = "Empire State Building";
   return `The stars over the ${skyscraper} in ${city}`;
-}
+};
 
 console.log(logCitySkyline());
 
@@ -108,3 +108,4 @@ const returnSkyColor2 = () => {
 console.log(returnSkyColor2()); // blue
 
 // 3:
+
