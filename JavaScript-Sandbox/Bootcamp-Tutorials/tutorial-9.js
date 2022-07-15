@@ -139,3 +139,18 @@ const logVisibleLightWaves = () => {
 }
 
 logVisibleLightWaves();
+
+///// Scope Pollution /////
+
+// 1:
+
+let num = 50;
+ 
+const logNum = () => {
+  num = 110; // Take note of this line of code
+  console.log(num);
+};
+ 
+logNum(); // Prints 110
+console.log(num); // Prints 110
+
