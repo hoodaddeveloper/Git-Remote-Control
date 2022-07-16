@@ -48,7 +48,6 @@ console.log(summ(2.5, 2.5, 4, 6)); // 15
 
 // / // / // More of Objects - Constructiors // / // / //
 
-
 // 1:
 
 function Person() {
@@ -64,19 +63,36 @@ console.log(hoodad.age);
 
 // 2:
 
-function Person2(fName2, lName2) {
+/* function Person2(fName2, lName2) {
   this.firstName = lName2;
   this.lastName = fName2;
   this.age2 = 30;
-  
-  this.getFullName = function() {
-  return `${this.firstName} ${this.lastName}`;
-  }
+
+  this.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  };
 }
+
+Person.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`;
+};
 
 let hoodad2 = new Person2("Saideh", "Dehghani");
 let Akbar = new Person2("Akbar", "Khan");
 
 console.log(hoodad2.firstName);
 console.log(Akbar.lastName);
-console.log(hoodad2.getFullName());
+console.log(hoodad2.getFullName()); */
+
+// 3:
+
+class Person {
+  constructor (fName, lName, age) {
+    this. firstName = fName;
+    this. lastName = lName;
+    this. age = age;
+}
+
+sayHello() {
+  return `Hi my name is ${this.firstName} ${this.lastName}`;
+}
