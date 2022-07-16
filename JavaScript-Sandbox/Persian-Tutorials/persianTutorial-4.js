@@ -86,7 +86,7 @@ console.log(hoodad2.getFullName()); */
 
 // 3:
 
-class Person {
+class Person2 {
   constructor (fName, lName, age) {
     this. firstName = fName;
     this. lastName = lName;
@@ -95,4 +95,9 @@ class Person {
 
 sayHello() {
   return `Hi my name is ${this.firstName} ${this.lastName}`;
+  }
 }
+
+let Saideh = new Person2 ("Saideh", "Dehghani", 60);
+
+console.log(Saideh.sayHello());
