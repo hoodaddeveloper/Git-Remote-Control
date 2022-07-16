@@ -101,3 +101,5 @@ sayHello() {
 let Saideh = new Person2 ("Saideh", "Dehghani", 60);
 
 console.log(Saideh.sayHello());
+
+// Continue ...
