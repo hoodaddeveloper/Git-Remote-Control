@@ -66,12 +66,17 @@ console.log(hoodad.age);
 
 function Person2(fName2, lName2) {
   this.firstName = lName2;
-  this.llastName = fName2;
+  this.lastName = fName2;
   this.age2 = 30;
+  
+  this.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+  }
 }
 
 let hoodad2 = new Person2("Saideh", "Dehghani");
 let Akbar = new Person2("Akbar", "Khan");
 
-console.log(hoodad2.lName2);
-console.log(Akbar.age2);
+console.log(hoodad2.firstName);
+console.log(Akbar.lastName);
+console.log(hoodad2.getFullName());
