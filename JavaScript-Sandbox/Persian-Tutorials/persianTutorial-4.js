@@ -51,6 +51,9 @@ console.log(summ(2.5, 2.5, 4, 6)); // 15
 function Person() {
   this.fName = "Hoodad";
   this.lName = "Wesker";
-};
+  this.age = 27;
+}
 
 let hoodad = new Person();
+console.log(hoodad.lName);
+console.log(hoodad.age);
