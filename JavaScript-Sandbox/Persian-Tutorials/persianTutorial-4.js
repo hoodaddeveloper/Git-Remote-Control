@@ -46,3 +46,11 @@ const summ = (...result3) => {
 
 console.log(summ(2.5, 2.5, 4, 6)); // 15
 
+// / // / // More of Objects - Constructiors // / // / //
+
+function Person() {
+  this.fName = "Hoodad";
+  this.lName = "Wesker";
+};
+
+let hoodad = new Person();
