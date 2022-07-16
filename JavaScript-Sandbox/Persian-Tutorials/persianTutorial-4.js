@@ -48,6 +48,9 @@ console.log(summ(2.5, 2.5, 4, 6)); // 15
 
 // / // / // More of Objects - Constructiors // / // / //
 
+
+// 1:
+
 function Person() {
   this.fName = "Hoodad";
   this.lName = "Wesker";
@@ -55,5 +58,20 @@ function Person() {
 }
 
 let hoodad = new Person();
+
 console.log(hoodad.lName);
 console.log(hoodad.age);
+
+// 2:
+
+function Person2(fName2, lName2) {
+  this.firstName = lName2;
+  this.llastName = fName2;
+  this.age2 = 30;
+}
+
+let hoodad2 = new Person2();
+let hoodad2 = new Person2();
+
+console.log(hoodad2.lName2);
+console.log(hoodad2.age2);
