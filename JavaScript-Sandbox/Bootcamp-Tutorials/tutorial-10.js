@@ -18,3 +18,5 @@ console.log(famousSayings[0]); // 'Fortune favors the brave.'
 console.log(famousSayings[2]); // 'Where there is love there is life.'
 console.log(famousSayings[2]); // undefined
 
+///// Update Elements /////
+
