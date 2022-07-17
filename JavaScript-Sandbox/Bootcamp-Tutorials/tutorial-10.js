@@ -63,3 +63,7 @@ const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'p
 groceryList.shift(); // removes the first element from the array
 groceryList.unshift("popcorn"); // adds 'popcorn' to the beginning of the array
 console.log(groceryList.slice(1, 4)); // ['bananas', 'coffee beans', 'brown rice']
+
+groceryList.indexOf('pasta'); // returns the index of 'pasta' in the array
+const pastaIndex = groceryList.indexOf('pasta'); // assigns the index of 'pasta' to the variable 'pastaIndex'
+console.log(pastaIndex); // 5
