@@ -61,4 +61,5 @@ console.log(chores2); // ['wash dishes', 'do laundry', 'take out trash', 'cook d
 
 const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
 groceryList.shift(); // removes the first element from the array
-console.log(groceryList);
+groceryList.unshift("popcorn"); // adds 'popcorn' to the beginning of the array
+console.log(groceryList.slice(1, 4)); // ['bananas', 'coffee beans', 'brown rice']
