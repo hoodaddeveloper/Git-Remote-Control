@@ -39,3 +39,10 @@ console.log(condiments);  // ['Mayo']
 
 utensils[3] = 'Spoon'; // reassigns the array to a new array
 console.log(utensils[3]); // 'Spoon'
+
+///// The .length property /////
+
+const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
+console.log(objectives.length); // 3
+
+///// The .push() Method /////
