@@ -24,3 +24,6 @@ let groceryList = ['bread', 'tomatoes', 'milk'];
 
 groceryList[1] = 'avocados'; // replaces 'tomatoes' with 'avocados'
 console.log(groceryList); // ['bread', 'avocados', 'milk']
+
+///// Arrays with let and const /////
+
