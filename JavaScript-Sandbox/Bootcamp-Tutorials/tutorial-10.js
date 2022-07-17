@@ -20,3 +20,7 @@ console.log(famousSayings[2]); // undefined
 
 ///// Update Elements /////
 
+let groceryList = ['bread', 'tomatoes', 'milk'];
+
+groceryList[1] = 'avocados'; // replaces 'tomatoes' with 'avocados'
+console.log(groceryList); // ['bread', 'avocados', 'milk']
