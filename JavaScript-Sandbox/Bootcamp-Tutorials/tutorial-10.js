@@ -32,4 +32,5 @@ let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
 const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
 
 condiments[0] = 'Mayo';
-console.log(condiments[0]);
+console.log(condiments); // ['Mayo', 'Mustard', 'Soy Sauce', 'Sriracha']
+
