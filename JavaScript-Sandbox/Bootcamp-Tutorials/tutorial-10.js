@@ -34,5 +34,8 @@ const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
 condiments[0] = 'Mayo';
 console.log(condiments); // ['Mayo', 'Mustard', 'Soy Sauce', 'Sriracha']
 
-condiments = ['Mayo'];
-console.log(condiments);
+condiments = ['Mayo']; // reassigns the array to a new array
+console.log(condiments);  // ['Mayo']
+
+utensils[3] = 'Spoon'; // reassigns the array to a new array
+console.log(utensils[3]); // 'Spoon'
