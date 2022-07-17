@@ -59,3 +59,6 @@ console.log(chores2); // ['wash dishes', 'do laundry', 'take out trash', 'cook d
 
 ///// More Array Methods /////
 
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+groceryList.shift(); // removes the first element from the array
+console.log(groceryList);
