@@ -46,3 +46,7 @@ const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 console.log(objectives.length); // 3
 
 ///// The .push() Method /////
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+chores.push("play", "sport"); // adds 'play' and 'sport' to the end of the array
+console.log(chores); // ['wash dishes', 'do laundry', 'take out trash', 'play', 'sport']
