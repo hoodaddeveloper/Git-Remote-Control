@@ -67,3 +67,6 @@ console.log(groceryList.slice(1, 4)); // ['bananas', 'coffee beans', 'brown rice
 groceryList.indexOf('pasta'); // returns the index of 'pasta' in the array
 const pastaIndex = groceryList.indexOf('pasta'); // assigns the index of 'pasta' to the variable 'pastaIndex'
 console.log(pastaIndex); // 5
+
+///// Arrays and Functions /////
+
