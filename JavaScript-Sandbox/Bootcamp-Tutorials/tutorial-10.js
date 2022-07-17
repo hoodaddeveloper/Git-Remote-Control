@@ -50,3 +50,9 @@ console.log(objectives.length); // 3
 const chores = ['wash dishes', 'do laundry', 'take out trash'];
 chores.push("play", "sport"); // adds 'play' and 'sport' to the end of the array
 console.log(chores); // ['wash dishes', 'do laundry', 'take out trash', 'play', 'sport']
+
+///// The .pop() Method /////
+
+const chores2 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+chores2.pop(); // removes the last element from the array
+console.log(chores2); // ['wash dishes', 'do laundry', 'take out trash', 'cook dinner']
