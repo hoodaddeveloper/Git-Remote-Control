@@ -56,3 +56,6 @@ console.log(chores); // ['wash dishes', 'do laundry', 'take out trash', 'play', 
 const chores2 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
 chores2.pop(); // removes the last element from the array
 console.log(chores2); // ['wash dishes', 'do laundry', 'take out trash', 'cook dinner']
+
+///// More Array Methods /////
+
