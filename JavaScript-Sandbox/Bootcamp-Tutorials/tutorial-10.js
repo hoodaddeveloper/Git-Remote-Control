@@ -103,4 +103,4 @@ console.log(vacationSpots[0]); // 'Hoodad'
 console.log(vacationSpots[1]); // 'Hasan'
 console.log(vacationSpots[2]); // 'Ali'
 
-///// The For Loop /////
+// Continue ...
