@@ -35,10 +35,25 @@ for (let x = 0; x < vacationSpots.length; x++) {
 
 const myArray = [6, 19, 3];
 const yourArray = [3, 81, 2];
+
 for (let i = 0; i < myArray.length; i++) {
   for (let j = 0; j < yourArray.length; j++) {
     if (myArray[i] === yourArray[j]) {
-      console.log('Both arrays have the number: ' + yourArray[j]);
+      console.log('Both arrays have the number: ' + yourArray[j]); // Both arrays have the number: 3
+    }
+  }
+}
+
+/// // / // ///
+
+const bobsFollowers = ["Rose", "Akbar", "Jasem", "laura"];
+const tinasFollowers = ["Jasem", "Akbar", "Susan"];
+const mutualFollowers = [];
+
+for (let t = 0; t < bobsFollowers.length; t++) {
+  for (let z = 0; z < tinasFollowers.length; z++) {
+    if (bobsFollowers[t] === tinasFollowers[z]) {
+      console.log(tinasFollowers[z]);
     }
   }
 }
