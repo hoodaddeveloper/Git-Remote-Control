@@ -59,22 +59,23 @@ console.log(chores2); // ['wash dishes', 'do laundry', 'take out trash', 'cook d
 
 ///// More Array Methods /////
 
-const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
-groceryList.shift(); // removes the first element from the array
-groceryList.unshift("popcorn"); // adds 'popcorn' to the beginning of the array
-console.log(groceryList.slice(1, 4)); // ['bananas', 'coffee beans', 'brown rice']
+const groceryList2 = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+groceryList2.shift(); // removes the first element from the array
+groceryList2.unshift("popcorn"); // adds 'popcorn' to the beginning of the array
+console.log(groceryList2.slice(1, 4)); // ['bananas', 'coffee beans', 'brown rice']
 
-groceryList.indexOf('pasta'); // returns the index of 'pasta' in the array
-const pastaIndex = groceryList.indexOf('pasta'); // assigns the index of 'pasta' to the variable 'pastaIndex'
+groceryList2.indexOf('pasta'); // returns the index of 'pasta' in the array
+const pastaIndex = groceryList2.indexOf('pasta'); // assigns the index of 'pasta' to the variable 'pastaIndex'
 console.log(pastaIndex); // 5
 
 ///// Arrays and Functions /////
 
 const concept = ['arrays', 'can', 'be', 'mutated'];
-
-function changeArr(arr){
-  arr[3] = 'MUTATED';
-}
+const changeArr = (arr) => arr[3] = 'MUTATED'; // changes the fourth element of the array to 'MUTATED'
 
 changeArr(concept);
-console.log(concept);
+console.log(concept); // ['arrays', 'can', 'be', 'MUTATED']
+
+const removeElement = (newArr) => newArr.pop();
+removeElement(concept); // removes the last element of the array
+console.log(concept); // ['arrays', 'can', 'be']
