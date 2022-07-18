@@ -33,8 +33,8 @@ for (let x = 0; x < vacationSpots.length; x++) {
 
 ///// Nested Loops /////
 
-const myArray = [6, 19, 20];
-const yourArray = [19, 81, 2];
+const myArray = [6, 19, 3];
+const yourArray = [3, 81, 2];
 for (let i = 0; i < myArray.length; i++) {
   for (let j = 0; j < yourArray.length; j++) {
     if (myArray[i] === yourArray[j]) {
