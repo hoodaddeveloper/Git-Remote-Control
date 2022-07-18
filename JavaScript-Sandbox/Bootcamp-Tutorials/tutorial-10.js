@@ -79,3 +79,6 @@ console.log(concept); // ['arrays', 'can', 'be', 'MUTATED']
 const removeElement = (newArr) => newArr.pop();
 removeElement(concept); // removes the last element of the array
 console.log(concept); // ['arrays', 'can', 'be']
+
+///// Nested Arrays /////
+
