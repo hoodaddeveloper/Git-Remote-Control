@@ -58,3 +58,13 @@ for (let t = 0; t < bobsFollowers.length; t++) {
     }
   }
 }
+
+///// The While Loop /////
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+let currentCard;
+
+while (currentCard != ['spade']) {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard); // diamond spade heart club
+}
