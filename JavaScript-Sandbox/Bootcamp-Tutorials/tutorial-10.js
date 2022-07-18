@@ -82,3 +82,10 @@ console.log(concept); // ['arrays', 'can', 'be']
 
 ///// Nested Arrays /////
 
+ // 1:
+
+const nestedArr = [[1], [2, 3]]; // creates a two-dimensional array
+console.log(nestedArr[1]); // Output: [2, 3]
+
+// 2:
+
