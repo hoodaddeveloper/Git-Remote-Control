@@ -98,3 +98,9 @@ const target =  numberClusters[2][1]; // 6
 
 ///// Loops /////
 
+const vacationSpots = ["Hoodad","Hasan", "Ali"];
+console.log(vacationSpots[0]); // 'Hoodad'
+console.log(vacationSpots[1]); // 'Hasan'
+console.log(vacationSpots[2]); // 'Ali'
+
+///// The For Loop /////
