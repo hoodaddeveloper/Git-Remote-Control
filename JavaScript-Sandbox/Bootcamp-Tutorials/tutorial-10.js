@@ -70,3 +70,11 @@ console.log(pastaIndex); // 5
 
 ///// Arrays and Functions /////
 
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+console.log(concept);
