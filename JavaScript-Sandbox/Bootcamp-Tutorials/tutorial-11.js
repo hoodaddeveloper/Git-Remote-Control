@@ -53,7 +53,8 @@ const mutualFollowers = [];
 for (let t = 0; t < bobsFollowers.length; t++) {
   for (let z = 0; z < tinasFollowers.length; z++) {
     if (bobsFollowers[t] === tinasFollowers[z]) {
-      console.log(tinasFollowers[z]);
+      console.log(tinasFollowers[z]); // Jasem Akbar
+      console.log(mutualFollowers.push(bobsFollowers[t]));
     }
   }
 }
