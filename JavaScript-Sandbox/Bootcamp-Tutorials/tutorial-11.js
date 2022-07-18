@@ -94,3 +94,13 @@ do {
 
 ///// The Break Statement /////
 
+for (let i = 0; i < 99; i++) {
+  if (i > 3) {
+     break; // stops the loop after the 4th iteration
+  }
+  console.log('Banana.');
+}
+ 
+console.log('Orange you glad I broke out the loop!');
+
+// // //
