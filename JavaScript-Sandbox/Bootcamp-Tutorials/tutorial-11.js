@@ -24,3 +24,9 @@ for (let i = 0; i < animals.length; i++){
 }
 
 // / //
+
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for (let x = 0; x < vacationSpots.length; x++) {
+  console.log('I would love to visit ' + vacationSpots[x]);
+} // I would love to visit Bali I would love to visit Paris I would love to visit Tulum
