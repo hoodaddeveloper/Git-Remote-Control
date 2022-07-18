@@ -71,3 +71,26 @@ while (currentCard != ['spade']) {
 
 ///// Do...While Statements /////
 
+let countString = '';
+let i = 0;
+ 
+do {
+  countString = countString + i;
+  i++;
+} while (i < 11);
+ 
+console.log(countString);
+
+// // //
+
+let cupsOfSugarNeeded = 20;
+let cupsAdded = 0;
+
+do {
+  cupsAdded++;
+  console.log(cupsAdded + ' cup was added')
+} while (cupsAdded < cupsOfSugarNeeded) {
+};
+
+///// The Break Statement /////
+
