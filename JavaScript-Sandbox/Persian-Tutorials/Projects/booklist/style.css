@@ -4,7 +4,7 @@ body {
 }
 
 #book-list h1 {
-  float: right;
+  float: left;
 }
 
 .clear {
@@ -55,7 +55,7 @@ h1, h2 {
 }
 
 #book-list h2 {
-  float: right;
+  float: left;
   margin-right: 15px;
 }
 
@@ -129,7 +129,7 @@ h1, h2 {
 }
 
 #add-book:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
