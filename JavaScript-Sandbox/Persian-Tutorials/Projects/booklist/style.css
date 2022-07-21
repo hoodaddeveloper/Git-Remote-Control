@@ -1,0 +1,13 @@
+body {
+  color: #444;
+  letter-spacing: 1px;
+}
+
+#book-list h1 {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+

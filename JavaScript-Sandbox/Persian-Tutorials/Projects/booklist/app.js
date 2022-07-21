@@ -1,1 +1,2 @@
-document.getElementById("page-banner");
+
+console.log(document.getElementById("page-banner"));
