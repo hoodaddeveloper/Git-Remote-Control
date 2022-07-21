@@ -1,1 +1,1 @@
-document.getElementById("");
+document.getElementById("page-banner");
