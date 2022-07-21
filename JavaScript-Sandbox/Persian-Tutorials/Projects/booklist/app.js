@@ -1,2 +1,4 @@
+let pageBanner = document.getElementById("page-banner");
+let titles = document.getElementsByClassName("title");
 
-console.log(document.getElementById("page-banner"));
+console.log(titles);
