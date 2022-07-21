@@ -70,11 +70,11 @@ h1, h2 {
   margin: 20px 10px;
 }
 
-#book-list li:hover{
+#book-list li:hover {
   border-color: #9361bf;
 }
 
-.delete{
+.delete {
   float: left;
   background: #9361bf;
   padding: 6px;
@@ -83,20 +83,20 @@ h1, h2 {
   color: white;
 }
 
-.name{
+.name {
   float: right;
 }
 
-.delete:hover{
+.delete:hover {
   background: #333;
 }
 
-#add-book{
+#add-book {
   width: 400px;
   margin: 0 auto;
 }
 
-#add-book input{
+#add-book input {
   display: block;
   margin: 20px 0;
   padding: 10px;
@@ -108,7 +108,7 @@ h1, h2 {
   float: left;
 }
 
-#add-book .button{
+#add-book .button {
   border: 1px solid #9361bf;
   background: #9361bf;
   padding: 10px 20px;
@@ -124,21 +124,21 @@ h1, h2 {
   color: white;
 }
 
-#add-book:after{
+#add-book:after {
   content: '';
   display: block;
   clear: both;
 }
 
-#hide{
+#hide {
   float: right;
   padding: 20px 35px 20px 0;
 }
 
-#hide label{
+#hide label {
   padding: 0 10px;
 }
 
-#add-book #hide{
+#add-book #hide {
   width: 30px;
 }
