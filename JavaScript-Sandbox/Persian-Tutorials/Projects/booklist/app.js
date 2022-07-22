@@ -45,5 +45,12 @@ result = list.childElementCount;
 result = li.parentElement;
 console.log(result); */
 
-const heading = document.createElement("div");
+const heading = document.createElement("h2");
+heading.innerHTML = `
+<ul>
+  <li>The Ants</li>
+  <li>The Bees</li>
+  <li>The Cats</li>
+</ul>
+`;
 console.log(heading);
