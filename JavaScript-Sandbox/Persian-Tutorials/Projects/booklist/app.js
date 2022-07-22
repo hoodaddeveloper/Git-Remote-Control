@@ -26,5 +26,8 @@ console.log(qSelector4);
   console.log(qSelector1);
 } */
 
-qSelector4 = document.querySelectorAll("#book-list li .name")[2];
-console.log(qSelector4);
+let qSelector5 = document.querySelectorAll("#book-list li .name")[2];
+console.log(qSelector5);
+
+let qSelector6 = document.querySelectorAll("#search-books");
+console.log(qSelector6);
