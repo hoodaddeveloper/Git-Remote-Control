@@ -62,5 +62,26 @@ console.log(heading); */
 ///// ///// ///// Eventlisteners ///// ///// /////
 
 document.querySelector(".button").addEventListener("click", function(event) {
-  console.log("You clicked me!");
+  console.log("You clicked Me!");
+  event.preventDefault();
+});
+
+document.querySelector(".button").addEventListener("mousedown", function(event) {
+  console.log("Mouse Down!");
+  event.preventDefault();
+});
+
+document.querySelector(".button").addEventListener("mouseup", function(event) {
+  console.log("Mouse Up!");
+  event.preventDefault();
+});
+
+document.querySelector(".button").addEventListener("mouseenter", function(event) {
+  console.log("Mouse In!");
+  event.preventDefault();
+});
+
+document.querySelector(".button").addEventListener("dblclick", function(event) {
+  console.log("You Double clicked Me!!");
+  event.preventDefault();
 });
