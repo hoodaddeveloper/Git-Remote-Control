@@ -21,6 +21,34 @@ link.addEventListener("click", function (event) {
   event.preventDefault();
 });
 
+ul.addEventListener("click", function (event) {
+  if (event.target.className === "delete") {
+    console.log("Yes");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  let tasks;
+  if (localStorage.getItem("tasks") === null) {
+    tasks = [];
+  } else {
+    tasks = localStorage.getItem("tasks").split(",");
+  }
+
+  for (let item of tasks) {
+    const spanName = document.createElement("span");
+    spanName.className = "name";
+    spanName.textContent = item;
+
+    const li = document.createElement("li");
+
+    li.appendChild(spanName);
+    li.innerHTML += spanDelete;
+
+    ul.appendChild(li);
+  }
+});
+
 function storeToLocalStorage(task) {
   let tasks;
   if (localStorage.getItem("tasks") === null) {
@@ -31,7 +59,7 @@ function storeToLocalStorage(task) {
 
   tasks.push(task);
   localStorage.setItem("tasks", tasks);
-};
+}
 
 ///// ///// ///// Practicing Codes ///// ///// /////
 
