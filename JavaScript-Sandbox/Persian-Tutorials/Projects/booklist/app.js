@@ -108,3 +108,15 @@ document.body.addEventListener("mousemove", function(event) {
   heading.innerHTML = `MouseX : ${event.offsetX}, MouseY : ${event.offsetY}`;
   event.preventDefault();
 }); */
+
+const checkbox = document.querySelector("#hide input");
+const heading = document.querySelectorAll(".title")[1];
+const ul = document.querySelectorAll("ul");
+
+checkbox.addEventListener("click", function(event) {
+  if (checkbox.checked) {
+    console.log("Checked");
+  } else {
+    console.log("Unchecked");
+  }
+});
