@@ -58,3 +58,11 @@ heading.innerHTML = `
 heading.appendChild(document.createTextNode("The Ants"));
 
 console.log(heading); */
+
+///// ///// ///// Eventlisteners ///// ///// /////
+
+const link = document.querySelector(".button").addEventlistener("click",
+function() {
+  console.log("You clicked me!");
+});
+console.log(link)
