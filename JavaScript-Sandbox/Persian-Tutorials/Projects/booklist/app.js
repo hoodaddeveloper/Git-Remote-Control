@@ -61,8 +61,6 @@ console.log(heading); */
 
 ///// ///// ///// Eventlisteners ///// ///// /////
 
-const link = document.querySelector(".button").addEventlistener("click",
-function() {
+document.querySelector(".button").addEventListener("click", function(event) {
   console.log("You clicked me!");
 });
-console.log(link)
