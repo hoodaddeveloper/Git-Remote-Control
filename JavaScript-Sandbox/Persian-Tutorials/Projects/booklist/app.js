@@ -85,3 +85,18 @@ document.querySelector(".button").addEventListener("dblclick", function(event) {
   console.log("You Double clicked Me!!");
   event.preventDefault();
 });
+
+document.querySelector(".button").addEventListener("mouseout", function(event) {
+  console.log("Mouse Out!");
+  event.preventDefault();
+});
+
+document.querySelector(".button").addEventListener("mousemove", function(event) {
+  console.log("Mouse Moving...!");
+  event.preventDefault();
+});
+
+document.body.addEventListener("mousemove", function(event) {
+  console.log("Mouse Moving Everywhere...!");
+  event.preventDefault();
+});
