@@ -1,3 +1,26 @@
+const inputText = document.querySelector("#add-book input");
+const link = document.querySelector(".button");
+const ul = document.querySelector("ul");
+const spanDelete = `<span class="delete">Delete</span>`;
+
+link.addEventListener("click", function (event) {
+  const spanName = document.createElement("span");
+  spanName.className = "name";
+  spanName.textContent = inputText.value;
+
+  const li = document.createElement("li");
+
+  li.appendChild(spanName);
+  li.innerHTML += spanDelete;
+
+  ul.appendChild(li);
+
+  inputText.value = "";
+  event.preventDefault();
+});
+
+///// ///// ///// Practicing Codes ///// ///// /////
+
 /* // First way to get elements:
 
 let pageBanner = document.getElementById('page-banner'); // get element by id
@@ -30,9 +53,9 @@ let qSelector5 = document.querySelectorAll("#book-list li .name")[2];
 console.log(qSelector5);
 
 let qSelector6 = document.querySelectorAll("#search-books");
-console.log(qSelector6); */
+console.log(qSelector6);
 
-/* let result;
+let result;
 const list = document.querySelector("ul");
 const li = document.querySelector("li");
 
@@ -43,9 +66,9 @@ result = list.firstElementChild;
 result = list.lastElementChild;
 result = list.childElementCount;
 result = li.parentElement;
-console.log(result); */
+console.log(result);
 
-/* const heading = document.createElement("h2");
+const heading = document.createElement("h2");
 
 heading.innerHTML = `
 <ul>
@@ -57,11 +80,11 @@ heading.innerHTML = `
 
 heading.appendChild(document.createTextNode("The Ants"));
 
-console.log(heading); */
+console.log(heading);
 
 ///// ///// ///// Eventlisteners ///// ///// /////
 
-/* document.querySelector(".button").addEventListener("click", function(event) {
+document.querySelector(".button").addEventListener("click", function(event) {
   console.log("You clicked Me!");
   event.preventDefault();
 });
@@ -99,15 +122,15 @@ document.querySelector(".button").addEventListener("mousemove", function(event) 
 document.body.addEventListener("mousemove", function(event) {
   console.log("Mouse Moving Everywhere...!");
   event.preventDefault();
-}); */
+});
 
-/* const heading = document.querySelectorAll(".title")[1];
+const heading = document.querySelectorAll(".title")[1];
 console.log(heading);
 
 document.body.addEventListener("mousemove", function(event) {
   heading.innerHTML = `MouseX : ${event.offsetX}, MouseY : ${event.offsetY}`;
   event.preventDefault();
-}); */
+});
 
 const checkbox = document.querySelector("#hide input");
 const heading = document.querySelectorAll(".title")[1];
@@ -121,4 +144,4 @@ checkbox.addEventListener("click", function(event) {
     heading.style.display = "block";
     ul.style.display = "initial";
   }
-});
+}); */
