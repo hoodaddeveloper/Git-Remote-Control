@@ -45,7 +45,8 @@ result = list.childElementCount;
 result = li.parentElement;
 console.log(result); */
 
-const heading = document.createElement("h2");
+/* const heading = document.createElement("h2");
+
 heading.innerHTML = `
 <ul>
   <li>The Ants</li>
@@ -53,4 +54,7 @@ heading.innerHTML = `
   <li>The Cats</li>
 </ul>
 `;
-console.log(heading);
+
+heading.appendChild(document.createTextNode("The Ants"));
+
+console.log(heading); */
