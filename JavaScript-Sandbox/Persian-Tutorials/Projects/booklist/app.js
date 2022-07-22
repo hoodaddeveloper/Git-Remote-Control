@@ -61,7 +61,7 @@ console.log(heading); */
 
 ///// ///// ///// Eventlisteners ///// ///// /////
 
-document.querySelector(".button").addEventListener("click", function(event) {
+/* document.querySelector(".button").addEventListener("click", function(event) {
   console.log("You clicked Me!");
   event.preventDefault();
 });
@@ -99,4 +99,12 @@ document.querySelector(".button").addEventListener("mousemove", function(event) 
 document.body.addEventListener("mousemove", function(event) {
   console.log("Mouse Moving Everywhere...!");
   event.preventDefault();
-});
+}); */
+
+/* const heading = document.querySelectorAll(".title")[1];
+console.log(heading);
+
+document.body.addEventListener("mousemove", function(event) {
+  heading.innerHTML = `MouseX : ${event.offsetX}, MouseY : ${event.offsetY}`;
+  event.preventDefault();
+}); */
