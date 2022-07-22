@@ -15,9 +15,23 @@ link.addEventListener("click", function (event) {
 
   ul.appendChild(li);
 
+  storeToLocalStorage(inputText.value);
+
   inputText.value = "";
   event.preventDefault();
 });
+
+function storeToLocalStorage(task) {
+  let tasks;
+  if (localStorage.getItem("tasks") === null) {
+    tasks = [];
+  } else {
+    tasks = localStorage.getItem("tasks").split(",");
+  }
+
+  tasks.push(task);
+  localStorage.setItem("tasks", tasks);
+};
 
 ///// ///// ///// Practicing Codes ///// ///// /////
 
