@@ -36,5 +36,5 @@ let result;
 const list = document.querySelector("ul");
 const li = document.querySelector("li");
 
-result = li;
-console.log(result);
+result = list.children[3].children[0].innerHTML; // get the innerHTML of the fourth child of the list
+console.log(result); // "The Ants"
