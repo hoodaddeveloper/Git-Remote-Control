@@ -111,12 +111,14 @@ document.body.addEventListener("mousemove", function(event) {
 
 const checkbox = document.querySelector("#hide input");
 const heading = document.querySelectorAll(".title")[1];
-const ul = document.querySelectorAll("ul");
+const ul = document.querySelector("ul");
 
 checkbox.addEventListener("click", function(event) {
   if (checkbox.checked) {
-    console.log("Checked");
+    heading.style.display = "none";
+    ul.style.display = "none";
   } else {
-    console.log("Unchecked");
+    heading.style.display = "block";
+    ul.style.display = "initial";
   }
 });
