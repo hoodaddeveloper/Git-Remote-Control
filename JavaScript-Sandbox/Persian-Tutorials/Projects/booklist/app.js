@@ -62,6 +62,21 @@ function storeToLocalStorage(task) {
   localStorage.setItem("tasks", tasks);
 }
 
+function removeFromLocalStorage(task) {
+  let tasks;
+  if (localStorage.getItem("tasks") === null) {
+    tasks = [];
+  } else {
+    tasks = localStorage.getItem("tasks").split(",");
+  }
+
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[0] === task) {
+      tasks.splice(i, 1);
+    }
+  }
+  localStorage.setItem("tasks", tasks);
+}
 ///// ///// ///// Practicing Codes ///// ///// /////
 
 /* // First way to get elements:
