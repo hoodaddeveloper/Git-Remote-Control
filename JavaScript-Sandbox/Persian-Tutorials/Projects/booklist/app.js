@@ -23,7 +23,8 @@ link.addEventListener("click", function (event) {
 
 ul.addEventListener("click", function (event) {
   if (event.target.className === "delete") {
-    console.log("Yes");
+    event.target.parentElement.remove();
+    removeFromLocalStorage(event.target.parentElement.children[0].textContent);
   }
 });
 
