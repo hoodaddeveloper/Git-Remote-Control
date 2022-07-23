@@ -71,12 +71,18 @@ function removeFromLocalStorage(task) {
   }
 
   for (let i = 0; i < tasks.length; i++) {
-    if (tasks[0] === task) {
+    if (tasks[i] === task) {
       tasks.splice(i, 1);
     }
   }
-  localStorage.setItem("tasks", tasks);
+
+  if (task.lengh === 0) {
+    localStorage.clear;
+  } else {
+    localStorage.setItem("tasks", tasks);
+  }
 }
+
 ///// ///// ///// Practicing Codes ///// ///// /////
 
 /* // First way to get elements:
