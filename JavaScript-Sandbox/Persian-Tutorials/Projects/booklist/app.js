@@ -35,6 +35,7 @@ checkBox.addEventListener("click", function (event) {
   } else {
     ul.style.display = "block";
   }
+});
 
 document.addEventListener("DOMContentLoaded", function (event) {
   let tasks;
