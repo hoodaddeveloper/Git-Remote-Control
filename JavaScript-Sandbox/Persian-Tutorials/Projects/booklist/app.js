@@ -2,6 +2,7 @@ const inputText = document.querySelector("#add-book input");
 const link = document.querySelector(".button");
 const ul = document.querySelector("ul");
 const spanDelete = `<span class="delete">Delete</span>`;
+const checkBox = document.querySelector("#hide input");
 
 link.addEventListener("click", function (event) {
   const spanName = document.createElement("span");
@@ -27,6 +28,13 @@ ul.addEventListener("click", function (event) {
     removeFromLocalStorage(event.target.parentElement.children[0].textContent);
   }
 });
+
+checkBox.addEventListener("click", function (event) {
+  if (checkBox.checked === true) {
+    ul.style.display = "none";
+  } else {
+    ul.style.display = "block";
+  }
 
 document.addEventListener("DOMContentLoaded", function (event) {
   let tasks;
