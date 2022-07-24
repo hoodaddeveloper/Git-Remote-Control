@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Burgers",
+    "address": "123 Main Street",
+    "city": "New York",
+  },
+  {
+    "name": "Pizza",
+    "address": "456 Broadway",
+    "city": "New York",
+  }
+]
