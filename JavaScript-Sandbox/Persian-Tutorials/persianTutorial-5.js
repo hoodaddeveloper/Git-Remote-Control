@@ -26,7 +26,7 @@ if (timeNow >= 5 && timeNow <= 12) {
 
 /////////////////////////////////////////////////////////////////////////
 
-let role = "guest"; // Set role to "guest"
+let role = "admin"; // Set role to "guest"
 
 switch (role) {
   case "guest": // If role is "guest"
@@ -39,7 +39,18 @@ switch (role) {
     console.log("Admin User"); // Print "Admin User"
     break;
   default: // If role is not "guest", "user" or "admin"
-  // Print "Unknown User"
-    console.log("Unknown User");
-    break;
+    // Print "Unknown User"
+    console.log("Unknown User"); // Print "Unknown User"
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+if (role === "guest") {
+  console.log("Guest User");
+} else if (role === "user") {
+  console.log("Registered User");
+} else if (role === "admin") {
+  console.log("Admin User");
+} else {
+  console.log("Unknown User");
 }
