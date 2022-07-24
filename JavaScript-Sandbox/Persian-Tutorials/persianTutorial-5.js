@@ -23,3 +23,35 @@ if (timeNow >= 5 && timeNow <= 12) { // If timeNow is greater than or equal to 5
 }
 
 /////////////////////////////////////////////////////////////////////////
+
+let time = 20; // Set time to 20
+
+
+switch (time) {
+  case (time >= 5 && time <= 12):
+    console.log("Good Morning");
+    break;
+  case (time >= 13 && time <= 18):
+    console.log("Good Afternoon");
+    break;
+  default:
+    console.log("Good Night");
+    break;
+}
+
+
+
+switch (key) {
+  case "a":
+    console.log("A");
+    break;
+  case "b":
+    console.log("B");
+    break;
+  case "c":
+    console.log("C");
+    break;
+  default:
+    console.log("Default");
+    break;
+}
