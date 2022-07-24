@@ -54,3 +54,16 @@ if (role === "guest") {
 } else {
   console.log("Unknown User");
 }
+
+///// Loops /////
+
+// For loop
+// while loop
+// do while loop
+// for in loop
+// for of loop
+
+for (let i = 0; i <= 5; i++) {
+  console.log("Hoodad");
+  console.log(i);
+}
