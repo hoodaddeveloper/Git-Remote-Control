@@ -26,3 +26,20 @@ if (timeNow >= 5 && timeNow <= 12) {
 
 /////////////////////////////////////////////////////////////////////////
 
+let role = "guest"; // Set role to "guest"
+
+switch (role) {
+  case "guest": // If role is "guest"
+    console.log("Guest User"); // Print "Guest User"
+    break;
+  case "user": // If role is "user"
+    console.log("Registered User"); // Print "Registered User"
+    break;
+  case "admin": // If role is "admin"
+    console.log("Admin User"); // Print "Admin User"
+    break;
+  default: // If role is not "guest", "user" or "admin"
+  // Print "Unknown User"
+    console.log("Unknown User");
+    break;
+}
