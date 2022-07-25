@@ -57,7 +57,7 @@ if (role === "guest") {
 
 ///// Loops /////
 
-// For loop
+// for loop
 for (let i = 0; i <= 5; i++) {
   console.log("Hoodad");
   console.log(i);
@@ -80,4 +80,14 @@ do {
 } while (x <= 5); // While x is less than or equal to 5
 
 // for in loop
+const person = {
+  name: "John",
+  age: 30
+};
+
+for (let key in person) {
+  console.log(key); // Print "name", "age"
+  console.log(person[key]); // Print "John", 30
+}
+
 // for of loop
