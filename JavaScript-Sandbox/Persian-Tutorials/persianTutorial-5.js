@@ -111,9 +111,12 @@ for (let farbe of farben) {
 const arr = ["Hoodad", "Ali", "Hossein", "Samad"]
 
 for (let s = 0; s < arr.length; s++) {
-  console.log(arr[s]);
+  console.log(arr[s]); // Print "Hoodad", "Ali", "Hossein", "Samad"
 }
 
 for (s of arr) {
-  console.log(s);
+  console.log(s); // Print "Hoodad", "Ali", "Hossein", "Samad"
 }
+
+
+// Continue ...
