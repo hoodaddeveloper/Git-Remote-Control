@@ -58,12 +58,26 @@ if (role === "guest") {
 ///// Loops /////
 
 // For loop
-// while loop
-// do while loop
-// for in loop
-// for of loop
-
 for (let i = 0; i <= 5; i++) {
   console.log("Hoodad");
   console.log(i);
 }
+
+// while loop
+let i = 0;
+
+while (i <= 5) { // While i is less than or equal to 5
+  console.log(i);
+  i++; // Increment i by 1
+}
+
+// do while loop
+let x = 0;
+
+do {
+  console.log(x); // Print 0, 1, 2, 3, 4, 5
+  x++;
+} while (x <= 5); // While x is less than or equal to 5
+
+// for in loop
+// for of loop
