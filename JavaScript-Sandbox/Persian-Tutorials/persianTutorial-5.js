@@ -100,3 +100,20 @@ for (let index in colors) {
 }
 
 // for of loop
+const farben = ["Rot", "Grün", "Blau"];
+
+for (let farbe of farben) {
+  console.log(farbe);
+}
+
+///// Repeat /////
+
+const arr = ["Hoodad", "Ali", "Hossein", "Samad"]
+
+for (let s = 0; s < arr.length; s++) {
+  console.log(arr[s]);
+}
+
+for (s of arr) {
+  console.log(s);
+}
