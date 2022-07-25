@@ -66,7 +66,8 @@ for (let i = 0; i <= 5; i++) {
 // while loop
 let i = 0;
 
-while (i <= 5) { // While i is less than or equal to 5
+while (i <= 5) {
+  // While i is less than or equal to 5
   console.log(i);
   i++; // Increment i by 1
 }
@@ -82,12 +83,20 @@ do {
 // for in loop
 const person = {
   name: "John",
-  age: 30
+  age: 30,
 };
+
+const colors = ["red", "green", "blue"];
 
 for (let key in person) {
   console.log(key); // Print "name", "age"
   console.log(person[key]); // Print "John", 30
+}
+
+/// /// ///
+
+for (let index in colors) {
+  console.log(colors[index]); // Print "red", "green", "blue"
 }
 
 // for of loop
