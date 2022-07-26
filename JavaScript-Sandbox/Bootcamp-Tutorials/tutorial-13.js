@@ -63,3 +63,15 @@ console.log(longFavoriteWords);
 
 ///// The .findIndex() Method /////////////////////////////////////////////////////////////////
 
+const jumbledNums = [123, 10, 25, 78, 4, 9]; 
+
+const lessThanTen = jumbledNums.findIndex(num2 => num2 < 10);
+const lessThanEleven = jumbledNums.findIndex(num2 => num2 < 11);
+
+console.log(lessThanTen); // 4
+console.log(lessThanEleven); // 1
+
+/// /// ///
+
+
+
