@@ -73,5 +73,10 @@ console.log(lessThanEleven); // 1
 
 /// /// ///
 
+const animals2 = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
+const foundAnimal = animals2.findIndex(num3 => num3 === 'elephant'); // returns index of 'elephant'
+const startsWithS = animals2.findIndex(animal => animal[0] === 's' ? true : false); // returns index of first animal starting with 's'
 
+console.log(foundAnimal); // 7
+console.log(startsWithS); // 6
