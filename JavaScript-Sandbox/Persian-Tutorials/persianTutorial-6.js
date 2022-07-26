@@ -124,3 +124,25 @@ x.value = 20;
 console.log(y.value); // 20
 console.log(y); */
 
+let number1 = 10;
+
+const increase1 = increaseFunc1 = (number1) => number1++;
+console.log(number1); // 10
+
+/// /// /// /// /// ///
+
+let number2 = 10;
+
+const increase2 = increaseFunc2 = (number2) => {
+  number2++
+  console.log(number2);
+};
+
+increaseFunc2(number2); // 11
+
+/// /// /// /// /// ///
+
+let obj1 = {value: 12};
+
+const increase3 = increaseFunc3 = (obj1) => obj1++;
+console.log(increase3(obj1)); // {value: 12}
