@@ -18,3 +18,16 @@ console.log(bigNumbers);
 
 /// /// ///
 
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+const secretMessage = animals.map(word => word[0]);
+
+console.log(secretMessage.join(''));
+
+const bigNumbers2 = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+const smallNumbers = bigNumbers2.map(number2 => number2 / 100);
+
+console.log(smallNumbers);
