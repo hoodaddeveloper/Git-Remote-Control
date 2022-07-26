@@ -42,3 +42,24 @@ console.log(words);
 console.log(shortWords);
 
 /// /// ///
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+// Call .filter() on randomNumbers below
+const smallNums1 = randomNumbers.filter(less => less < 250); // returns numbers less than 250
+const smallNums2 = randomNumbers.filter(more => more > 250); // returns numbers less than 250
+
+console.log(smallNums1);
+console.log(smallNums2);
+
+/// /// ///
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(more => more.length > 7); // returns words longer than 7 characters
+
+console.log(favoriteWords);
+console.log(longFavoriteWords);
+
+///// The .findIndex() Method /////////////////////////////////////////////////////////////////
+
