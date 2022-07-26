@@ -10,13 +10,13 @@ console.log(myArray);
 
 function mixedNumbers(arr) {
   // Only change code below this line
-arr.push(7, 'VIII', 9);
-arr.unshift('I', 2, 'three');
+  arr.push(7, "VIII", 9);
+  arr.unshift("I", 2, "three");
   // Only change code above this line
   return arr;
 }
 
-console.log(mixedNumbers(['IV', 5, 'six']));
+console.log(mixedNumbers(["IV", 5, "six"]));
 
 /// // ///
 
@@ -26,7 +26,7 @@ function popShift(arr) {
   return [shifted, popped];
 }
 
-console.log(popShift(['challenge', 'is', 'not', 'complete']));
+console.log(popShift(["challenge", "is", "not", "complete"]));
 
 /// // ///
 
@@ -45,4 +45,30 @@ function htmlColorNames(arr) {
   return arr;
 }
 
-console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+console.log(
+  htmlColorNames([
+    "DarkGoldenRod",
+    "WhiteSmoke",
+    "LavenderBlush",
+    "PaleTurquoise",
+    "FireBrick",
+  ])
+);
+
+///// Functions as Data /////////////////////////////////////////////////////////
+
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for (let i = 1; i <= 10000; i++) {
+    if (2 + 2 != 4) {
+      console.log("Something has gone very wrong :( ");
+    }
+  }
+};
+
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+isTwoPlusTwo();
+console.log(isTwoPlusTwo.name);
+
+//// Functions as Parameters /////////////////////////////////////////////////////////
+
