@@ -11,9 +11,7 @@ fruits.forEach(function(item) {
 
 const numbers = [1, 2, 3, 4, 5]; 
  
-const bigNumbers = numbers.map(number => {
-  return number * 100 + 10 - 2;
-});
+const bigNumbers = numbers.map(number => number * 100 + 10 - 5);
 
 console.log(numbers);
 console.log(bigNumbers);
