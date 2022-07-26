@@ -88,3 +88,5 @@ const checkConsistentOutput = (func, val) => {
 }
 
 console.log(checkConsistentOutput(addTwo, 12));
+
+// Continue ...
