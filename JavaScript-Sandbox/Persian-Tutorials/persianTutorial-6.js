@@ -96,4 +96,31 @@ console.log(circle2);
 // String, Number, Boolean, null, undefined, symbol
 
 // Reference types:
-// Object, Array, Function
+// Object, Array (Arrays are also Objects), Function (Functions Are also Objects)
+
+// We can say that we have two types of values:
+// 1. Primitive values
+// 2. Objects (Reference values)
+
+/// /// /// /// /// ///
+
+/* let x = 10;
+let y = x;
+
+console.log(y); // 10
+console.log(x); // 10
+
+x = 20;
+
+console.log(x); // 20 */
+
+/// /// /// /// /// ///
+
+/* let x = {value: 10};
+let y = x;
+
+x.value = 20;
+
+console.log(y.value); // 20
+console.log(y); */
+
