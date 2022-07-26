@@ -80,3 +80,6 @@ const startsWithS = animals2.findIndex(animal => animal[0] === 's' ? true : fals
 
 console.log(foundAnimal); // 7
 console.log(startsWithS); // 6
+
+///// The .reduce() Method /////////////////////////////////////////////////////////////////
+

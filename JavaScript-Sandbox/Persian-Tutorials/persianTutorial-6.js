@@ -89,3 +89,11 @@ circle2.color = "red";
 circle.draw2 = function () {};
 
 console.log(circle2);
+
+///// value types //////////////////////////////////////////////////////////////
+
+// Primitive types:
+// String, Number, Boolean, null, undefined, symbol
+
+// Reference types:
+// Object, Array, Function
