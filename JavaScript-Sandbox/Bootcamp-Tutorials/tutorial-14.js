@@ -32,12 +32,12 @@ function Bird() {
   this.numLegs = 2;
 };
 
-let blueBird = new Bird(); //// Creates a new instance of the Bird constructor function
+let blueBird = new Bird(); // Creates a new instance of the Bird constructor function
 
-console.log(blueBird); //// Logs the blueBird object
-console.log(blueBird.name); //// Logs the name property of the blueBird object
-console.log(blueBird.color);
-console.log(blueBird.numLegs);
+console.log(blueBird); // Logs the blueBird object
+console.log(blueBird.name); // Logs the name property of the blueBird object
+console.log(blueBird.color); // Logs the color property of the blueBird object
+console.log(blueBird.numLegs); // Logs the numLegs property of the blueBird object
 
 /// /// /// /// /// ///
 
@@ -49,10 +49,10 @@ function Dog() {
 
 let whiteDog = new Dog();
 
-console.log(whiteDog);
-console.log(whiteDog.name);
-console.log(whiteDog.color);
-console.log(whiteDog.numLegs);
+console.log(whiteDog); // Logs the whiteDog object
+console.log(whiteDog.name); // Logs the name property of the whiteDog object
+console.log(whiteDog.color); // Logs the color property of the whiteDog object
+console.log(whiteDog.numLegs); // Logs the numLegs property of the whiteDog object
 
 ///// Use a Constructor to Create an Objects /////
 
