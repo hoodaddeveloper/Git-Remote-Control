@@ -127,4 +127,14 @@ for (let z = 0; z < 3; z++) {
   setTimeout(log, 100); // logs 0, 1, 2
 }
 
-///// The .reduce() Method /////////////////////////////////////////////////////////////////
+///// Create a Method on an Object /////////////////////////////////////////////////////////////////
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: duckName = () => console.log(`The name of this duck is ${duck.name}.`),
+};
+
+duck.sayName();
+
+// Continue ...
