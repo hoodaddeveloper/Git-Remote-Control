@@ -54,5 +54,13 @@ console.log(whiteDog.name); // Logs the name property of the whiteDog object
 console.log(whiteDog.color); // Logs the color property of the whiteDog object
 console.log(whiteDog.numLegs); // Logs the numLegs property of the whiteDog object
 
-///// Use a Constructor to Create an Objects /////
+///// Check For The Presence of an Element With indexOf() /////
+
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+console.log(fruits.indexOf('dates')); // Returns -1
+console.log(fruits.indexOf('oranges')); // Returns 2
+console.log(fruits.indexOf('pears')); // Returns 1
+
+/// /// /// /// /// ///
 
