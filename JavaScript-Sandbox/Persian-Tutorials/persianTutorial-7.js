@@ -22,5 +22,7 @@ function findNumber(x) {
 
 findNumber(33);
 
-///// More about arrow functions /////
+/// /// /// /// /// /// /// /// /// ///
 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
+nums.forEach(num => console.log(num * 10)); // print each number in the array multiplied by 10
