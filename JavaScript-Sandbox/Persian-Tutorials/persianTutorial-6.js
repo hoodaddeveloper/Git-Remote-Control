@@ -150,3 +150,6 @@ function func(obj) {
 }
 
 func(obj); // 13
+
+/// /// /// /// /// ///
+
