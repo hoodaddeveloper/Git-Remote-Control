@@ -17,7 +17,30 @@ myDog.sayName();
 let dog = {
   name: "Spot",
   numLegs: 4,
-  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+  sayLegs: function () {
+    return "This dog has " + this.numLegs + " legs.";
+  },
 };
 
 console.log(dog.sayLegs());
+
+///// Define a Constructor Function /////
+
+const constructor = (Bird = () => {
+  this.name = "Albert";
+  this.color = "blue";
+  this.numLegs = 2;
+});
+
+let blueBird = new Bird(); //// Creates a new instance of the Bird constructor function
+
+/// /// /// /// /// ///
+
+function Dog() {
+  this.name = "Woofoo";
+  this.color = "white";
+  this.numLegs = 2;
+}
+
+///// Use a Constructor to Create an Objects /////
+
