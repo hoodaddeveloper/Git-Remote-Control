@@ -26,13 +26,18 @@ console.log(dog.sayLegs());
 
 ///// Define a Constructor Function /////
 
-const constructor = (Bird = () => {
+function Bird() {
   this.name = "Albert";
   this.color = "blue";
   this.numLegs = 2;
-});
+};
 
 let blueBird = new Bird(); //// Creates a new instance of the Bird constructor function
+
+console.log(blueBird); //// Logs the blueBird object
+console.log(blueBird.name); //// Logs the name property of the blueBird object
+console.log(blueBird.color);
+console.log(blueBird.numLegs);
 
 /// /// /// /// /// ///
 
@@ -41,6 +46,13 @@ function Dog() {
   this.color = "white";
   this.numLegs = 2;
 }
+
+let whiteDog = new Dog();
+
+console.log(whiteDog);
+console.log(whiteDog.name);
+console.log(whiteDog.color);
+console.log(whiteDog.numLegs);
 
 ///// Use a Constructor to Create an Objects /////
 
