@@ -130,11 +130,21 @@ for (let z = 0; z < 3; z++) {
 ///// Create a Method on an Object /////////////////////////////////////////////////////////////////
 
 let duck = {
-  name: "Aflac",
+  name: "Avalac",
   numLegs: 2,
-  sayName: duckName = () => console.log(`The name of this duck is ${duck.name}.`),
+  sayName: (duckName) => console.log(`The name of this duck is ${duck.name}.`),
 };
 
 duck.sayName();
+
+/// /// /// /// /// /// /// /// /// ///
+
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: func => `This dog has ${dog.numLegs} legs.`,
+};
+
+console.log(dog.sayLegs());
 
 // Continue ...
