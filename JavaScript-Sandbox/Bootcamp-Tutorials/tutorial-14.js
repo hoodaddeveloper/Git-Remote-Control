@@ -30,7 +30,7 @@ function Bird() {
   this.name = "Albert";
   this.color = "blue";
   this.numLegs = 2;
-};
+}
 
 let blueBird = new Bird(); // Creates a new instance of the Bird constructor function
 
@@ -56,11 +56,45 @@ console.log(whiteDog.numLegs); // Logs the numLegs property of the whiteDog obje
 
 ///// Check For The Presence of an Element With indexOf() /////
 
-let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+let fruits = ["apples", "pears", "oranges", "peaches", "pears"];
 
-console.log(fruits.indexOf('dates')); // Returns -1
-console.log(fruits.indexOf('oranges')); // Returns 2
-console.log(fruits.indexOf('pears')); // Returns 1
+console.log(fruits.indexOf("dates")); // Returns -1
+console.log(fruits.indexOf("oranges")); // Returns 2
+console.log(fruits.indexOf("pears")); // Returns 1
+console.log(fruits.indexOf("apples")); // Returns 0
 
 /// /// /// /// /// ///
 
+// 1:
+function quickCheck(arr, elem) {
+  if (arr.indexOf(elem) >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(quickCheck(["squash", "onions", "shallots"], "mushrooms"));
+
+// 2:
+function quickCheck2(arr2, elem2) {
+  if (arr2.indexOf(elem2) >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(quickCheck2(["squash", "onions", "shallots"], "mushrooms"));
+
+// 3:
+
+function quickCheck3(arr3, elem3) {
+  if (arr3.indexOf(elem3) >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(quickCheck3(["squash", "onions", "shallots"], "mushrooms"));
