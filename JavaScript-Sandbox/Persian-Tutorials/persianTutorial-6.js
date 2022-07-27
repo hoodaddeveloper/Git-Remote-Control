@@ -180,8 +180,16 @@ console.log(Akbar);
 
 ///// Random Number /////////////////////////////////////////////////////////////
 
-const randomNumber1 = (getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min));
+const randomNumber1 = getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min);
 console.log(randomNumber1(40, 50));
 
 const randomNumber2 = Math.floor(Math.random() * 10);
-console.log(randomNumber2); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+console.log(randomNumber2);
+
+
+/// /// /// /// /// ///
+
+const randomNumber3 = getRandomNum = (min, max) => Math.floor(Math.random() * (max - min) + min);
+console.log(randomNumber1(100, 110));
+
+// Continue ...
