@@ -151,5 +151,31 @@ function func(obj) {
 
 func(obj); // 13
 
-/// /// /// /// /// ///
+///// Clone Object //////////////////////////////////////////////////////////////
 
+const another = { ...obj };
+console.log(another); // { value: 13 }
+
+///// Spread Operator //////////////////////////////////////////////////////////
+
+let Akbar = {
+  name: "Akbar",
+  age: 30,
+  isMarried: false,
+  hobbies: ["Sports", "Cooking"],
+  address: {
+    city: "Shiraz",
+    street: "Koshan",
+    houseNumber: "14",
+  },
+  game: function () {
+    console.log("I love Games");
+  }
+};
+
+/// Clone:
+
+let AlbarClone = { ...Akbar };
+console.log(Akbar);
+
+/// /// /// /// /// ///
