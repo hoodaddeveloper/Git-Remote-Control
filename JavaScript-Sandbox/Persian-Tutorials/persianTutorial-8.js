@@ -36,3 +36,5 @@ const ageUnder30 = users.filter(user => user.age < 30); // filter the users with
 
 console.log(agePlus30);
 console.log(ageUnder30);
+
+///// map() method /////
