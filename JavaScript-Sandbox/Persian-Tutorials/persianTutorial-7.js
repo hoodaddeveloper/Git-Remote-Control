@@ -31,7 +31,7 @@ nums.forEach((num, i) => console.log(i, num * 10)); // print each number in the 
 
 const nums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
 
-const joined = nums2.join(", "); // join the array into a string separated by a comma and a space
+const joined = nums2.join("* "); // join the array into a string separated by a star and a space
 console.log(joined);
 
 ///// Split a String /////
@@ -45,3 +45,11 @@ const combined = parts.join(" - "); // join the array of words into a string sep
 console.log(combined);
 
 ///// sort an array /////
+
+const nums3 = [1, 4, 3, 2, 8, 0, 6, 7, 5, 9]; // create an array of numbers
+
+nums3.sort(); // sort the array in ascending order
+console.log(nums3); // print the sorted array
+
+nums3.reverse(); // sort the array in descending order
+console.log(nums3); // print the reversed array
