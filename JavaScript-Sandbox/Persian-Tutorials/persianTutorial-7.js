@@ -28,3 +28,18 @@ const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
 nums.forEach((num, i) => console.log(i, num * 10)); // print each number in the array multiplied by 10 with the index
 
 /// /// /// /// /// /// /// /// /// ///
+
+const nums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
+
+const joined = nums2.join(", "); // join the array into a string separated by a comma and a space
+console.log(joined);
+
+/// /// /// /// /// /// /// /// /// ///
+
+const msg = "My name is Albert Wesker!"; // create a string
+const parts = msg.split(" "); // split the string into an array of words
+
+console.log(parts); // print the array of words
+
+const combined = parts.join(" - "); // join the array of words into a string separated by a hyphen
+console.log(combined);
