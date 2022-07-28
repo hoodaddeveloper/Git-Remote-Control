@@ -38,3 +38,9 @@ console.log(agePlus30);
 console.log(ageUnder30);
 
 ///// map() method /////
+
+const arr = [10, 20, 30];
+
+twice = arr.map(value => value * 2); // multiply each value by 2
+
+console.log(twice)
