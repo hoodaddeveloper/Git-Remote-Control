@@ -78,11 +78,7 @@ console.log(quickCheck(["squash", "onions", "shallots"], "mushrooms"));
 
 // 2:
 function quickCheck2(arr2, elem2) {
-  if (arr2.indexOf(elem2) >= 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return arr2.indexOf(elem2) >= 0 ? true : false;
 }
 
 console.log(quickCheck2(["squash", "onions", "shallots"], "mushrooms"));
@@ -90,11 +86,9 @@ console.log(quickCheck2(["squash", "onions", "shallots"], "mushrooms"));
 // 3:
 
 function quickCheck3(arr3, elem3) {
-  if (arr3.indexOf(elem3) >= 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return arr3.indexOf(elem3) != -1;
 }
 
 console.log(quickCheck3(["squash", "onions", "shallots"], "mushrooms"));
+
+// Continue ...
