@@ -93,4 +93,4 @@ const answer2 = nums5.every(function (value) {
 
 console.log(answer2); // false
 
-/// /// /// /// /// /// /// /// /// ///
+// Continue ...
