@@ -63,7 +63,12 @@ const IDs = [
 ];
 
 IDs.sort(function (a, b) {
-  if (a.name < b.name) {
-    return -1;
-  }
+  let nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  let nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  
+  if (nameA < nameB) return -1;
+  if (nameB > nameA) return 1;
+  return 0;
 });
+
+console.log(IDs);
