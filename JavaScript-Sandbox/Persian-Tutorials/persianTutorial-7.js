@@ -75,4 +75,22 @@ console.log(IDs);
 
 ///// every and some /////
 
-const nums4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
+const nums4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const answer = nums4.every(function (value) {
+  return value > 0; // return true if all values are greater than 0
+});
+
+console.log(answer); // false
+
+/// /// /// /// /// /// /// /// /// ///
+
+const nums5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const answer2 = nums5.every(function (value) {
+  return value >= 0; // check if every element in the array is greater than or equal to 0
+});
+
+console.log(answer2); // false
+
+/// /// /// /// /// /// /// /// /// ///
