@@ -57,8 +57,31 @@ console.log(html);
 /// /// /// /// /// ///
 
 const myFriends = ["Sue", "Amanda", "Victoria", "Bob", "Tom"];
-const myFriendsOjbect = myFriends.map(friends => ({ value: friends })); // create an object for each friend
+const myFriendsOjbect = myFriends.map((friends) => ({ value: friends })); // create an object for each friend
 console.log(myFriendsOjbect);
 
-///// this /////
+///// What is "this" /////
+
+// method => A function that is attached to an object
+// This => The object that the function is attached to
+
+const video = {
+  title: "The Lord of the Rings",
+  play() {
+    console.log(this);
+  },
+};
+
+video.play();
+
+/// /// /// /// /// ///
+
+function Video(title) {
+  this.title = title;
+  console.log(this)
+}
+
+const v = new Video("The Lord of the Rings");
+
+/// /// /// /// /// ///
 
