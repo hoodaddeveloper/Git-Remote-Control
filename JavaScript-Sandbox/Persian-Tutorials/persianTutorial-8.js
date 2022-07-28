@@ -54,10 +54,11 @@ console.log(items);
 const html = items.join(" "); // join the items into a string with space
 console.log(html);
 
-///// /// /// /// /// ///
+/// /// /// /// /// ///
 
 const myFriends = ["Sue", "Amanda", "Victoria", "Bob", "Tom"];
 const myFriendsOjbect = myFriends.map(friends => ({ value: friends })); // create an object for each friend
 console.log(myFriendsOjbect);
 
-///// /// /// /// /// ///
+///// this /////
+
