@@ -53,3 +53,17 @@ console.log(nums3); // print the sorted array
 
 nums3.reverse(); // sort the array in descending order
 console.log(nums3); // print the reversed array
+
+/// /// /// /// /// /// /// /// /// ///
+
+const IDs = [
+  { id: 1, name: "Albert Wesker" },
+  { id: 2, name: "Leon S. Kennedy" },
+  { id: 3, name: "Jill Valentine" },
+];
+
+IDs.sort(function (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+});
