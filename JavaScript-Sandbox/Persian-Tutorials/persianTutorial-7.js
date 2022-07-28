@@ -94,3 +94,9 @@ const answer2 = nums5.every(function (value) {
 console.log(answer2); // false
 
 /// /// /// /// /// /// /// /// /// ///
+
+const notes = [10, 14, 20, 13, 14, 15, 18, 7, 18, 19, 11];
+
+const atLeastOneTwenty = notes.every(function (value) {
+  return value === 20;
+});
