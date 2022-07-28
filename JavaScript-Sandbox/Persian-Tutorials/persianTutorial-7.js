@@ -65,10 +65,14 @@ const IDs = [
 IDs.sort(function (a, b) {
   let nameA = a.name.toUpperCase(); // ignore upper and lowercase
   let nameB = b.name.toUpperCase(); // ignore upper and lowercase
-  
+
   if (nameA < nameB) return -1;
   if (nameB > nameA) return 1;
   return 0;
 });
 
 console.log(IDs);
+
+///// every and some /////
+
+const nums4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // create an array of numbers
