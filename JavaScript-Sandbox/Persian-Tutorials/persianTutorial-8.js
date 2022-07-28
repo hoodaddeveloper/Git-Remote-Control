@@ -31,8 +31,8 @@ const users = [
   { name: "Hoodad Wesker", age: 27 },
 ];
 
-const agePlus30 = users.filter(user => user.age > 30); // filter the users with age greater than 30
-const ageUnder30 = users.filter(user => user.age < 30); // filter the users with age less than 30
+const agePlus30 = users.filter((user) => user.age > 30); // filter the users with age greater than 30
+const ageUnder30 = users.filter((user) => user.age < 30); // filter the users with age less than 30
 
 console.log(agePlus30);
 console.log(ageUnder30);
@@ -41,6 +41,15 @@ console.log(ageUnder30);
 
 const arr = [10, 20, 30];
 
-twice = arr.map(value => value * 2); // multiply each value by 2
+twice = arr.map((value) => value * 2); // multiply each value by 2
 
-console.log(twice)
+console.log(twice);
+
+/// /// /// /// /// ///
+
+const products = ["Apple", "Orange", "Banana", "Pear"];
+const items = products.map((product) => `<li>${product}</li>`); // create a list of products with <li> tag
+console.log(items);
+
+const html = items.join(" "); // join the items into a string with space
+console.log(html);
