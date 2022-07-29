@@ -161,4 +161,10 @@ console.log(reduced); // -1 + 0 + 2 + 3 = 5
 const reduced2 = Nums.reduce((ac, value) => ac + value, 0);
 console.log(reduced2);
 
-/// /// /// /// /// ///
+///// default method /////
+
+function bankInterest(principal, interest = 20, years = 5) {
+  return ((principal * interest) / 100) * years; // calculate the interest
+}
+
+console.log(bankInterest(10000));
