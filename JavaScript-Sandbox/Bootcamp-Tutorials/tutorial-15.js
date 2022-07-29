@@ -11,10 +11,13 @@ console.log(summedNums); // 80
 /// /// /// /// /// ///
 
 const newNumbers = [1, 3, 5, 7];
-const newSum = newNumbers.reduce((accumulator, currentValue) => {
-  console.log("The value of accumulator: ", accumulator);
-  console.log("The value of currentValue: ", currentValue);
-  return accumulator + currentValue;
-}, 10);
+const newSum = newNumbers.reduce((accumulator, currentValue) => { // reduce the array to a single value
+  console.log("The value of accumulator: ", accumulator); // the value of accumulator is the value of the previous iteration
+  console.log("The value of currentValue: ", currentValue); // the value of currentValue is the value of the current iteration
+  return accumulator + currentValue; // add each value to the accumulator
+}, 10); // second argument is the initial value of the accumulator
 
-console.log(newSum);
+console.log(newSum); // 24
+
+///// Iterator Documentation /////
+
