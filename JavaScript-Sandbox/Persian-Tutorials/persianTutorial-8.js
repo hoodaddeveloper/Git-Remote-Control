@@ -78,10 +78,19 @@ video.play();
 
 function Video(title) {
   this.title = title;
-  console.log(this)
+  console.log(this);
 }
 
 const v = new Video("The Lord of the Rings");
 
-/// /// /// /// /// ///
+///// Function declaration /////
 
+function walk() {
+  console.log("walk");
+}
+
+///// Function expression /////
+
+const run = function () {
+  console.log("run");
+};
