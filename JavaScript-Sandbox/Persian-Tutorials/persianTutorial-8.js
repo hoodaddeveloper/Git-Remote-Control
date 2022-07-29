@@ -181,3 +181,5 @@ let person = {
 };
 
 console.log(`Her name is ${person.fullname()} and she is ${person.age} years old.`);
+
+// Continue ...
