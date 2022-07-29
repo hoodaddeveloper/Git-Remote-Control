@@ -101,7 +101,8 @@ run();
 
 /// /// /// /// /// ///
 
-function sum(a, b) { // function declaration
+function sum(a, b) {
+  // function declaration
   return a + b; // return the sum of a and b
 }
 
@@ -109,8 +110,22 @@ console.log(sum(1, 5)); // 6
 
 /// /// /// /// /// ///
 
-const minus = function (c, d, e) { // function expression
+const minus = function (c, d, e) {
+  // function expression
   return c - d + e;
 };
 
 console.log(minus(3, 4, 4)); // 3
+
+/// /// /// /// /// ///
+
+function allArguments(w, x) {
+  console.log(arguments);
+  let total = 0;
+  for (let value of arguments) {
+    total += value;
+    return total;
+  }
+}
+
+allArguments();
