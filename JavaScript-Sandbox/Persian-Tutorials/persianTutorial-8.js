@@ -163,8 +163,21 @@ console.log(reduced2);
 
 ///// default method /////
 
-function bankInterest(principal, interest = 20, years = 5) {
+function bankInterest(principal, interest = 20, years = 2) {
   return ((principal * interest) / 100) * years; // calculate the interest
 }
 
 console.log(bankInterest(10000));
+
+/// /// /// /// /// ///
+
+let person = {
+  fName: "Sara",
+  lName: "Conner",
+  age: 33,
+  fullname() {
+    return `${this.fName} ${this.lName}`;
+  },
+};
+
+console.log(`Her name is ${person.fullname()} and she is ${person.age} years old.`);
