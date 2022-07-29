@@ -1,7 +1,6 @@
 ///// The .reduce() Method /////
 
 const numbers = [1, 2, 4, 10];
-
 const summedNums = numbers.reduce((accumulator, currentValue) => {
   return accumulator * currentValue; // multiply each value in the array
 });
@@ -48,7 +47,6 @@ console.log(
 ///// Choose the Right Iterator /////
 
 const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
-
 const nums = [1, 50, 75, 200, 350, 525, 1000];
 
 //  Choose a method that will return undefined
