@@ -90,3 +90,5 @@ callback function. It returns -1 if none of the elements in the array satisfies 
 iterates through an array and takes the values of the elements and returns a single value.
 
 */
+
+// Continue ...
