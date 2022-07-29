@@ -89,8 +89,16 @@ function walk() {
   console.log("walk");
 }
 
+walk();
+
 ///// Function expression /////
 
 const run = function () {
   console.log("run");
 };
+
+run();
+
+
+/// /// /// /// /// ///
+
