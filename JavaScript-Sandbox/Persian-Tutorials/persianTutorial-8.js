@@ -119,13 +119,13 @@ console.log(minus(3, 4, 4)); // 3
 
 /// /// /// /// /// ///
 
-function allArguments(w, x) {
-  console.log(arguments);
-  let total = 0;
-  for (let value of arguments) {
-    total += value;
-    return total;
+function allArguments(w, x) { // function declaration
+  console.log(arguments); // arguments is an array
+  let total = 0; // create a variable to store the sum of all arguments
+  for (let value of arguments) { // loop through all arguments
+    total += value; // add each argument to the total
   }
+  return total; // return the total
 }
 
-allArguments();
+console.log(allArguments(1, 10, 10)); // 21
