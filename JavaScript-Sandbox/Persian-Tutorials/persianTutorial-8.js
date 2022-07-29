@@ -136,7 +136,7 @@ console.log(allArguments(1, 10, 10)); // 21
 
 let myArguments = function (y, z) {
   console.log(arguments);
-  let all = 0;
+  let all = 1;
   for (let value of arguments) {
     all *= value;
   }
@@ -144,3 +144,14 @@ let myArguments = function (y, z) {
 };
 
 console.log(myArguments(2, 4, 10));
+
+///// reduce() method /////
+
+const Nums = [-1, 0, 2, 3];
+
+const reduced = Nums.reduce(function (ac, value) {
+  // reduce the array to a single value
+  return ac + value; // add each value to the accumulator
+}, 0);
+
+console.log(reduced); // -1 + 0 + 2 + 3 = 5
