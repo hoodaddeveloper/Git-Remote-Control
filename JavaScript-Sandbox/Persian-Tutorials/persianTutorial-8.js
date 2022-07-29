@@ -105,7 +105,7 @@ function sum(a, b) { // function declaration
   return a + b; // return the sum of a and b
 }
 
-console.log(sum(1, 5));
+console.log(sum(1, 5)); // 6
 
 /// /// /// /// /// ///
 
@@ -113,4 +113,4 @@ const minus = function (c, d) { // function expression
   return c - d; // return the difference of c and d
 };
 
-console.log(minus(3, 4));
+console.log(minus(3, 4)); // -1
