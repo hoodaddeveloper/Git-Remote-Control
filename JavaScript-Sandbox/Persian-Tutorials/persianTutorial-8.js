@@ -109,8 +109,8 @@ console.log(sum(1, 5)); // 6
 
 /// /// /// /// /// ///
 
-const minus = function (c, d) { // function expression
-  return c - d; // return the difference of c and d
+const minus = function (c, d, e) { // function expression
+  return c - d + e;
 };
 
-console.log(minus(3, 4)); // -1
+console.log(minus(3, 4, 4)); // 3
