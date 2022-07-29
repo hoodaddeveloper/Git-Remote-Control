@@ -155,3 +155,10 @@ const reduced = Nums.reduce(function (ac, value) {
 }, 0);
 
 console.log(reduced); // -1 + 0 + 2 + 3 = 5
+
+///// With arrow function /////
+
+const reduced2 = Nums.reduce((ac, value) => ac + value, 0);
+console.log(reduced2);
+
+/// /// /// /// /// ///
