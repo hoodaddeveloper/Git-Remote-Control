@@ -108,25 +108,37 @@ const cat = {
   },
   getName() {
     console.log(this.name);
-  }
+  },
 };
 
 cat.makesound(); // "Miaauu"
 cat.diet(); // "herbivore"
-cat.getAge() // 6
-cat.getName() // "Whiskers"
+cat.getAge(); // 6
+cat.getName(); // "Whiskers"
 
 /// /// /// /// /// ///
 
 const robot = {
-  model: '1E78V2',
+  model: "1E78V2",
   energyLevel: 100,
   provideInfo() {
-    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`
-  }
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`;
+  },
 };
 
 console.log(robot.provideInfo());
 
 /// /// /// /// /// ///
+
+const robot1 = {
+  model: "1E78V2",
+  energyLevel: 100,
+  provideInfo1() {
+    console.log(`I am ${this.model} and my current energy level is ${this.energyLevel}.`);
+  },
+};
+
+robot1.provideInfo1();
+
+///// Arrow Functions and this /////
 
