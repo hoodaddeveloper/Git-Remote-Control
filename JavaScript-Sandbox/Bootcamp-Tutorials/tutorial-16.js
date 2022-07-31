@@ -8,7 +8,7 @@ let spaceship = {
 console.log(spaceship.homePlanet); // 'Earth'
 console.log(spaceship.color); // silver
 
-/// /// /// /// ///
+/// /// /// /// /// ///
 
 let spaceShip = {
   homePlanet: 'Earth',
@@ -38,4 +38,21 @@ console.log(Spaceship['Fuel Type']); // 'Turbo Fuel'
 console.log(Spaceship['numCrew']); // 5
 console.log(Spaceship['homePlanet']); // 'Earth'
 console.log(Spaceship['!!!!!!!!!!!']); // undefined
+
+/// /// /// /// /// ///
+
+let spaceSHIP = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+let fuel = spaceSHIP['Fuel Type'];
+let isActive = spaceSHIP['Active Mission'];
+
+console.log(isActive); // true
+console.log(fuel); // 'Turbo Fuel'
+
+///// Property Assignment /////
 
