@@ -227,3 +227,13 @@ console.log(spaceship2);
 
 ///// Pass By Reference /////
 
+const obj1 = {
+  name: "Abbas",
+  age: 30,
+};
+
+let changeName = (cn) => (cn.name = "Wesker");
+changeName(obj1);
+
+console.log(obj1.name);
+
