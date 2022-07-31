@@ -96,9 +96,49 @@ const myCar = {
 myCar["Build year"] = 2014; // update the value of the property "Build year"
 delete myCar["Top Speed"]; // delete the property "Top Speed"
 myCar["car color"] = "White"; // update the value of the property "car color"
-myCar["Top Speed"] = "220 KM" // add a new property "Top Speed"
+myCar["Top Speed"] = "220 KM"; // add a new property "Top Speed"
 
 console.log(myCar);
 
 ///// Methods /////
 
+const alienShip = {
+  alienInvade() {
+    console.log(
+      "Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon."
+    );
+  },
+};
+
+alienShip.alienInvade();
+
+/// /// /// /// /// ///
+
+const math = {
+  a: 5,
+  b: 5,
+  sum() {
+    console.log(math.a + math.b);
+  },
+};
+
+math.sum();
+
+/// /// /// /// /// ///
+
+let retreatMessage =
+  "We no longer wish to conquer your planet. It is full of dogs, which we do not care for.";
+
+// Write your code below
+let Ship = {
+  retreat() {
+    console.log(retreatMessage);
+  },
+
+  takeOff() {
+    console.log("Spim... Borp... Glix... Blastoff!");
+  },
+};
+
+Ship.retreat();
+Ship.takeOff();
