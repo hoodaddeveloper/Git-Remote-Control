@@ -166,6 +166,45 @@ const space = {
   nanoelectronics: {
     computer: {
       terabytes: 100,
+      "Our monitors": ["HD", "4K"],
+    },
+    "back-up": {
+      battery: "Lithium",
+      terabytes: 50,
+    },
+  },
+};
+
+let deg = space.crew.captain.degree;
+let display = space.nanoelectronics.computer["Our monitors"][1];
+console.log(deg); // "Computer Engineering"
+console.log(display); // "4K"
+
+/// /// /// /// /// ///
+
+let spaceship2 = {
+  passengers: null,
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032,
+  },
+  crew: {
+    captain: {
+      name: "Sandra",
+      degree: "Computer Engineering",
+      encourageTeam() {
+        console.log("We got this!");
+      },
+      "favorite foods": ["cookies", "cakes", "candy", "spinach"],
+    },
+  },
+  engine: {
+    model: "Nimbus2000",
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
       monitors: "HD",
     },
     "back-up": {
@@ -175,4 +214,16 @@ const space = {
   },
 };
 
-/// /// /// /// /// ///
+let capFave = spaceship2.crew.captain["favorite foods"][0];
+console.log(capFave); // cookies
+
+spaceship2.passengers = [
+  { name: "Hoodad", age: "27", job: "Engineer" },
+  { name: "Tracer", age: "25", job: "Mechanic" },
+  { name: "Inspector", age: "28", job: "Dctor" },
+];
+
+console.log(spaceship2);
+
+///// Pass By Reference /////
+
