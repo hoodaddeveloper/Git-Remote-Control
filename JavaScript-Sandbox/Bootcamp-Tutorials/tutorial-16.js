@@ -26,3 +26,16 @@ console.log(planetArray); // ['Venus', 'Mars', 'Saturn']
 
 ///// Bracket Notation /////
 
+let Spaceship = {
+  'Fuel Type': 'Turbo Fuel',
+  'Active Duty': true,
+  homePlanet: 'Earth',
+  numCrew: 5
+};
+
+console.log(Spaceship['Active Duty']); // true
+console.log(Spaceship['Fuel Type']); // 'Turbo Fuel'
+console.log(Spaceship['numCrew']); // 5
+console.log(Spaceship['homePlanet']); // 'Earth'
+console.log(Spaceship['!!!!!!!!!!!']); // undefined
+
