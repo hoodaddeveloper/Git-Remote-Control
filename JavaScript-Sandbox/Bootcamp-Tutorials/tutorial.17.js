@@ -74,12 +74,14 @@ let spaceship2 = {
 };
 
 for (let crewMember in spaceship2.crew) {
-  console.log(`${crewMember}: ${spaceship2.crew[crewMember].name}`)
-};
+  console.log(`${crewMember}: ${spaceship2.crew[crewMember].name}`);
+}
 
 for (let crewMember in spaceship2.crew) {
-  console.log(`${spaceship2.crew[crewMember].name}: ${spaceship2.crew[crewMember].degree}`)
-};
+  console.log(
+    `${spaceship2.crew[crewMember].name}: ${spaceship2.crew[crewMember].degree}`
+  );
+}
 
 ///// Advanced Objects Introduction /////
 
@@ -88,3 +90,43 @@ for (let crewMember in spaceship2.crew) {
 // Defining "getters" and "setters" in objects.
 // Creating factory functions.
 // Using destructuring techniques.
+
+///// The this Keyword /////
+
+const cat = {
+  name: "Whiskers",
+  age: 6,
+  makesound() {
+    console.log("Miiaauu");
+  },
+  dietType: "herbivore",
+  diet() {
+    console.log(this.dietType);
+  },
+  getAge() {
+    console.log(this.age);
+  },
+  getName() {
+    console.log(this.name);
+  }
+};
+
+cat.makesound(); // "Miaauu"
+cat.diet(); // "herbivore"
+cat.getAge() // 6
+cat.getName() // "Whiskers"
+
+/// /// /// /// /// ///
+
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`
+  }
+};
+
+console.log(robot.provideInfo());
+
+/// /// /// /// /// ///
+
