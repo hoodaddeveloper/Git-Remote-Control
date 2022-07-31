@@ -134,7 +134,9 @@ const robot1 = {
   model: "1E78V2",
   energyLevel: 100,
   provideInfo1() {
-    console.log(`I am ${this.model} and my current energy level is ${this.energyLevel}.`);
+    console.log(
+      `I am ${this.model} and my current energy level is ${this.energyLevel}.`
+    );
   },
 };
 
@@ -142,3 +144,14 @@ robot1.provideInfo1();
 
 ///// Arrow Functions and this /////
 
+const goat = {
+  dietType: "herbivore",
+  makeSound() {
+    console.log("baaa");
+  },
+  diet: () => {
+    console.log(this.dietType);
+  },
+};
+
+goat.diet(); // Prints undefined because "this" is not available in the arrow function.
