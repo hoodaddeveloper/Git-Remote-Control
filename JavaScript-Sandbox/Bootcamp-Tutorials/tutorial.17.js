@@ -155,3 +155,28 @@ const goat = {
 };
 
 goat.diet(); // Prints undefined because "this" is not available in the arrow function.
+
+/// /// /// /// /// ///
+
+const robot2 = {
+  energyLevel: 100,
+  checkEnergy () {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  }
+}
+
+robot2.checkEnergy(); // Prints "Energy is currently at 100%."
+
+///// Privacy /////
+
+const robot3 = {
+  _energyLevel: 100,
+  recharge() {
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`);
+  },
+};
+
+robot3._energyLevel = "high";
+robot3.recharge();
+
