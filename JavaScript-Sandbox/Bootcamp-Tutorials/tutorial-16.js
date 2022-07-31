@@ -65,7 +65,40 @@ const myFriedns = {
 };
 
 delete myFriedns.Abadan; // delete the property "Abadan"
-myFriedns.USA = "Jack" // add a new property "USA"
-myFriedns.Kazeroon = "Abbas" // update the value of the property "Kazeroon"
+myFriedns.USA = "Jack"; // add a new property "USA"
+myFriedns.Kazeroon = "Abbas"; // update the value of the property "Kazeroon"
 
 console.log(myFriedns);
+
+/// /// /// /// /// ///
+
+let SpaceShip = {
+  "Fuel Type": "Turbo Fuel",
+  homePlanet: "Earth",
+  color: "silver",
+  "Secret Mission": "Discover life outside of Earth.",
+};
+
+SpaceShip.color = "glorious gold"; // update the value of the property "color"
+SpaceShip.numEngines = 10; // add a new property "numEngines"
+delete SpaceShip["Secret Mission"]; // delete the property "Secret Mission"
+
+/// /// /// /// /// ///
+
+const myCar = {
+  "car make": "Ford",
+  "the model": "Mustang",
+  "Build year": 1969,
+  "car color": "silver",
+  "Top Speed": "120mph",
+};
+
+myCar["Build year"] = 2014; // update the value of the property "Build year"
+delete myCar["Top Speed"]; // delete the property "Top Speed"
+myCar["car color"] = "White"; // update the value of the property "car color"
+myCar["Top Speed"] = "220 KM" // add a new property "Top Speed"
+
+console.log(myCar);
+
+///// Methods /////
+
