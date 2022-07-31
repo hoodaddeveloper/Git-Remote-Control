@@ -6,4 +6,3 @@ function start() {
 }
 
 start();
-///// Object oriented programming /////
