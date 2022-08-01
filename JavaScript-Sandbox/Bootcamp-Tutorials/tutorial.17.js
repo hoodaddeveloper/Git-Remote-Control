@@ -232,3 +232,18 @@ console.log(robot4.energyLevel);
 
 ///// Setters /////
 
+const person2 = {
+  _age: 27,
+  set age(newAge){
+    if (typeof newAge === 'number'){
+      this._age = newAge;
+    } else {
+      console.log('You must assign a number to age');
+    }
+  }
+};
+
+person2.age = 30; // Sets the value to 30
+person2.age = '40'; // Logs: You must assign a number to age
+
+console.log(person2._age); // Logs: 30
