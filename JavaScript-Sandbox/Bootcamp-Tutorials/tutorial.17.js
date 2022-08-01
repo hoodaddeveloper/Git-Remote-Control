@@ -160,10 +160,10 @@ goat.diet(); // Prints undefined because "this" is not available in the arrow fu
 
 const robot2 = {
   energyLevel: 100,
-  checkEnergy () {
-    console.log(`Energy is currently at ${this.energyLevel}%.`)
-  }
-}
+  checkEnergy() {
+    console.log(`Energy is currently at ${this.energyLevel}%.`);
+  },
+};
 
 robot2.checkEnergy(); // Prints "Energy is currently at 100%."
 
@@ -180,3 +180,37 @@ const robot3 = {
 robot3._energyLevel = "high";
 robot3.recharge();
 
+///// Getters /////
+
+const person = {
+  _firstName: "John",
+  _lastName: "Dee",
+  get fullName() {
+    if (this._firstName && this._lastName) {
+      return `${this._firstName} ${this._lastName}`;
+    } else {
+      return "Missing a first name or a last name.";
+    }
+  },
+};
+
+// To call the getter method:
+console.log(person.fullName); // 'John Doe'
+
+/// /// /// /// /// ///
+
+const project = {
+  _id: 3453,
+  _name: "Las Plagas",
+  getMission() {
+    if (this._id || this._name) {
+      console.log(`${this._id} ${this._name}`);
+    } else {
+      console.log(`This project has a secret mission but not identified`);
+    }
+  },
+};
+
+project.getMission();
+
+/// /// /// /// /// ///
