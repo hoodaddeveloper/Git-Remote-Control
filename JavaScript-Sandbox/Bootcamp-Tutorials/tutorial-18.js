@@ -44,6 +44,7 @@ const monsterFactory2 = (name, age) => {
 console.log(monsterFactory2("Hoodad", 23));
 
 /// / ///
+
 const monsterFactory3 = (name, age) => {
   return {
     name,
@@ -51,7 +52,8 @@ const monsterFactory3 = (name, age) => {
   };
 };
 
-const newAnswer = monsterFactory3("Ali", 27);
+
+console.log(monsterFactory2("Ali", 27));
 
 /// / ///
 
@@ -65,17 +67,41 @@ function robotFactory4(model, mobile) {
   };
 }
 
-// To check that the property value shorthand technique worked:
-const newRobot = robotFactory4("P-501", false);
-console.log(newRobot.model);
-console.log(newRobot.mobile);
-
 /// Use the property value shorthand and refactor the factory function:
 
 const robotFactory5 = (model, mobile) => {
   return {
-    model: model,
-    mobile: mobile,
+    model,
+    mobile,
+    beep() {
+      console.log("Booogh Booogh");
+    },
   };
 };
+
+const newRobot = robotFactory5('P-501', false)
+console.log(newRobot.model)
+console.log(newRobot.mobile)
+
+///// Destructured Assignment /////
+
+const vampire = {
+  name: 'Dracula',
+  residence: 'Transylvania',
+  preferences: {
+    day: 'stay inside',
+    night: 'satisfy appetite'
+  }
+};
+
+const residence1 = vampire.residence; 
+console.log(residence1); // Prints 'Transylvania'
+
+const { residence } = vampire; 
+console.log(residence); // Prints 'Transylvania'
+
+const { day } = vampire.preferences; 
+console.log(day); // Prints 'stay inside'
+
+/// / ///
 
