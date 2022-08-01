@@ -121,33 +121,33 @@ cat.getName(); // "Whiskers"
 const robot = {
   model: "1E78V2",
   energyLevel: 100,
-  provideInfo() {
+  get provideInfo() {
     return `I am ${this.model} and my current energy level is ${this.energyLevel}.`;
   },
 };
 
-console.log(robot.provideInfo());
+console.log(robot.provideInfo);
 
 /// /// /// /// /// ///
 
 const robot1 = {
   model: "1E78V2",
   energyLevel: 100,
-  provideInfo1() {
+  get provideInfo1() {
     console.log(
       `I am ${this.model} and my current energy level is ${this.energyLevel}.`
     );
   },
 };
 
-robot1.provideInfo1();
+robot1.provideInfo1;
 
 ///// Arrow Functions and this /////
 
 const goat = {
   dietType: "herbivore",
-  makeSound() {
-    console.log("baaa");
+  get Sound() {
+    console.log("baaaaa");
   },
   diet: () => {
     console.log(this.dietType);
@@ -155,17 +155,18 @@ const goat = {
 };
 
 goat.diet(); // Prints undefined because "this" is not available in the arrow function.
+goat.Sound; // Prints "baaaaa"
 
 /// /// /// /// /// ///
 
 const robot2 = {
   energyLevel: 100,
-  checkEnergy() {
+  get checkEnergy() {
     console.log(`Energy is currently at ${this.energyLevel}%.`);
   },
 };
 
-robot2.checkEnergy(); // Prints "Energy is currently at 100%."
+robot2.checkEnergy; // Prints "Energy is currently at 100%."
 
 ///// Privacy /////
 
@@ -202,7 +203,7 @@ console.log(person.fullName); // 'John Doe'
 const project = {
   _id: 3453,
   _name: "Las Plagas",
-  getMission() {
+  get Mission() {
     if (this._id || this._name) {
       console.log(`${this._id} ${this._name}`);
     } else {
@@ -211,7 +212,7 @@ const project = {
   },
 };
 
-project.getMission();
+project.Mission;
 
 /// /// /// /// /// ///
 
@@ -228,3 +229,6 @@ const robot4 = {
 };
 
 console.log(robot4.energyLevel);
+
+///// Setters /////
+
