@@ -144,3 +144,5 @@ console.log(robotEntries);
 const newRobot2 = Object.assign({laserBlaster: true, voiceRecognition: true}, robot3);
 
 console.log(newRobot2);
+
+// Continue ...
