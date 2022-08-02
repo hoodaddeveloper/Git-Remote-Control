@@ -19,7 +19,7 @@ function buyMercedes1() {
 
 console.log(buyMercedes1()); // 
 
-/// / /// / ///
+/// // /// // ///
 
 let buyingCar = {
   money: 7000,
@@ -31,3 +31,6 @@ let buyingCar = {
 }
 
 console.log(buyingCar.buyMercedes2());
+
+/// // /// // ///
+
