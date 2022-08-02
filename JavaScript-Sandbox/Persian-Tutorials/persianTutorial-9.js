@@ -32,5 +32,5 @@ let buyingCar = {
 
 console.log(buyingCar.buyMercedes2());
 
-/// // /// // ///
+///// Prototypes /////
 
