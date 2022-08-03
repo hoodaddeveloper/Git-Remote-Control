@@ -105,5 +105,7 @@ switch (power) {
 // For Loop
 
 for (let index = 12; index <= 24; index++) {
-  console.log(index);
+  console.log("===> " + index);
 }
+
+// for ...in
