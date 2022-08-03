@@ -43,6 +43,13 @@ function car1(name, model) {
   console.log(`This is my ${name} ${model}.`);
 }
 
+function math(number) {
+  return number * number - number + number;
+}
+
+let answer = math(10);
+console.log(answer);
+
 // Arrow Fuction
 
 car1("BMW", "X7");
