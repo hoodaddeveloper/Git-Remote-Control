@@ -83,3 +83,24 @@ let access = myAge >= 18 && (myMoney >= 80 || myPoints >= 1000) && inBlackList !
 
 console.log(access);
 
+// Switch...Case
+
+let power = 1000;
+
+switch (power) {
+  case 10:
+    console.log("Bronze");
+    break;
+  case 100:
+    console.log("Silver");
+    break;
+  case 1000:
+    console.log("Gold");
+    break;
+  default:
+    console.log("Nothing");
+    break;
+}
+
+// For Loop
+
