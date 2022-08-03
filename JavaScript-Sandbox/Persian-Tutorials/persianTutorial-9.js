@@ -52,9 +52,24 @@ console.log(answer);
 //or
 console.log(math(10));
 
-// Arrow Fuction 
+// Arrow Fuction
 
 car1("BMW", "X7");
 
 let car2 = (name, model) => console.log(`This is my other ${name} ${model}.`);
 car2("Mercedes", "E-Class");
+
+// Operators
+
+let y = 10;
+let z = 20;
+
+console.log(++y); // 11
+console.log(y++); // 11
+console.log(y); // 12
+
+console.log(y < z); // true
+console.log(y == z); // false
+console.log(y > z); // false
+
+
