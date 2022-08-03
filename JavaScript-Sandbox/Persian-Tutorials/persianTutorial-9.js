@@ -72,4 +72,14 @@ console.log(y < z); // true
 console.log(y == z); // false
 console.log(y > z); // false
 
+// Ternary Operator & Logical Operator
+
+let myAge = 27;
+let myMoney = 80;
+let myPoints = 900;
+let inBlackList = false;
+
+let access = myAge >= 18 && (myMoney >= 80 || myPoints >= 1000) && inBlackList != true ? "You have access" : "You do not have access";
+
+console.log(access);
 
