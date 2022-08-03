@@ -49,8 +49,10 @@ function math(number) {
 
 let answer = math(10);
 console.log(answer);
+//or
+console.log(math(10));
 
-// Arrow Fuction
+// Arrow Fuction 
 
 car1("BMW", "X7");
 
