@@ -135,8 +135,11 @@ myPet.isHappy();
 
 // Create Object
 
-let anotherPet = new Object(); // Create Object
+let anotherPet = new Object(); // Create Object with Object()
 console.log(anotherPet); // {} __proto__: Object
 
-let theObj = Object.create(null); // Create Object
-console.log(theObj); // {} (empty object)
+let theObj1 = Object.create(null); // Create Object with null prototype
+console.log(theObj1); // {} (empty object)
+
+let theObj2 = Object.create(Object.prototype); // Create a default Object with prototype
+console.log(theObj2); // {} (empty object)
