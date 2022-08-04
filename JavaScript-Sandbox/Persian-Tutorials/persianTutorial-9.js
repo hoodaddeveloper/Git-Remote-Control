@@ -142,4 +142,37 @@ let theObj1 = Object.create(null); // Create Object with null prototype
 console.log(theObj1); // {} (empty object)
 
 let theObj2 = Object.create(Object.prototype); // Create a default Object with prototype
-console.log(theObj2); // {} (empty object)
+console.log(theObj2); // {} default prototype
+
+let theObj3 = Object.create({
+  name: "Bella",
+  age: 2,
+  color: "White",
+  breed: "British shorthair",
+  isHappy() {
+    console.log("I am happy.");
+  },
+});
+
+console.log(theObj3); // {name: "Bella", age: 2, color: "White", breed: "British shorthair"} & __proto__: Object
+
+// Access & Inheritance
+
+let country = {
+  name: "Iran",
+  capital: "Tehran",
+  population: "1.4 billion",
+  language: "Farsi",
+  currency: "Rial",
+  getInfo() {
+    console.log(
+      `${this.capital} is the capital of ${this.name} and has a population of ${this.population}.
+      The language spoken in ${this.name} is ${this.language} and the currency is ${this.currency}.
+      The country is located in ${this.location}.`
+    );
+  },
+};
+
+country.population = "85 million";
+country.location = "west Asia";
+country.getInfo();
