@@ -21,7 +21,7 @@ console.log(getName);
 console.log(getSurename);
 console.log(getAge);
 console.log(getHobbies);
-console.log(person.work());
+person.work();
 
 // Arrays
 
@@ -119,4 +119,18 @@ for (const key in students) {
   console.log("The person " + students[key] + " is your friend.");
 }
 
-// While Loop
+// Objects Basics
+
+let myPet = {
+  name: "Bella",
+  age: 2,
+  color: "White",
+  breed: "British shorthair",
+  isHappy() {
+    console.log("I am happy.");
+  },
+};
+
+myPet.isHappy();
+
+// Create Object
