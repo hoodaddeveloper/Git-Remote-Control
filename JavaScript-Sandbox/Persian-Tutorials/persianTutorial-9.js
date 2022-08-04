@@ -134,3 +134,9 @@ let myPet = {
 myPet.isHappy();
 
 // Create Object
+
+let anotherPet = new Object(); // Create Object
+console.log(anotherPet); // {} __proto__: Object
+
+let theObj = Object.create(null); // Create Object
+console.log(theObj); // {} (empty object)
