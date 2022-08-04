@@ -180,3 +180,8 @@ country.getInfo();
 let anotherCountry = Object.create(country);
 anotherCountry.SecondCity = "Shiraz";
 console.log(anotherCountry);
+
+// Testing Objects
+
+console.log("firstName" in country); // false (not in) 
+console.log("population" in country); // true (in)
