@@ -176,3 +176,7 @@ let country = {
 country.population = "85 million";
 country.location = "west Asia";
 country.getInfo();
+
+let anotherCountry = Object.create(country);
+anotherCountry.SecondCity = "Shiraz";
+console.log(anotherCountry);
