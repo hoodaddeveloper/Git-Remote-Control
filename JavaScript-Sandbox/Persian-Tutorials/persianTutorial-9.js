@@ -195,3 +195,9 @@ console.log(anotherCountry.hasOwnProperty("SecondCity")); // true (in)
 // 3:
 console.log(country.propertyIsEnumerable("arWar")); // false (not in)
 console.log(country.propertyIsEnumerable("currency")); // true (in)
+//4:
+console.log(country.language === undefined); // false (not undefined)
+console.log(country.currency !== undefined); // true (not undefined)
+
+// Enumerating Objects
+
