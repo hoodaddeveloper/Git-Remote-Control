@@ -184,9 +184,9 @@ console.log(anotherCountry);
 // Testing Objects
 
 // 1:
-console.log("firstName" in country); // false (not in) 
+console.log("firstName" in country); // false (not in)
 console.log("population" in country); // true (in)
-//2:
+// 2:
 console.log(country.hasOwnProperty("lastName")); // false (not in)
 console.log(country.hasOwnProperty("language")); // true (in)
 // For anotherCountry;
@@ -195,9 +195,14 @@ console.log(anotherCountry.hasOwnProperty("SecondCity")); // true (in)
 // 3:
 console.log(country.propertyIsEnumerable("arWar")); // false (not in)
 console.log(country.propertyIsEnumerable("currency")); // true (in)
-//4:
+// 4:
 console.log(country.language === undefined); // false (not undefined)
 console.log(country.currency !== undefined); // true (not undefined)
 
 // Enumerating Objects
 
+for (x in country) {
+  console.log("This is " + x);
+}
+
+// Getter & Setter
