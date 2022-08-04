@@ -79,7 +79,10 @@ let myMoney = 80;
 let myPoints = 900;
 let inBlackList = false;
 
-let access = myAge >= 18 && (myMoney >= 80 || myPoints >= 1000) && inBlackList != true ? "You have access" : "You do not have access";
+let access =
+  myAge >= 18 && (myMoney >= 80 || myPoints >= 1000) && inBlackList != true
+    ? "You have access"
+    : "You do not have access";
 
 console.log(access);
 
@@ -109,3 +112,11 @@ for (let index = 12; index <= 24; index++) {
 }
 
 // for ...in
+
+let students = ["Hossein", "Ali", "Sara", "Saman", "Sara"];
+
+for (const key in students) {
+  console.log("The person " + students[key] + " is your friend.");
+}
+
+// While Loop
