@@ -185,3 +185,9 @@ console.log(anotherCountry);
 
 console.log("firstName" in country); // false (not in) 
 console.log("population" in country); // true (in)
+
+console.log(country.hasOwnProperty("lastName")); // false (not in)
+console.log(country.hasOwnProperty("language")); // true (in)
+
+console.log("SecondCity" in anotherCountry); // true (in)
+console.log(anotherCountry.hasOwnProperty("SecondCity")); // true (in)
