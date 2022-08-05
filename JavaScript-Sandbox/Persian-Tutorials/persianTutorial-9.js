@@ -257,4 +257,4 @@ let myArray2 = [
   [12, 23, 34, 45, 56],
 ];
 
-console.log(myArray2[1] + "&" + myArray2[2]);
+console.log(myArray2[1], myArray2[2]);
