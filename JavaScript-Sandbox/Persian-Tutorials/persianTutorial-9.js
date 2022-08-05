@@ -290,8 +290,11 @@ console.log(a); // [, , , , , , , , , , , 13]
 
 /// // /// // ///
 
-let safeWay = Array.from(mess);
+let safeWay = Array.from(mess); // Create a new array with the same digits (no duplicates)
 console.log(safeWay);
 
-let cleanWay = [...new Set(safeWay)]
+let cleanWay = [...new Set(safeWay)] // Create a new array with the unique digits (no duplicates)
 console.log(cleanWay);
+
+// Read & Write Array Elements
+
