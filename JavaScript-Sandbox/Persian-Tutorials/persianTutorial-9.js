@@ -314,3 +314,12 @@ console.log(ar); // [1, 2, 3, 5]
 if (ar.length > -1) {
   console.log("It exists.");
 }
+
+/// // /// // ///
+
+console.log([1, 2, 3, 4, 5].length); // 5
+
+aa = ["Hoodad", "Wesker", 3, 4, 5];
+aa.length = 3; // Change the length of the array to 3
+
+console.log(aa); // [Hoodad, Wesker, 3]
