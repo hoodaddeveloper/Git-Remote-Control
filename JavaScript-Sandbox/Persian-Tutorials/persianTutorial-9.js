@@ -375,9 +375,35 @@ for (let index = 0; index < letters.length; index++) {
 
 console.log(HU);
 
-// Now using .map()
+// Using .map()
 
 let upperCase2 = "";
 letters.map((letter) => (upperCase2 += letter.toUpperCase()));
 
 console.log(upperCase2);
+
+// Using .filter()
+
+let ARRAY = [11, 22, 33, 44, 55, 66];
+
+let f = ARRAY.filter((x) => x > 22); // Create a new array with elements that are greater than 22
+let c = ARRAY.find((x) => x > 22); // Find the first element that is greater than 22
+
+console.log(f); // [33, 44, 55, 66]
+console.log(c); // 33
+
+// Array Methods
+
+let s = [1, 2, 3, 4, 5, 6];
+console.log(s.slice(2, 4)); // Prints from 2 to 4 but not 2: [3, 4]
+console.log(s.slice(4, 6)); // Prints from 4 to 6 but not 4: [5, 6]
+console.log(s.includes(6)); // Returns true because the array contains the element 6
+console.log(s.includes(9)); // Returns false because the array does not contain the element 9
+
+// Create Functions
+
+function add(a, b) {
+  console.log(a + b);
+}
+
+add(3, 3); // 6
