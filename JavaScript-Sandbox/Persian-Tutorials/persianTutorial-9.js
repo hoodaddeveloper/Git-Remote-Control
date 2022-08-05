@@ -407,3 +407,14 @@ function add(a, b) {
 }
 
 add(3, 3); // 6
+
+const barboolak = function (a, b) {
+  console.log(a ** b);
+};
+
+barboolak(2, 16); // 65536
+
+const ARROW = (a, b) => console.log(a / b);
+ARROW(9, 3); // 3
+
+//
