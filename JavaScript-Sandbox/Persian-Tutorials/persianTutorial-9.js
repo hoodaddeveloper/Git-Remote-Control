@@ -222,3 +222,11 @@ let laptop = {
 laptop.price = 10000;
 console.log(laptop.info);
 console.log(laptop.price);
+
+// Extending Object
+
+let _laptop = laptop;
+_laptop.brand = "Lenovo";
+_laptop.model = "Legion Y740";
+
+console.log(_laptop);
