@@ -206,3 +206,14 @@ for (x in country) {
 }
 
 // Getter & Setter
+
+let laptop = {
+  brand: "Asus",
+  model: "Gaming Pro",
+  price: "5000",
+  get info() {
+    return `My laptop is an ${this.brand} ${this.model} model and it costs ${this.price} dollars. `;
+  },
+};
+
+console.log(laptop.info);
