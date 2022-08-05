@@ -258,3 +258,18 @@ let myArray2 = [
 ];
 
 console.log(myArray2[1], myArray2[2]);
+
+// Using spread operator
+
+myArray3 = [33, 44, 55, 66, 77, 88, 99];
+let SO = [22, ...myArray3, 111];
+
+console.log(SO);
+
+/// // /// // ///
+
+let digits = "123456489023878ffmvjksj45hrjffj3k"; // Create an array of digits
+let newDigits1 = [...digits]; // Create a new array with the same digits
+
+let newDigits2 = [...new Set(digits)]; // Create a new array with the unique digits (no duplicates)
+console.log(newDigits2);
