@@ -321,5 +321,15 @@ console.log([1, 2, 3, 4, 5].length); // 5
 
 aa = ["Hoodad", "Wesker", 3, 4, 5];
 aa.length = 3; // Change the length of the array to 3
-
 console.log(aa); // [Hoodad, Wesker, 3]
+
+aa.length = 7; // Change the length of the array to 7 (add 4 empty elements)
+console.log(aa); // [Hoodad, Wesker, 3, , , , ]
+
+// Adding & Deleting Elements
+
+let bb = [1, 2, 3, 4, 5, 6];
+let push = bb.push(123); // Add element to the end of the array
+
+console.log(bb); // [1, 2, 3, 4, 5, 6, 123]
+
