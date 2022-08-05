@@ -298,3 +298,8 @@ console.log(cleanWay);
 
 // Read & Write Array Elements
 
+let ar1 = [1,2,3,4];
+let i = ar1[3]; // Read element at index 3
+console.log(i); // 4
+ar1[3] = 5; // Write element at index 3
+console.log(ar1); // [1, 2, 3, 5]
