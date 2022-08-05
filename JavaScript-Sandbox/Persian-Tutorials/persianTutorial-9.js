@@ -214,6 +214,11 @@ let laptop = {
   get info() {
     return `My laptop is an ${this.brand} ${this.model} model and it costs ${this.price} dollars. `;
   },
+  set changePrice(value) {
+    this.laptop.price = value.toUpperCase();
+  },
 };
 
+laptop.price = 10000;
 console.log(laptop.info);
+console.log(laptop.price);
