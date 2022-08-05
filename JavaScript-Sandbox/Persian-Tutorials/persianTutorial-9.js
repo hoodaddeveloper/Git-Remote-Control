@@ -248,3 +248,13 @@ let otherPc = {
 let futurePc = { ...myPC, ...otherPc }; // Create a new object with the same properties as laptop
 
 console.log(futurePc);
+
+// Create Array
+
+let myArray2 = [
+  { x: 1, y: 2, z: 3 },
+  { a: 4, b: 5, c: 6 },
+  [12, 23, 34, 45, 56],
+];
+
+console.log(myArray2[1] + "&" + myArray2[2]);
