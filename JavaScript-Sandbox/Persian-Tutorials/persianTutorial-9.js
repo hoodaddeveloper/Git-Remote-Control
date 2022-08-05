@@ -225,17 +225,8 @@ console.log(laptop.price);
 
 // Extending Object
 
-/* let _laptop = laptop;
-_laptop.brand = "Lenovo";
-_laptop.model = "Legion Y740"; */
-
-// or
-
-/* let _laptop = {weight: "2KG"}; // Create a new object with the same properties as laptop
-Object.assign(_laptop, laptop); // Assign laptop properties to _laptop */
-
-// or
-
 _laptop = {...laptop}; // Create a new object with the same properties as laptop
+_laptop.brand = "Lenovo";
+_laptop.model = "Legion Y740";
 
 console.log(_laptop);
