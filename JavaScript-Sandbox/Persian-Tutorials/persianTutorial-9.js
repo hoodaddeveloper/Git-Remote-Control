@@ -419,10 +419,23 @@ ARROW(9, 3); // 3
 
 // Argument & Parameters
 
-function fullname(fname, lname) {
-  fname = fname || "John";
-  lname = lname || "Dee";
-  console.log(fname +" "+ lname);
+function fullname(fname = "John", lname = "Dee") {
+  // If no arguments are passed, use default values
+  /* fname = fname || "John";
+  lname = lname || "Dee"; */
+  console.log(fname + " " + lname);
 }
 
 fullname("Ali"); // Ali Dee
+
+/// // /// // ///
+
+function func(a, b, ...c) { // Rest operator
+  for (const key in c) { // Iterate over the rest of the arguments
+    console.log(key); // Print the index of the argument
+  }
+}
+
+func("A", "B", "C", 1, 2, 3, 4, 5); // Prints the index of the argument
+
+// Namespaces
