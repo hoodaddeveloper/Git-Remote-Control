@@ -293,13 +293,24 @@ console.log(a); // [, , , , , , , , , , , 13]
 let safeWay = Array.from(mess); // Create a new array with the same digits (no duplicates)
 console.log(safeWay);
 
-let cleanWay = [...new Set(safeWay)] // Create a new array with the unique digits (no duplicates)
+let cleanWay = [...new Set(safeWay)]; // Create a new array with the unique digits (no duplicates)
 console.log(cleanWay);
 
 // Read & Write Array Elements
 
-let ar1 = [1,2,3,4];
-let i = ar1[3]; // Read element at index 3
+let ar = [1, 2, 3, 4];
+let i = ar[3]; // Read element at index 3
 console.log(i); // 4
-ar1[3] = 5; // Write element at index 3
-console.log(ar1); // [1, 2, 3, 5]
+ar[3] = 5; // Write element at index 3
+ar["Hoodad"] = 6;
+console.log(ar); // [1, 2, 3, 5]
+
+/* if (ar.length > 5) {
+  console.log("Bigger than 3.");
+} else {
+  console.log("Not bigger than 3.")
+} */
+
+if (ar.length > -1) {
+  console.log("It exists.");
+}
