@@ -273,3 +273,25 @@ let newDigits1 = [...digits]; // Create a new array with the same digits
 
 let newDigits2 = [...new Set(digits)]; // Create a new array with the unique digits (no duplicates)
 console.log(newDigits2);
+
+/// // /// // ///
+
+let mess = "2349586720495867204598670245986720459867240895670245867";
+
+let clean = [...new Set(mess)];
+console.log(clean);
+
+// Array Constructor
+
+let a = new Array(11); // Create empty an array with 11 elements
+a[2] = 13; // Add element to array
+
+console.log(a); // [, , , , , , , , , , , 13]
+
+/// // /// // ///
+
+let safeWay = Array.from(mess);
+console.log(safeWay);
+
+let cleanWay = [...new Set(safeWay)]
+console.log(cleanWay);
