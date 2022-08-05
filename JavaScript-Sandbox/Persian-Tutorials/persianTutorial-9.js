@@ -430,12 +430,28 @@ fullname("Ali"); // Ali Dee
 
 /// // /// // ///
 
-function func(a, b, ...c) { // Rest operator
-  for (const key in c) { // Iterate over the rest of the arguments
+function func(a, b, ...c) {
+  // Rest Operator
+  for (const key in c) {
+    // Iterate over the rest of the arguments
     console.log(key); // Print the index of the argument
   }
 }
 
 func("A", "B", "C", 1, 2, 3, 4, 5); // Prints the index of the argument
 
-// Namespaces
+// Closures
+
+let scope = "Global"; // Create a variable outside of the function
+
+function check() {
+  let scope = "local"; // Create a variable inside of the function
+  function f() {
+    return scope;
+  }
+  return f;
+}
+
+console.log(check()()); // Prints "local"
+
+// Finish!
