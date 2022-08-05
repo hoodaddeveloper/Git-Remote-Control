@@ -329,7 +329,41 @@ console.log(aa); // [Hoodad, Wesker, 3, , , , ]
 // Adding & Deleting Elements
 
 let bb = [1, 2, 3, 4, 5, 6];
-let push = bb.push(123); // Add element to the end of the array
 
+let push = bb.push(123); // Add element to the end of the array
 console.log(bb); // [1, 2, 3, 4, 5, 6, 123]
 
+bb.unshift(321); // Add element to the beginning of the array
+console.log(bb); // [321, 1, 2, 3, 4, 5, 6, 123]
+
+bb.pop(); // Remove element from the end of the array
+console.log(bb); // [321, 1, 2, 3, 4, 5, 6]
+
+bb.shift(); // Remove element from the beginning of the array
+console.log(bb); // [1, 2, 3, 4, 5, 6]
+
+delete bb[1]; // Delete element at index 1
+console.log(bb); // [1, , 3, 4, 5, 6]
+
+// Iterating Arrays
+
+let letters = [..."Hello Umbrella"];
+let document = [];
+
+for (const letter of letters) {
+  console.log((document += letter));
+}
+
+/// // /// // ///
+
+let upperCase = "";
+
+letters.forEach((letter) => {
+  upperCase += letter;
+});
+
+console.log(upperCase);
+
+/// // /// // ///
+
+let
