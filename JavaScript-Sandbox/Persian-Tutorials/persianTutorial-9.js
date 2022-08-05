@@ -417,4 +417,12 @@ barboolak(2, 16); // 65536
 const ARROW = (a, b) => console.log(a / b);
 ARROW(9, 3); // 3
 
-//
+// Argument & Parameters
+
+function fullname(fname, lname) {
+  fname = fname || "John";
+  lname = lname || "Dee";
+  console.log(fname +" "+ lname);
+}
+
+fullname("Ali"); // Ali Dee
