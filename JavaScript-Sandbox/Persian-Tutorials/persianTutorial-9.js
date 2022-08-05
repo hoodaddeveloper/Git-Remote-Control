@@ -230,3 +230,11 @@ _laptop.brand = "Lenovo";
 _laptop.model = "Legion Y740";
 
 console.log(_laptop);
+
+// Extended Object Literal Syntax
+
+let myPC = {
+  Graphic: "Nvidia 3090",
+  CPU: "Intel i9",
+  RAM: "32GB",
+}
