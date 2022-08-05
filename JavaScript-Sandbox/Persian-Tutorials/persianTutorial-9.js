@@ -220,12 +220,12 @@ let laptop = {
 };
 
 laptop.price = 10000;
-console.log(laptop.info);
+laptop.info;
 console.log(laptop.price);
 
 // Extending Object
 
-_laptop = {...laptop}; // Create a new object with the same properties as laptop
+_laptop = { ...laptop }; // Create a new object with the same properties as laptop
 _laptop.brand = "Lenovo";
 _laptop.model = "Legion Y740";
 
@@ -237,4 +237,14 @@ let myPC = {
   Graphic: "Nvidia 3090",
   CPU: "Intel i9",
   RAM: "32GB",
-}
+};
+
+let otherPc = {
+  Graphic: "Nvidia 5090",
+  CPU: "Intel i11",
+  RAM: "64GB",
+};
+
+let futurePc = { ...myPC, ...otherPc }; // Create a new object with the same properties as laptop
+
+console.log(futurePc);
