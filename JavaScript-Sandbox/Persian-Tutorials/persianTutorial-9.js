@@ -366,4 +366,18 @@ console.log(upperCase);
 
 /// // /// // ///
 
-let
+let HU = "";
+
+for (let index = 0; index < letters.length; index++) {
+  const letter = letters[index];
+  HU += letter;
+}
+
+console.log(HU);
+
+// Now using .map()
+
+let upperCase2 = "";
+letters.map((letter) => (upperCase2 += letter.toUpperCase()));
+
+console.log(upperCase2);
