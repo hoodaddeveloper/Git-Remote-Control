@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My complete From</title>
+  <style>
+    body {
+      background-color: rgb(57, 169, 219);
+      font-family: Arial;
+    }
+
+    form {
+      text-align: center;
+      line-height: 30px;
+      height: 80%;
+      width: 80%;
+      overflow: auto;
+      margin: 3% auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: purple;
+    }
+
+    input[type="image"] {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <form action="index.html" method="POST" target="_blank">
+    <h1>This Is A Complete Form</h1>
+    <!----- Search Input ----->
+    <fieldset style="width: 20%; margin: auto;">
+      <legend>Search</legend>
+      <label for="search">
+        <input type="search" name="search" id="search">
+        <input type="image" id="search" src="submit.jpg">
+      </label>
+    </fieldset>
+    <br>
+    <!----- Username Input ----->
+    <label>Username: <input type="text" name="username" placeholder="Enter Your Username" minlength="4" maxlength="10" pattern="[a-zA-Z0-9]+" required></label>
+    <br>
+    <!----- Credit Card Input ----->
+    <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number" pattern="[0-9]{14,16}" required></label>
+    <br>
+    <!----- Age Input ----->
+    <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+    <br>
+    <!----- Email Input ----->
+    <label>Email: <input type="email" name="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></label>
+    <br>
+    <!----- Password Input ----->
+    <label>Password: <input type="password" id="password" name="password" placeholder="Enter Your Password" minlength="6" maxlength="20" onkeyup="check();" required></label>
+    <br>
+    <label>Confirm Password: <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="check();" required></label>
+    <span id='message'></span>
+    <br>
+    <br>
+    <!----- Radio Input ----->
+    <fieldset style="width: 40%; margin: auto;">
+      <span>Your Gender:</span>
+      <label>Male<input type="radio" name="radio" value="Male" required></label>
+      <label>Female<input type="radio" name="radio" value="Female"></label>
+      <br>
+      <!----- Checkbox Input ----->
+      <label>Select Your Hobbies:
+        Swimming <input type="checkbox" name="checkbox" value="swimming" checked>
+        Jogging <input type="checkbox" name="checkbox" value="jogging">
+        Gaming <input type="checkbox" name="checkbox" value="gaming">
+        Hiking <input type="checkbox" name="checkbox" value="hiking">
+      </label>
+    </fieldset>
+    <br>
+    <!----- Range Box ----->
+    <label>Select Your Degree
+      <span>Junior</span>
+      <input type="range" name="degree" id="degree" value="5" min="1" max="10">
+      <span>CEO</span>
+    </label>
+    <br>
+    <!----- Select Box ----->
+    <label>Select Your Country:
+      <select name="options" required>
+        <option value="">Select One</option>
+        <option value="Iran">Iran</option>
+        <option value="Canada">Canada</option>
+        <option value="Japan">Japan</option>
+        <option value="China">China</option>
+      </select>
+    </label>
+    <br>
+    <!----- Datalist ----->
+    <label for="member">What Type Of member Do You Like To Be?</label>
+    <input list="membership" id="member" name="member">
+    <datalist id="membership">
+      <option value="basic"></option>
+      <option value="plus"></option>
+      <option value="pro"></option>
+      <option value="vip"></option>
+    </datalist>
+    <br>
+    <!----- Upload File ----->
+    <label>Upload a Profile Picture: <input type="file" name="file" accept="image/*"></label>
+    <br>
+    <!----- Textarea ----->
+    <fieldset style="width: 100px; margin: auto;">
+      <legend>Write About Yourself:</legend>
+      <textarea name="description" rows="5" cols="50" placeholder="Write Here ..."></textarea>
+    </fieldset>
+    <!----- Submit, Reset & Image ----->
+    <input type="submit" id="submit" name="submit" value="Send">
+    <input type="reset" name="reset" value="reset">
+  </form>
+
+  <!----- JavaScript Code for checking Password ----->
+  <script type="text/javascript">
+    var check = function() {
+      if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'Matching';
+      } else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'Not Matching';
+      }
+    };
+  </script>
+
+</body>
+</html>
