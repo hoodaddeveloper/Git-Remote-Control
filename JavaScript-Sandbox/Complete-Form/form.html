@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,9 @@
     }
 
     form {
+      padding-bottom: 15px;
       text-align: center;
       line-height: 30px;
-      height: 80%;
       width: 80%;
       overflow: auto;
       margin: 3% auto;
@@ -32,9 +33,10 @@
     }
   </style>
 </head>
+
 <body>
   <form action="index.html" method="POST" target="_blank">
-    <h1>This Is A Complete Form</h1>
+    <h1>This is a complete Form</h1>
     <!----- Search Input ----->
     <fieldset style="width: 20%; margin: auto;">
       <legend>Search</legend>
@@ -45,21 +47,26 @@
     </fieldset>
     <br>
     <!----- Username Input ----->
-    <label>Username: <input type="text" name="username" placeholder="Enter Your Username" minlength="4" maxlength="10" pattern="[a-zA-Z0-9]+" required></label>
+    <label>Username: <input type="text" name="username" placeholder="Enter Your Username" minlength="4" maxlength="10"
+        pattern="[a-zA-Z0-9]+" required></label>
     <br>
     <!----- Credit Card Input ----->
-    <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number" pattern="[0-9]{14,16}" required></label>
+    <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number"
+        pattern="[0-9]{14,16}" required></label>
     <br>
     <!----- Age Input ----->
     <label>Age: <input type="number" name="age" min="18" max="120" required></label>
     <br>
     <!----- Email Input ----->
-    <label>Email: <input type="email" name="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></label>
+    <label>Email: <input type="email" name="email" placeholder="Enter Your Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></label>
     <br>
     <!----- Password Input ----->
-    <label>Password: <input type="password" id="password" name="password" placeholder="Enter Your Password" minlength="6" maxlength="20" onkeyup="check();" required></label>
+    <label>Password: <input type="password" id="password" name="password" placeholder="Enter Your Password"
+        minlength="6" maxlength="20" onkeyup="check();" required></label>
     <br>
-    <label>Confirm Password: <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="check();" required></label>
+    <label>Confirm Password: <input type="password" id="confirm_password" name="confirm_password"
+        placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="check();" required></label>
     <span id='message'></span>
     <br>
     <br>
@@ -82,7 +89,7 @@
     <label>Select Your Degree
       <span>Junior</span>
       <input type="range" name="degree" id="degree" value="5" min="1" max="10">
-      <span>CEO</span>
+      <span>Senior</span>
     </label>
     <br>
     <!----- Select Box ----->
@@ -121,7 +128,7 @@
 
   <!----- JavaScript Code for checking Password ----->
   <script type="text/javascript">
-    var check = function() {
+    var check = function () {
       if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
         document.getElementById('message').style.color = 'green';
         document.getElementById('message').innerHTML = 'Matching';
@@ -133,4 +140,5 @@
   </script>
 
 </body>
+
 </html>
