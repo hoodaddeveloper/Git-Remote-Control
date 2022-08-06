@@ -5,47 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>My From</title>
-  <style>
-    body {
-      background-color: rgb(57, 169, 219);
-      font-family: Arial;
-    }
-
-    form {
-      padding-bottom: 15px;
-      text-align: center;
-      line-height: 40px;
-      width: 80%;
-      overflow: auto;
-      margin: 3% auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 40px;
-    }
-
-    .main-1,
-    .main-2 {
-      margin-left: 30%;
-      text-align: left;
-    }
-
-    h1 {
-      text-align: center;
-      color: purple;
-    }
-
-    legend {
-      text-align: left;
-    }
-  </style>
 </head>
 
 <body>
-  <form action="index.html" method="POST" target="_blank">
+  <form id="form" action="index.html" method="POST" target="_blank">
     <h1>This is a Form</h1>
     <!----- Search Input ----->
-    <fieldset style="width: 20%; margin: auto;">
-      <legend>Search</legend>
+    <fieldset class="f-1">
+      <legend>Search:</legend>
       <label for="search">
         <input type="search" name="search" id="search">
         <input type="button" id="search" name="search" value="Search">
@@ -78,7 +47,7 @@
     </div>
     <br>
     <!----- Radio Input ----->
-    <fieldset style="width: 40%; margin: auto;">
+    <fieldset class="f-2">
       <legend>Choose:</legend>
       <span>Your Gender:</span>
       <label>Male<input type="radio" name="radio" value="Male" required></label>
@@ -127,7 +96,7 @@
     </div>
     <br>
     <!----- Textarea ----->
-    <fieldset style="width: 100px; margin: auto;">
+    <fieldset class="f-3"">
       <legend>Write About Yourself:</legend>
       <textarea name="description" rows="5" cols="50" placeholder="Write Here ..."></textarea>
     </fieldset>
@@ -137,17 +106,7 @@
   </form>
 
   <!----- JavaScript Code for checking Password ----->
-  <script type="text/javascript">
-    var check = function () {
-      if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
-        document.getElementById('message').style.color = 'green';
-        document.getElementById('message').innerHTML = 'Matching';
-      } else {
-        document.getElementById('message').style.color = 'red';
-        document.getElementById('message').innerHTML = 'Not Matching';
-      }
-    };
-  </script>
+  <script src="app.js"></script>
 
 </body>
 
