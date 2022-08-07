@@ -53,3 +53,15 @@ console.log(new Surgeon("Bob", "Cardiology")); // Prints object to console
 
 ///// Instance /////
 
+class Cat {
+  constructor(name) {
+    this.name = name;
+    this.behavior = 2;
+  }
+}
+
+const kitty = new Cat("Kitty"); // Create new instance of Cat
+
+console.log(kitty.name); // Prints name value to console
+console.log(kitty.behavior); // Prints behavior value to console
+
