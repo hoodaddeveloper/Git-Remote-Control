@@ -12,6 +12,7 @@ form {
   margin: 3% auto;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
+  box-shadow: 5px 5px 10px 10px rgba(0, 81, 148, 0.5);
 }
 
 .main-1,
@@ -25,6 +26,24 @@ h1 {
   color: purple;
 }
 
+input {
+  border: rgb(114, 207, 250) 2px groove;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: rgb(114, 207, 250);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
 legend {
   text-align: left;
   color: purple;
@@ -34,20 +53,23 @@ legend {
 .f-1 {
   width: 25%;
   margin: auto;
-  border:rgb(156, 224, 255) 3px groove;
+  border: none;
   border-radius: 30px;
+  padding-bottom: 22px;
+  background-color: rgb(180, 224, 245);
 }
 
 .f-2 {
   width: 40%;
   margin: auto;
-  border:rgb(156, 224, 255) 3px groove;
+  border: rgb(156, 224, 255) 3px groove;
   border-radius: 30px;
+  padding-bottom: 22px;
 }
 
 .f-3 {
   width: 35%;
   margin: auto;
-  border:rgb(156, 224, 255) 3px groove;
+  border: rgb(156, 224, 255) 3px groove;
   border-radius: 30px;
 }
