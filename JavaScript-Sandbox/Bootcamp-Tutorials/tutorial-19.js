@@ -42,3 +42,9 @@ console.log(Huppy.behavior); // Print behavior value to console
 
 ///// Constructor /////
 
+class Surgeon {
+  constructor(name, department) {
+    name =
+    department =
+  }
+}
