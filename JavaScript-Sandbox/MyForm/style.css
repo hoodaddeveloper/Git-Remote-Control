@@ -23,7 +23,8 @@ form {
 
 h1 {
   text-align: center;
-  color: purple;
+  color: rgb(0, 113, 166);
+  text-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
 }
 
 input {
@@ -45,9 +46,9 @@ input[type="button"] {
 }
 
 legend {
-  text-align: left;
-  color: purple;
-  text-shadow: 1px 1px 5px;
+  color: rgb(0, 113, 166);
+  text-shadow: 1px 1px 1px;
+  font-size: 20px;
 }
 
 .f-1 {
@@ -56,20 +57,26 @@ legend {
   border: none;
   border-radius: 30px;
   padding-bottom: 22px;
-  background-color: rgb(180, 224, 245);
+  background-color: rgb(206, 232, 244);
+  box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
 }
 
 .f-2 {
   width: 40%;
   margin: auto;
-  border: rgb(156, 224, 255) 3px groove;
+  border: none;
   border-radius: 30px;
   padding-bottom: 22px;
+  background-color: rgb(206, 232, 244);
+  box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
 }
 
 .f-3 {
   width: 35%;
   margin: auto;
-  border: rgb(156, 224, 255) 3px groove;
+  border: none;
   border-radius: 30px;
+  background-color: rgb(206, 232, 244);
+  box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
+  margin-bottom: 15px;
 }
