@@ -67,14 +67,14 @@ console.log(kitty.behavior); // Prints behavior value to console
 
 /// // /// // ///
 
-class Surgeon {
+class Surgeon2 {
   constructor(name, department) {
     this.name = name;
     this.department = department;
   }
 }
 
-const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
-const surgeonJackson = new Surgeon('Ruth Jackson',  'Orthopedics');
+const surgeonRomero = new Surgeon2("Francisco Romero", "Cardiovascular");
+const surgeonJackson = new Surgeon2("Ruth Jackson", "Orthopedics");
 
 ///// Methods /////
