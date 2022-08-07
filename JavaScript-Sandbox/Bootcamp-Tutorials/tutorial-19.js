@@ -49,4 +49,7 @@ class Surgeon {
   }
 }
 
-/// // /// // ///
+console.log(new Surgeon("Bob", "Cardiology")); // Prints object to console
+
+///// Instance /////
+
