@@ -65,3 +65,16 @@ const kitty = new Cat("Kitty"); // Create new instance of Cat
 console.log(kitty.name); // Prints name value to console
 console.log(kitty.behavior); // Prints behavior value to console
 
+/// // /// // ///
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson',  'Orthopedics');
+
+///// Methods /////
