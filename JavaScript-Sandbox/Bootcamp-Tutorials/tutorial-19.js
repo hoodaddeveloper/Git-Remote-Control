@@ -100,3 +100,6 @@ class Dog3 {
 
 const DOG = new Dog3("Huppy");
 console.log(DOG);
+
+///// Method Calls /////
+
