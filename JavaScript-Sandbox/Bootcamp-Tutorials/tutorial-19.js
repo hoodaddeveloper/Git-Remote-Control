@@ -98,8 +98,31 @@ class Dog3 {
   }
 }
 
-const DOG = new Dog3("Huppy");
-console.log(DOG);
+const DOG = new Dog3("Huppy"); // Create new instance of Dog
+console.log(DOG); // Prints object to console
 
 ///// Method Calls /////
 
+class Car {
+  constructor(model, model, power) {
+    this._model = model;
+    this._ptice = price;
+    this._power = power;
+  }
+
+  get model() {
+    return this._model;
+  }
+
+  get price() {
+    return this._price;
+  }
+
+  get power() {
+    return this._power;
+  }
+
+  kilometers() {
+    this._kilometers++;
+  }
+}
