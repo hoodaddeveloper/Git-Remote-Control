@@ -78,3 +78,25 @@ const surgeonRomero = new Surgeon2("Francisco Romero", "Cardiovascular");
 const surgeonJackson = new Surgeon2("Ruth Jackson", "Orthopedics");
 
 ///// Methods /////
+
+class Dog3 {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get behavior() {
+    return this._behavior;
+  }
+
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
+
+const DOG = new Dog3("Huppy");
+console.log(DOG);
