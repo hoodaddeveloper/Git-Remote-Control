@@ -18,3 +18,11 @@ myArray.slice(); // Extracts a section of an array and returns a new array
 myArray.sort(); // Sorts the elements of an array
 myArray.splice(); // Adds/Removes items to/from an array
 myArray.unshift(); // Adds new items to the beginning of an array and returns the new length
+myArray.toString(); // Converts an array to a string
+myArray.valueOf(); // Returns the primitive value of an array
+myArray.join(); // Joins all elements of an array into a string
+myArray.split(); // Splits a string into an array of substrings
+myArray.toLocaleString(); // Converts an array to a string, using a locale-specific separator
+myArray.toString(); // Converts an array to a string
+myArray.toSource(); // Returns a string representation of an array
+myArray.toLocaleString(); // Converts an array to a string, using a locale-specific separator
