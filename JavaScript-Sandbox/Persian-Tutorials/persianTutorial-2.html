@@ -6,6 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modern JS with Silicium</title>
+  <style>
+    body {
+      height: 100vh;
+      padding: 10px 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background: linear-gradient(0deg, rgba(178, 255, 181, 1), rgba(174, 246, 255, 1) 70%);
+    }
+  </style>
 </head>
 
 <body>
@@ -29,7 +40,7 @@
     ///// Ternery Operator /////
 
     let age = 27; // Check if the age is 18 or older
-    let message = (age >= 18) ? "You are  adult" : "You are not adult";
+    let message = (age >= 18) ? "You are  adult." : "You are not adult.";
     document.write(message + "<br>"); // You are adult
 
     let money = 8000; // Check if the money is greater than or equal to 7000 then show message
@@ -79,6 +90,45 @@
 
     let newlist = list1.concat(list2, list3, list4, "Mehran", "Taghi"); // Concatenate the arrays and strings into one array
     document.write(newlist.join(" . ") + "<br>");
+
+    let students = [["Hoodad", 20, 19, 18], ["Ali", 17, 19, 20], ["Akbar", 17, 20, 18]];
+
+    document.write(students[0].join(" - ",) + "<br>");
+    document.write(students[1].join(" - ",) + "<br>");
+    document.write(students[2].join(" - ",) + "<br>");
+
+    ///// if else /////
+
+    myPoint = 20;
+
+    if (myPoint >= 15) {
+      document.write("Good" + "<br>");
+    } else if (myPoint >= 10) {
+      document.write("Not too bad" + "<br>");
+    } else {
+      document.write("Bad" + "<br>");
+    };
+
+    let Age = 19;
+    
+    switch (Age) {
+      case 17:
+        document.write("Age is " + Age + " (You are under 18)");
+        break;
+      case 18:
+        document.write("Age is " + Age + " (You are 18)");
+        break;
+      case 19:
+        document.write("Age is " + Age + " (You are 19)");
+        break;
+      default:
+        document.write("Age is " + Age + " (You are adult)");
+        break;
+    }
+
+    ///// Loops /////
+
+    
   </script>
 </body>
 
