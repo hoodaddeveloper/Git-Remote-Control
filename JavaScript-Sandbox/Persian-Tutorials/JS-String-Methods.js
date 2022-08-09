@@ -6,6 +6,7 @@ myArray.charAt(); // Returns the character at the specified index (position)
 myArray.charCodeAt(); // Returns the Unicode of the character at the specified index (position)
 myArray.concat(); // Joins two or more arrays
 myArray.indexOf(); // Searches the array for an item and returns the index of the item
+myArray.endsWith(); // Checks if a string ends with specified string/characters
 myArray.lastIndexOf(); // Searches the array for an item and returns the last index of the item
 myArray.join(); // Joins all elements of an array into a string
 myArray.lastIndexOf(); // Searches the array for an item and returns the last index of the item
