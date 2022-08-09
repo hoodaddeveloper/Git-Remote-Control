@@ -37,8 +37,23 @@
     document.write(buyMercedes + "<br>"); // Yes you have the Mercedes!
 
     let names = ["John", "Jane", "Mary", "Mark", "Bob"];
-    let check = (names.includes("John")) ? "Yes" : "No"; // Check if the array contains "John"
+    let check = names.includes("John") ? "Yes" : "No"; // Check if the array contains "John"
     document.write(check + "<br>"); // Yes
+
+    ///// Change type of variable /////
+
+    let num = 220;
+    let str = num.toString(); // Convert number to string
+    document.write(str + "<br>");
+    
+    let ms = "10";
+    let number = Number(ms); // Convert string to number
+    document.write(number + "<br>");
+
+    let boolean0 = Boolean(0); // Convert number to boolean
+    let boolean1 = Boolean(1); // Convert number to boolean
+    document.write(boolean0 + "<br>"); // false
+    document.write(boolean1 + "<br>"); // true
   </script>
 </body>
 
