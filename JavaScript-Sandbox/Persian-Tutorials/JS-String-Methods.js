@@ -12,3 +12,8 @@ myArray.lastIndexOf(); // Searches the array for an item and returns the last in
 myArray.pop(); // Removes the last element from an array and returns that element
 myArray.push(); // Adds new items to the end of an array and returns the new length
 myArray.reverse(); // Reverses the order of the elements in an array
+myArray.shift(); // Removes the first element from an array and returns that element
+myArray.slice(); // Extracts a section of an array and returns a new array
+myArray.sort(); // Sorts the elements of an array
+myArray.splice(); // Adds/Removes items to/from an array
+myArray.unshift(); // Adds new items to the beginning of an array and returns the new length
