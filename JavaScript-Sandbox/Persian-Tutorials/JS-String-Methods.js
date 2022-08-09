@@ -25,4 +25,3 @@ myArray.split(); // Splits a string into an array of substrings
 myArray.toLocaleString(); // Converts an array to a string, using a locale-specific separator
 myArray.toString(); // Converts an array to a string
 myArray.toSource(); // Returns a string representation of an array
-myArray.toLocaleString(); // Converts an array to a string, using a locale-specific separator
