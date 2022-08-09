@@ -110,25 +110,40 @@
     };
 
     let Age = 19;
-    
+
     switch (Age) {
       case 17:
-        document.write("Age is " + Age + " (You are under 18)");
+        document.write("Age is " + Age + " (You are under 18)" + "<br>");
         break;
       case 18:
-        document.write("Age is " + Age + " (You are 18)");
+        document.write("Age is " + Age + " (You are 18)" + "<br>");
         break;
       case 19:
-        document.write("Age is " + Age + " (You are 19)");
+        document.write("Age is " + Age + " (You are 19)" + "<br>");
         break;
       default:
-        document.write("Age is " + Age + " (You are adult)");
+        document.write("Age is " + Age + " (You are adult)" + "<br>");
         break;
     }
 
     ///// Loops /////
 
-    
+    let studentHa = ["Hoodad", "Ali", "Akbar", "Mehran", "Taghi"];
+
+    for (x = 0; x < studentHa.length; x++) {
+      document.write(`Hello ${studentHa[x]}` + "<br>")
+    };
+
+    document.write("<br>");
+
+    let student2 = ["Jack", "Hossein", "Naghi", "Reza", "Sue"];
+    let m = 0;
+
+    while (m < studentHa.length) {
+      document.write(`Salam ${studentHa[m]}` + "<br>")
+      m++;
+    }
+
   </script>
 </body>
 
