@@ -63,9 +63,14 @@
     budys.unshift("Hoodad"); // Add to the beginning of the array
     budys.pop("Jack"); // Remove the last element of the array
     budys.shift("Jack"); // Remove the first element of the array
+    budys.sort(); // Sort the array in ascending order
+    // budys.reverse(); // Sort the array in descending order
 
     document.write(budys.toString() + "<br>"); // convert array to string
     document.write(budys.join(" | ") + "<br>"); // join array with " | "
+
+    let nums = [11, 2, 23, 4, 35, 6, 47, 8, 59, 10];
+    document.write(nums.sort((a, b) => a - b)); // Sort the numbers in ascending order
   </script>
 </body>
 
