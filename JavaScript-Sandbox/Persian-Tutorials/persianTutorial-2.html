@@ -12,7 +12,7 @@
     let name = "Hoodad <br>";
     document.write(name);
 
-    let data = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque dicta suscipit perferendis ipsa, eius consequuntur numquam exercitationem quo optio quaerat nulla! Quis eligendi nihil deserunt cupiditate harum incidunt eius. Totam facere autem aliquid suscipit debitis fuga ipsum illo sit velit quia, quo, sint distinctio eius? Autem aliquid consequuntur laborum unde itaque aperiam, veritatis voluptates nihil! Ipsum blanditiis at rem? <br>";
+    let data = "Lorem ipsum dolor Lorem sit amet Lorem consectetur Lorem adipisicing elit. Sunt eaque dicta suscipit perferendis ipsa, eius consequuntur numquam exercitationem quo optio quaerat nulla! Quis eligendi nihil deserunt cupiditate harum incidunt eius. Totam facere autem aliquid suscipit debitis fuga ipsum illo sit velit quia, quo, sint distinctio eius? Autem aliquid consequuntur laborum unde itaque aperiam, veritatis voluptates nihil! Ipsum blanditiis at rem? <br>";
     // data = data.toLowerCase();	// converts to lowercase
     // data = data.toUpperCase();	// converts to uppercase
     document.write(data);
@@ -21,6 +21,7 @@
     document.write("==>" + data.slice(5, 11)+ "<br>"); // ipsum
     document.write("==>" + data.substr(11, 15)+ "<br>"); // dolor sit amet
     document.write("==> " + data.includes("Lorem")+ "<br>"); // true
+    document.write("==> " + data.search("A")+ "<br>"); // 331 (index of A)
     document.write("Data length: " + data.length); // Data length: 444
   </script>
 </body>
