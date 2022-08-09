@@ -124,26 +124,46 @@
       default:
         document.write("Age is " + Age + " (You are adult)" + "<br>");
         break;
-    }
-
-    ///// Loops /////
-
-    let studentHa = ["Hoodad", "Ali", "Akbar", "Mehran", "Taghi"];
-
-    for (x = 0; x < studentHa.length; x++) {
-      document.write(`Hello ${studentHa[x]}` + "<br>")
     };
 
     document.write("<br>");
 
+    ///// for loop /////
+
+    let student1 = ["Hoodad", "Ali", "Akbar", "Mehran", "Taghi"];
+
+    for (x = 0; x < student1.length; x++) {
+      document.write(`Hello ${student1[x]}` + "<br>")
+    };
+
+    document.write("<br>");
+
+    ///// while loop /////
+
     let student2 = ["Jack", "Hossein", "Naghi", "Reza", "Sue"];
     let m = 0;
 
-    while (m < studentHa.length) {
-      document.write(`Salam ${studentHa[m]}` + "<br>")
+    while (m < student2.length) {
+      document.write(`Salam ${student2[m]}` + "<br>")
       m++;
     }
 
+    document.write("<br>");
+
+    ///// do while loop /////
+
+    let student3 = ["Jack", "Hossein", "Naghi", "Reza", "Sue"];
+    let c = 0;
+
+    do {
+      document.write(`Hi ${student3[c]}` + "<br>")
+      c++;
+    } while (c < student3.length);
+
+    document.write("<br>");
+
+    ///// forEach loop /////
+    student3.forEach(s => document.write(`Hello ${s}` + "<br>"));
   </script>
 </body>
 
