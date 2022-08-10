@@ -155,3 +155,20 @@ articles.forEach((article) => {
 });
 
 ///// Javascript Built-In Objects /////
+
+console.log(Number.EPSILON); // smallest number that can be added to 1 to be greater than 1
+console.log(Number.MAX_SAFE_INTEGER); // largest safe integer
+console.log(Number.MAX_VALUE); // largest number
+console.log(Number.MAX_VALUE * 2); // largest number * 2 (overflow) - Infinity
+console.log(Math.E);
+console.log(Math.PI);
+
+let student = {
+  name: "John",
+  point: 20,
+  age: 30,
+  isMarried: false,
+};
+
+console.log(JSON.stringify(student)); // converts the object to a string
+// {"name":"John","point":20,"age":30,"isMarried":false}
