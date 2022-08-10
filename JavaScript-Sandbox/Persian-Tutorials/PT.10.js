@@ -80,22 +80,21 @@ console.log(n2, isPrime2);
 
 // Function declaration
 
-function sayHello() {
-  console.log("Hello_1");
+function add1(a, b) {
+  console.log(a + b);
 }
 
-sayHello();
+add1(8, 8);
 
 // Function expression
 
-let sayhello_2 = function () {
-  console.log("Hello_2");
+let add2 = function (a, b) {
+  console.log(a * b);
 };
 
-sayhello_2();
+add2(8, 8);
 
 // Arrow Function
 
-let sayHello3 = () => console.log("Hello_3");
-
-sayHello3();
+let add3 = (a, b) => console.log(a ** b);
+add3(8, 8);
