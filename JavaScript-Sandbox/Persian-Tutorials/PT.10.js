@@ -172,3 +172,5 @@ let student = {
 
 console.log(JSON.stringify(student)); // converts the object to a string
 // {"name":"John","point":20,"age":30,"isMarried":false}
+
+// Continue ...
