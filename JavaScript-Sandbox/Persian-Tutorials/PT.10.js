@@ -116,6 +116,10 @@ let Hoodi = {
   sayHi() {
     console.log(`Hello, my new name is ${this.fullname()}!`);
   },
+  showFriends() {
+    return `my friends are ${this.friends.join(" - ")}`; // join() is a method that joins the array elements with a separator
+  },
 };
-console.log(Hoodi.fullname());
-Hoodi.sayHi();
+console.log(Hoodi.fullname()); // Hoodad Hoffman
+Hoodi.sayHi(); // Hello, my new name is Hoodad Hoffman!
+console.log(Hoodi.showFriends()); // my friends are Jane - Mark - Bob
