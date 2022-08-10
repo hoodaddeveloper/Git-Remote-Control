@@ -46,7 +46,7 @@ for (let f = 0; f < 30; f++) {
   console.log(f + 0.5);
 }
 
-///// Project /////
+///// Mini Project /////
 
 let n = 10000000000109;
 let isPrime = true;
@@ -80,21 +80,38 @@ console.log(n2, isPrime2);
 
 // Function declaration
 
-function add1(a, b) {
-  console.log(a + b);
+function add1(a, b, c) {
+  console.log("Answer: " + (a + b - c));
 }
 
-add1(8, 8);
+add1(8, 8, 1);
 
 // Function expression
 
 let add2 = function (a, b) {
-  console.log(a * b);
+  console.log(`Answer: ${a} * ${b}`);
 };
 
 add2(8, 8);
 
 // Arrow Function
 
-let add3 = (a, b) => console.log(a ** b);
-add3(8, 8);
+let add3 = (a, b, c) => console.log("Answer: " + a ** b + c);
+add3(8, 8, 5);
+
+///// Mini Project in Function /////
+
+
+
+function IsPrime() {
+  let IsPrime = true;
+
+  for (let i = 2; i < n; i++) {
+    if (n % i == 0) {
+      IsPrime = false;
+      break;
+    }
+  }
+}
+
+console.log(n, IsPrime);
