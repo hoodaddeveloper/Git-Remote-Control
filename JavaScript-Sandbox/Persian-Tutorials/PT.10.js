@@ -39,9 +39,9 @@ for (let f = 0; f < 30; f++) {
     continue; // continue skips the rest of the code in the loop and goes to the next iteration
   }
 
-  if (f == 20) {
+  if (f == 21) {
     break; // break skips the rest of the code in the loop and goes to the next iteration
   }
 
-  console.log(f);
+  console.log(f + 0.5);
 }
