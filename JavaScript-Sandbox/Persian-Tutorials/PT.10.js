@@ -14,7 +14,7 @@ while (p < 20) {
   }
 }
 
-/// /// /// /// ///
+/// /// /// /// /// ///
 
 let h = 0;
 
@@ -30,7 +30,7 @@ do {
   }
 } while (h < 20);
 
-/// /// /// /// ///
+/// /// /// /// /// ///
 
 let f = 0;
 
@@ -45,3 +45,33 @@ for (let f = 0; f < 30; f++) {
 
   console.log(f + 0.5);
 }
+
+///// Project /////
+
+let n = 10000000000109;
+let isPrime = true;
+
+for (let i = 2; i < n; i++) {
+  if (n % i == 0) {
+    isPrime = false;
+    break;
+  }
+}
+
+console.log(n, isPrime);
+
+/// /// /// /// /// ///
+
+let n2 = 1000000007;
+let i = 2;
+let isPrime2 = true;
+
+while (i < parseInt(n2 ** 0.5) + 1) {
+  if (n2 % i == 0) {
+    isPrime2 = false;
+    break;
+  }
+  i++;
+}
+
+console.log(n2, isPrime2);
