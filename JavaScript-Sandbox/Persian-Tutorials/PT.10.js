@@ -105,14 +105,17 @@ console.log(addWithFive(5));
 ///// Objects /////
 
 let Hoodi = {
-  fname: "Hooadad",
+  fname: "Hoodad",
   lname: "Hoffman",
   age: 28,
   isMarried: true,
   friends: ["Jane", "Mark", "Bob"],
   fullname() {
-    console.log(`${this.fname} ${this.lname}`);
+    return `${this.fname} ${this.lname}`;
+  },
+  sayHi() {
+    console.log(`Hello, my new name is ${this.fullname()}!`);
   },
 };
-
-Hoodi.fullname();
+console.log(Hoodi.fullname());
+Hoodi.sayHi();
