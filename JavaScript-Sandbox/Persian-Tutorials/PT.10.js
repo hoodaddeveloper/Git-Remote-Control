@@ -99,5 +99,20 @@ add2(8, 8);
 let add3 = (a, b, c) => console.log("Answer: " + a ** b + c);
 add3(8, 8, 5);
 
-let addWithFive = v => v + 5;
+let addWithFive = (v) => v + 5;
 console.log(addWithFive(5));
+
+///// Objects /////
+
+let Hoodi = {
+  fname: "Hooadad",
+  lname: "Hoffman",
+  age: 28,
+  isMarried: true,
+  friends: ["Jane", "Mark", "Bob"],
+  fullname() {
+    console.log(`${this.fname} ${this.lname}`);
+  },
+};
+
+Hoodi.fullname();
