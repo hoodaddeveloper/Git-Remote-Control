@@ -75,3 +75,27 @@ while (i < parseInt(n2 ** 0.5) + 1) {
 }
 
 console.log(n2, isPrime2);
+
+///// Functions /////
+
+// Function declaration
+
+function sayHello() {
+  console.log("Hello_1");
+}
+
+sayHello();
+
+// Function expression
+
+let sayhello_2 = function () {
+  console.log("Hello_2");
+};
+
+sayhello_2();
+
+// Arrow Function
+
+let sayHello3 = () => console.log("Hello_3");
+
+sayHello3();
