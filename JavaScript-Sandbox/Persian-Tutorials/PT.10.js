@@ -123,3 +123,35 @@ let Hoodi = {
 console.log(Hoodi.fullname()); // Hoodad Hoffman
 Hoodi.sayHi(); // Hello, my new name is Hoodad Hoffman!
 console.log(Hoodi.showFriends()); // my friends are Jane - Mark - Bob
+
+/// /// /// /// /// ///
+
+let articles = [
+  {
+    title: "My First Title!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, magni obcaecati maxime incidunt laborum laudantium beatae, eius et quaerat cumque ipsa, voluptates veritatis odio? Harum dolores doloremque quas voluptates laboriosam?",
+    views: 1000,
+  },
+  {
+    title: "My Second Title!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, magni obcaecati maxime incidunt laborum laudantium beatae, eius et quaerat cumque ipsa, voluptates veritatis odio? Harum dolores doloremque quas voluptates laboriosam?",
+    views: 400,
+  },
+  {
+    title: "My Third Title!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, magni obcaecati maxime incidunt laborum laudantium beatae, eius et quaerat cumque ipsa, voluptates veritatis odio? Harum dolores doloremque quas voluptates laboriosam?",
+    views: 8000,
+  },
+];
+
+articles.forEach((article) => {
+  console.log(article.title);
+  console.log(article.description);
+  console.log("Views: " + article.views + "K");
+  console.log("--------------------");
+});
+
+///// Javascript Built-In Objects /////
