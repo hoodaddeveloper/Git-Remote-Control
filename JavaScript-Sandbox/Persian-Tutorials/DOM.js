@@ -5,4 +5,10 @@
 // Document Object Model (DOM) is a programming interface for HTML and XML documents.
 
 let header = document.getElementById("header");
-console.log(header);
+header.style.color = "lightblue";
+
+let content = document.getElementsByClassName("content");
+content[0].style.color = "green";
+content[1].style.color = "purple";
+content[0].style.fontSize = "20px";
+content[1].style.fontSize = "14px";
