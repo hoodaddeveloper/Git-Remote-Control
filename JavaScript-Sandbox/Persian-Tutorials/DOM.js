@@ -75,4 +75,4 @@ createNavbar(); // Create the navbar again.
 let header = document.querySelector("#header"); // Get the header element.
 
 console.log(header.getAttribute("id")); // Get the id of the header element.
-header.setAttribute("title", "My Header");
+header.setAttribute("title", "My Header"); // Set the title of the header element.
