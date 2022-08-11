@@ -31,3 +31,9 @@ content.forEach(content => content.style.color = "green"); // Change the color o
 
 paragraph = document.querySelectorAll("p"); // Get the first paragraph element.
 paragraph.forEach((paragraph) => (paragraph.style.color = "blue")); // Change the color of the paragraph elements.
+
+let query1 = document.querySelector("body > div > div > div > ul > li:nth-child(2)"); // Get the third list item.
+query1.style.color = "red"; // Change the color of the third list item.
+
+let query2 = document.querySelector("body > div > div > div > ul > li:nth-child(3)"); // Get the fourth list item.
+query2.style.color = "purple"; // Change the color of the fourth list item.
