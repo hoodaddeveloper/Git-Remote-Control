@@ -82,6 +82,7 @@ let links = document.querySelectorAll("a");
 links.forEach((links) => {
   // let href = links.getAttribute("href"); // Get the href of the links.
   // links.setAttribute("href", href.replace("http://", "https://")); // Replace the http:// with https://.
-  let href = links.href;
-  links.href = href.replace("http://", "https://");
+  // Or:
+  let href = links.href; // Get the href of the links.
+  links.href = href.replace("http://", "https://"); // Replace the http:// with https://.
 });
