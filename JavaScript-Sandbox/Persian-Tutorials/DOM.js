@@ -40,9 +40,20 @@ query2.style.color = "purple"; // Change the color of the fourth list item. */
 
 ///// Edit Elements /////
 
-let lists = document.querySelectorAll("li");
+/* let lists = document.querySelectorAll("li");
 lists.forEach(lists => lists.innerHTML += ` <span class="badge badge-warning">New</span>`
-  /* lists.innerText += " You"
-  lists.textContent += " The" */
-);
+  lists.innerText += " You"
+  lists.textContent += " The"
+); */
 
+///// Create Elements /////
+
+let people = [
+  { name: "Hoodad", new: false },
+  { name: "Hessam", new: true },
+  { name: "Hossein", new: false },
+  { name: "Hasan", new: true },
+];
+
+let ul = document.querySelector("ul");
+people.forEach((people) => (ul.innerHTML += `<li>${people.name}</li>`));
