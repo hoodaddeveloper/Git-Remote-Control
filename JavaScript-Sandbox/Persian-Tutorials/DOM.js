@@ -89,6 +89,6 @@ links.forEach((links) => {
   links.setAttribute("style", "color: orange; font-size: 20px;"); // Set the style of the links.
   // Or:
   let ul = document.querySelector("ul"); // Get the ul element.
-  ul.style.color = "green";
+  ul.style.color = "green"; // Set the color of the ul element.
   ul.style.fontSize = "18px";
 });
