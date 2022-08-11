@@ -12,3 +12,7 @@ content[0].style.color = "green";
 content[1].style.color = "purple";
 content[0].style.fontSize = "20px";
 content[1].style.fontSize = "14px";
+
+let paragraphs = document.getElementsByTagName("p");
+paragraphs[0].style.fontStyle = "italic";
+paragraphs[2].style.fontStyle = "italic";
