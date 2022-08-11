@@ -6,7 +6,7 @@
 
 ///// First way to access the Elements /////
 
-let header = document.getElementById("header"); // Get the header element.
+/* let header = document.getElementById("header"); // Get the header element.
 header.style.color = "lightblue"; // Change the color of the header.
 
 let content = document.getElementsByClassName("content"); // Get all the content elements.
@@ -19,15 +19,15 @@ let paragraph = document.getElementsByTagName("p"); // Get all the paragraph ele
 paragraph[0].style.fontStyle = "italic"; // Change the font style of the first paragraph element.
 paragraph[2].style.fontStyle = "italic"; // Change the font style of the third paragraph element.
 
-paragraph[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element.
+paragraph[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element. */
 
 ///// Second way to access the Elements by QuerySelector & QuerySelectorAll /////
 
-header2 = document.querySelector("#header"); // Get the header element.
-header2.style.color = "black"; // Change the color of the header.
+header = document.querySelector("#header"); // Get the header element.
+header.style.color = "purple"; // Change the color of the header.
 
-content2 = document.querySelector(".content"); // Get the first content element.
-content2.style.color = "black"; // Change the color of the first content element.
+content = document.querySelectorAll(".content"); // Get the first content element.
+content.forEach(content => content.style.color = "green"); // Change the color of the content elements.
 
-paragraph2 = document.querySelector("p"); // Get the first paragraph element.
-paragraph2.style.color = "purple"; // Change the color of the first paragraph element.
+paragraph = document.querySelectorAll("p"); // Get the first paragraph element.
+paragraph.forEach((paragraph) => (paragraph.style.color = "blue")); // Change the color of the paragraph elements.
