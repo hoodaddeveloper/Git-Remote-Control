@@ -76,3 +76,12 @@ let header = document.querySelector("#header"); // Get the header element.
 
 console.log(header.getAttribute("id")); // Get the id of the header element.
 header.setAttribute("title", "My Header"); // Set the title of the header element.
+
+let links = document.querySelectorAll("a");
+
+links.forEach((links) => {
+  // let href = links.getAttribute("href"); // Get the href of the links.
+  // links.setAttribute("href", href.replace("http://", "https://")); // Replace the http:// with https://.
+  let href = links.href;
+  links.href = href.replace("http://", "https://");
+});
