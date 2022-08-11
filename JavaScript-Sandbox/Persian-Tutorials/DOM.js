@@ -15,10 +15,19 @@ content[1].style.color = "purple"; // Change the color of the second content ele
 content[0].style.fontSize = "20px"; // Change the font size of the first content element.
 content[1].style.fontSize = "14px"; // Change the font size of the second content element.
 
-let paragraphs = document.getElementsByTagName("p"); // Get all the paragraph elements.
-paragraphs[0].style.fontStyle = "italic"; // Change the font style of the first paragraph element.
-paragraphs[2].style.fontStyle = "italic"; // Change the font style of the third paragraph element.
+let paragraph = document.getElementsByTagName("p"); // Get all the paragraph elements.
+paragraph[0].style.fontStyle = "italic"; // Change the font style of the first paragraph element.
+paragraph[2].style.fontStyle = "italic"; // Change the font style of the third paragraph element.
 
-paragraphs[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element.
+paragraph[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element.
 
 ///// Second way to access the Elements by QuerySelector & QuerySelectorAll /////
+
+header2 = document.querySelector("#header"); // Get the header element.
+header2.style.color = "black"; // Change the color of the header.
+
+content2 = document.querySelector(".content"); // Get the first content element.
+content2.style.color = "black"; // Change the color of the first content element.
+
+paragraph2 = document.querySelector("p"); // Get the first paragraph element.
+paragraph2.style.color = "purple"; // Change the color of the first paragraph element.
