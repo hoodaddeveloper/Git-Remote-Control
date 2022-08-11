@@ -66,9 +66,13 @@ function createNavbar() {
   });
 }
 
-createNavbar(); // Create the navbar.
-ul.innerHTML = ""; // Clear the navbar.
+/* createNavbar(); // Create the navbar.
+ul.innerHTML = ""; // Clear the navbar. */
 
 people.push({ name: "Hamed", new: false }, { name: "Hashem", new: true }); // Add new people to the navbar.
 createNavbar(); // Create the navbar again.
 
+let header = document.querySelector("#header"); // Get the header element.
+
+console.log(header.getAttribute("id"));
+header.setAttribute("title", "My Header");
