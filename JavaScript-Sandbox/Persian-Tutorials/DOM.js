@@ -55,5 +55,17 @@ let people = [
   { name: "Hasan", new: true },
 ];
 
-let ul = document.querySelector("ul");
-people.forEach((people) => (ul.innerHTML += `<li>${people.name}</li>`));
+function createNavbar() {
+  let ul = document.querySelector("ul");
+  people.forEach((people) => {
+    if (people.new) {
+      ul.innerHTML += `<li>${people.name} <span class="badge badge-warning">new</span></li>`;
+    } else {
+      ul.innerHTML += `<li>${people.name}</li>`;
+    }
+  });
+}
+
+people.push({name: "Hamed", new: false},{name: "Hashem", new: true})
+
+createNavbar();
