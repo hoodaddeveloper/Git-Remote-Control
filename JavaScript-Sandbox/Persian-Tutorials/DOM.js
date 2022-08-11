@@ -86,3 +86,6 @@ links.forEach((links) => {
   let href = links.href; // Get the href of the links.
   links.href = href.replace("http://", "https://"); // Replace the http:// with https://.
 });
+
+///// GetAttribute or SetAttribute /////
+
