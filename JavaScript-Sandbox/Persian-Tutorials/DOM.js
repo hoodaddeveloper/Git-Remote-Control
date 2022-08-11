@@ -90,5 +90,5 @@ links.forEach((links) => {
   // Or:
   let ul = document.querySelector("ul"); // Get the ul element.
   ul.style.color = "green"; // Set the color of the ul element.
-  ul.style.fontSize = "18px";
+  ul.style.fontSize = "18px"; // Set the font size of the ul element.
 });
