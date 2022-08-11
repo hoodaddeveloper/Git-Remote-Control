@@ -19,7 +19,7 @@ let paragraph = document.getElementsByTagName("p"); // Get all the paragraph ele
 paragraph[0].style.fontStyle = "italic"; // Change the font style of the first paragraph element.
 paragraph[2].style.fontStyle = "italic"; // Change the font style of the third paragraph element.
 
-paragraph[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element. */
+paragraph[0].innerText = "Edited: This Paragraph edited by JS!"; // Change the text of the second paragraph element.
 
 ///// Second way to access the Elements by QuerySelector & QuerySelectorAll /////
 
@@ -36,4 +36,13 @@ let query1 = document.querySelector("body > div > div > div > ul > li:nth-child(
 query1.style.color = "red"; // Change the color of the third list item.
 
 let query2 = document.querySelector("body > div > div > div > ul > li:nth-child(3)"); // Get the fourth list item.
-query2.style.color = "purple"; // Change the color of the fourth list item.
+query2.style.color = "purple"; // Change the color of the fourth list item. */
+
+///// Edit Elements /////
+
+let lists = document.querySelectorAll("li");
+lists.forEach(lists => lists.innerHTML += ` <span class="badge badge-warning">New</span>`
+  /* lists.innerText += " You"
+  lists.textContent += " The" */
+);
+
