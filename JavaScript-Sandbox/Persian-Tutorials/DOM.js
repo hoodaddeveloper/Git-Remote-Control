@@ -85,7 +85,10 @@ links.forEach((links) => {
   // Or:
   let href = links.href; // Get the href of the links.
   links.href = href.replace("http://", "https://"); // Replace the http:// with https://.
+  ///// GetAttributes or SetAttributes /////
+  links.setAttribute("style", "color: orange; font-size: 20px;"); // Set the style of the links.
+  // Or:
+  let ul = document.querySelector("ul"); // Get the ul element.
+  ul.style.color = "green";
+  ul.style.fontSize = "18px";
 });
-
-///// GetAttribute or SetAttribute /////
-
