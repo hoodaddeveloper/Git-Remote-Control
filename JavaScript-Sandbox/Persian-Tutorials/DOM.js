@@ -95,4 +95,4 @@ links.forEach((links) => {
 });
 
 header.classList.add("m-3"); // Add the m-3 class to the header element.
-header.classList.remove("btn-success");
+header.classList.remove("btn-success"); // Remove the btn-success class from the header element.
