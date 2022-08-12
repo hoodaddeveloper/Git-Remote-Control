@@ -114,3 +114,16 @@ lists.forEach((lists) => {
     lists.classList.add("text-warning");
   }
 });
+
+let paragraph = document.getElementsByTagName("p"); // Get all the paragraph elements.
+paragraph[0].style.fontSize = "20px"; // Change the font style of the first paragraph element.
+
+ul = document.querySelector("ul");
+
+/* Array.from(ul.children).forEach((li, index) => { // Get the children of the ul element.
+  if (index % 2 == 0) { // If the index is even.
+    li.style.color = "red"; // Change the color of the li element.
+  } else {
+    li.style.color = "green"; // Change the color of the li element.
+  }
+}); */
