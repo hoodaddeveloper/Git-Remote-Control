@@ -136,6 +136,13 @@ ul = document.querySelector("ul");
 
 let btn = document.querySelector("button");
 
-btn.addEventListener("click", e => {
-  e.target.textContent = "You clicked me!"
-})
+btn.addEventListener("click", (e) => {
+  e.target.textContent = "danger!";
+  e.target.classList.add("btn-danger");
+});
+
+let headerBtn = document.querySelector("h1");
+
+headerBtn.addEventListener("click", (e) => {
+  e.target.textContent = "warning!";
+});
