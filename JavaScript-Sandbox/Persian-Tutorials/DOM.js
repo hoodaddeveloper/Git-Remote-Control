@@ -134,15 +134,16 @@ ul = document.querySelector("ul");
 
 ///// Events /////
 
-let btn = document.querySelector("button");
+let btn = document.querySelector("button"); // Get the button element.
 
-btn.addEventListener("click", (e) => {
-  e.target.textContent = "danger!";
-  e.target.classList.add("btn-danger");
+btn.addEventListener("click", (e) => { // Add an event listener to the button element.
+  e.target.textContent = "danger!"; // Change the text of the button element.
+  e.target.classList.add("btn-danger"); // Add the btn-danger class to the button element.
 });
 
-let headerBtn = document.querySelector("h1");
+let headerBtn = document.querySelector("h1"); // Get the h1 element.
 
-headerBtn.addEventListener("click", (e) => {
-  e.target.textContent = "warning!";
+headerBtn.addEventListener("click", (e) => { // Add an event listener to the h1 element.
+  e.target.textContent = "YES?"; // Change the text of the h1 element.
+  alert("You clicked the header!"); // Show an alert.
 });
