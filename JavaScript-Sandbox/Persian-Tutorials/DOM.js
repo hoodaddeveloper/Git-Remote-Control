@@ -93,3 +93,6 @@ links.forEach((links) => {
   ul.style.fontSize = "18px"; // Set the font size of the ul element.
   ul.style.fontStyle = "italic"; // Set the font style of the ul element.
 });
+
+header.classList.add("m-3"); // Add the m-3 class to the header element.
+header.classList.remove("btn-success");
