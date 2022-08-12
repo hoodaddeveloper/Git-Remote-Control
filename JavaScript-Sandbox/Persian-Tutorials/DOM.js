@@ -127,3 +127,15 @@ ul = document.querySelector("ul");
     li.style.color = "green"; // Change the color of the li element.
   }
 }); */
+
+// ul.parentElement.style.color = "blue"; // Change the color of the parent element of the ul element.
+// ul.nextElementSibling.style.color = "darkgreen"; // Change the color of the next element sibling of the ul element.
+// ul.previousElementSibling.style.color = "gray"; // Change the color of the previous element sibling of the ul element.
+
+///// Events /////
+
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", e => {
+  e.target.textContent = "You clicked me!"
+})
