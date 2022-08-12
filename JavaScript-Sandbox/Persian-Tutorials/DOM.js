@@ -86,7 +86,10 @@ links.forEach((links) => {
   let href = links.href; // Get the href of the links.
   links.href = href.replace("http://", "https://"); // Replace the http:// with https://.
   ///// GetAttributes or Dataset /////
-  links.setAttribute("style", "color: orange; font-size: 20px; font-style: italic;"); // Set the style of the links.
+  links.setAttribute(
+    "style",
+    "color: orange; font-size: 20px; font-style: italic;"
+  ); // Set the style of the links.
   // Or:
   let ul = document.querySelector("ul"); // Get the ul element.
   ul.style.color = "green"; // Set the color of the ul element.
@@ -95,4 +98,19 @@ links.forEach((links) => {
 });
 
 header.classList.add("m-3"); // Add the m-3 class to the header element.
-header.classList.remove("btn-success"); // Remove the btn-success class from the header element.
+// header.classList.remove("btn-success"); // Remove the btn-success class from the header element.
+
+let lists = document.querySelectorAll("li");
+lists.forEach((lists) => {
+  if (lists.textContent.includes("Primary")) {
+    lists.classList.add("text-primary");
+  }
+
+  if (lists.textContent.includes("Danger")) {
+    lists.classList.add("text-danger");
+  }
+
+  if (lists.textContent.includes("Warning")) {
+    lists.classList.add("text-warning");
+  }
+});
