@@ -8,6 +8,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <title>Entering the DOM!</title>
+  <style>
+    .accordion div span {
+      background-color: rgb(228, 227, 227);
+      display: block;
+      cursor: pointer;
+      padding: 15px;
+    }
+
+    .accordion div span:after {
+      content: "\002b";
+      float: right;
+    }
+
+    .accordion div span:hover {
+      background-color: #ccc;
+    }
+
+    .accordion div div {
+      padding: 15px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      display: none;
+    }
+
+    .accordion div.show div {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,7 +53,8 @@
         <div class="content">
           <button class="mb-3" onclick="this.innerHTML=Date()">What time is it?</button>
           <div class="accordion">
-            <div>
+            <!-- Wrapper -->
+            <div class="show">
               <span>My first accordion Element!</span>
               <div>
                 Pork loin meatball swine, corned beef leberkas sausage rump shankle kevin salami biltong buffalo ground
@@ -37,7 +66,8 @@
                 ribs swine tenderloin <a href="http://google.com">alcatra</a> alcatra shankle bresaola.
               </div>
             </div>
-            <div>
+            <!-- Wrapper -->
+            <div class="show">
               <span>My second accordion Element!</span>
               <div>
                 Filet mignon kielbasa capicola jowl pork loin beef shankle ham hock meatball tongue. Meatball ham
@@ -52,7 +82,8 @@
                 landjaeger brisket boudin.
               </div>
             </div>
-            <div>
+            <!-- Wrapper -->
+            <div class="show">
               <span>My third accordion Element!</span>
               <div>
                 Bacon ipsum dolor amet porchetta spare ribs chislic buffalo shankle strip steak kielbasa meatloaf
