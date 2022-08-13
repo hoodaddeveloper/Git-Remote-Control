@@ -159,14 +159,14 @@ document.querySelector(".content").append(el); // Add the div element to the con
 
 window.addEventListener("online", (event) => {
   // Add 'online' event listener to the window element.
-  el.tectContent = "You are now connected to the network.";
+  el.textContent = "You are now connected to the network.";
   el.className = "alert";
   el.classList.add("alert-success");
 });
 
 window.addEventListener("offline", (event) => {
   // Add 'offline' event listener to the window element.
-  el.tectContent = "The network connection has been lost.";
+  el.textContent = "The network connection has been lost.";
   el.className = "alert";
   el.classList.add("alert-danger");
 });
