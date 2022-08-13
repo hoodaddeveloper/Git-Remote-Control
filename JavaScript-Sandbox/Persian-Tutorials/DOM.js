@@ -150,18 +150,19 @@ headerBtn.addEventListener("click", (e) => {
   alert("You clicked the header!"); // Show an alert.
 });
 
-let el1 = document.createElement("div"); // Create a new div element.
-el1.textContent = "Helllooo"; // Set the text of the div element.
-document.querySelector(".content").prepend(el1); // Add the div element to the content element.
+let el = document.createElement("div"); // Create a new div element.
+document.querySelector(".content").prepend(el); // Add the div element to the content element.
 
-let el2 = document.createElement("div"); // Create a new div element.
-el2.textContent = "Yeesss"; // Set the text of the div element.
-document.querySelector(".content").append(el2); // Add the div element to the content element.
+/* let el = document.createElement("div"); // Create a new div element.
+el.textContent = "Yeesss"; // Set the text of the div element.
+document.querySelector(".content").append(el); // Add the div element to the content element. */
 
-window.addEventListener('online', (event) => {  // Add 'online' event listener to the window element.
-  console.log("You are now connected to the network.");
+window.addEventListener("online", (event) => {
+  // Add 'online' event listener to the window element.
+  el.tectContent = "You are now connected to the network.";
 });
 
-window.addEventListener('offline', (event) => { // Add 'offline' event listener to the window element.
-  console.log("The network connection has been lost.");
+window.addEventListener("offline", (event) => {
+  // Add 'offline' event listener to the window element.
+  el.tectContent = "The network connection has been lost.";
 });
