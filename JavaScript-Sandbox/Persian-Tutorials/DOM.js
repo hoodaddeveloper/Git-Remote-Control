@@ -155,5 +155,5 @@ el1.textContent = "Helllooo"; // Set the text of the div element.
 document.querySelector(".content").prepend(el1); // Add the div element to the content element.
 
 let el2 = document.createElement("div"); // Create a new div element.
-el2.textContent = "Yeesss";
+el2.textContent = "Yeesss"; // Set the text of the div element.
 document.querySelector(".content").append(el2);
