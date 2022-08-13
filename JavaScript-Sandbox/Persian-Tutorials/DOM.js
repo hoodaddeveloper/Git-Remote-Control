@@ -136,14 +136,24 @@ ul = document.querySelector("ul");
 
 let btn = document.querySelector("button"); // Get the button element.
 
-btn.addEventListener("click", (e) => { // Add an event listener to the button element.
+btn.addEventListener("click", (e) => {
+  // Add an event listener to the button element.
   e.target.textContent = "danger!"; // Change the text of the button element.
   e.target.classList.add("btn-danger"); // Add the btn-danger class to the button element.
 });
 
 let headerBtn = document.querySelector("h1"); // Get the h1 element.
 
-headerBtn.addEventListener("click", (e) => { // Add an event listener to the h1 element.
+headerBtn.addEventListener("click", (e) => {
+  // Add an event listener to the h1 element.
   e.target.textContent = "YES?"; // Change the text of the h1 element.
   alert("You clicked the header!"); // Show an alert.
 });
+
+let el1 = document.createElement("div"); // Create a new div element.
+el1.textContent = "Helllooo"; // Set the text of the div element.
+document.querySelector(".content").prepend(el1); // Add the div element to the content element.
+
+let el2 = document.createElement("div"); // Create a new div element.
+el2.textContent = "Yeesss";
+document.querySelector(".content").append(el2);
