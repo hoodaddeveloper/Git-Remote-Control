@@ -1,15 +1,15 @@
 ///// JavaScript Code for checking and Confirming Password
-
+const msg = document.querySelector("#message");
 const check = check => {
   if (
     document.querySelector("#password").value ==
     document.querySelector("#confirm-password").value
   ) {
-    document.querySelector("#message").style.color = "green";
-    document.querySelector("#message").innerHTML = "Matching!";
+    msg.style.color = "green";
+    msg.innerHTML = "<i>Matching!</i>";
   } else {
-    document.querySelector("#message").style.color = "red";
-    document.querySelector("#message").innerHTML = "Not Matching!";
+    msg.style.color = "red";
+    msg.innerHTML = "<i>Not Matching!</i>";
   }
 };
 
