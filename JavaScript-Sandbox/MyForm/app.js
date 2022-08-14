@@ -1,6 +1,6 @@
 ///// JavaScript Code for checking and Confirming Password
 
-const check = function () {
+const check = check => {
   if (
     document.querySelector("#password").value ==
     document.querySelector("#confirm-password").value
