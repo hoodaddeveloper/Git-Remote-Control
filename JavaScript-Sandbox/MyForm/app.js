@@ -1,19 +1,22 @@
 ///// JavaScript Code for checking and Confirming Password
 
 const check = function () {
-  if (
-    document.getElementById("password").value ==
-    document.getElementById("confirm_password").value
-  ) {
-    document.getElementById("message").style.color = "green";
-    document.getElementById("message").innerHTML = "Matching";
+  if (document.querySelector("#password").value == document.querySelector("#confirm_password").value) {
+    document.querySelector("#message").style.color = "green";
+    document.querySelector("#message").innerHTML = "Matching!";
   } else {
-    document.getElementById("message").style.color = "red";
-    document.getElementById("message").innerHTML = "Not Matching";
+    document.querySelector("#message").style.color = "red";
+    document.querySelector("#message").innerHTML = "Not Matching!";
   }
 };
 
-console.log(document.genElementBy);
+///// Practicing DOM with Form Elements
 
 const form = document.querySelector("form");
-console.log(form);
+// form.firstElementChild.innerText = "New Title from DOM"; // Changing the title of the form (h1)
+// form.children[0].innerHTML = "<h5>New Title from DOM</h5>"; // Changing the tag of the first element in the form h1 to h5
+// form.lastElementChild.remove(); // Removing the last element of the form (reset button)
+
+const btn = document.querySelector("#button");
+console.log(btn);
+btn.style.background = "orange";
