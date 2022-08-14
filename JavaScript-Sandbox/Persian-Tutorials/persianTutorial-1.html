@@ -14,8 +14,6 @@
 
   <script>
     ///// Window Object /////
-    alert("Hello Hoodad");
-
     const input = window.prompt("Enter your name:");
     console.log(input);
 
@@ -25,13 +23,7 @@
       console.log("No");
     }
 
-    let result;
-
-    result = window.location;
-    result = window.navigator;
-    result = window.document;
-
-    console.log(result);
+    document.write(`Your name is: ${input}`);
   </script>
 </body>
 
