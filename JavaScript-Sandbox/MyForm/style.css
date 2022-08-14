@@ -45,6 +45,13 @@ input[type="button"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: rgb(59, 190, 251);
+  transition: 0.5s;
+}
+
 legend {
   color: rgb(0, 113, 166);
   text-shadow: 1px 1px 1px;
