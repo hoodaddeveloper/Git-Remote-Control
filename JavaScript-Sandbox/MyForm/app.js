@@ -8,10 +8,10 @@ const checkpass = (checkPass) => {
   if (pass.value == confirmPass.value) {
     // If password and confirm password are equal
     msg.style.color = "green"; // Set message color to green
-    msg.innerHTML = "<i>Matching!</i>"; // Show the message "Matching!"
+    msg.innerHTML = "<i>Matching!</i>"; // Show the message "Matching!" in italic
   } else {
     msg.style.color = "red"; // Change message color to red
-    msg.innerHTML = "<i>Not Matching!</i>"; // Show the message "Not Matching!"
+    msg.innerHTML = "<i>Not Matching!</i>"; // Show the message "Not Matching!" in italic
   }
 };
 
