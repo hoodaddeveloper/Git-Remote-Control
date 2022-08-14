@@ -3,7 +3,7 @@
 const check = function () {
   if (
     document.querySelector("#password").value ==
-    document.querySelector("#confirm_password").value
+    document.querySelector("#confirm-password").value
   ) {
     document.querySelector("#message").style.color = "green";
     document.querySelector("#message").innerHTML = "Matching!";
