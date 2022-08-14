@@ -4,7 +4,7 @@ body {
 }
 
 form {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   text-align: center;
   line-height: 40px;
   width: 80%;
@@ -39,7 +39,7 @@ input[type="button"] {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 5px 10px;
+  padding: 3px 10px;
   font-size: 16px;
   margin: 0 6px;
   cursor: pointer;
@@ -89,7 +89,7 @@ legend {
 }
 
 label {
-  padding: 8px 8px;
+  padding: 8px 16px;
   background-color: rgb(206, 232, 244);
   border-radius: 30px;
   box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
