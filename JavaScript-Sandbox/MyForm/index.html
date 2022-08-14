@@ -13,7 +13,7 @@
   <form id="form" action="index.html" method="POST" target="_blank">
     <h1>My Form</h1>
     <!----- Search Input ----->
-    <fieldset class="f-1">
+    <fieldset class="field-1">
       <legend>Search:</legend>
       <label for="search">
         <input type="search" name="search" id="search">
@@ -47,11 +47,13 @@
     </div>
     <br>
     <!----- Radio Input ----->
-    <fieldset class="f-2">
+    <fieldset class="field-2">
       <legend>Choose:</legend>
-      <span>Your Gender:</span>
-      <label>Male<input type="radio" name="radio" value="Male" required></label>
-      <label>Female<input type="radio" name="radio" value="Female"></label>
+      <label>
+        <span>Your Gender:</span>
+        Male<input type="radio" name="radio" value="Male" required>
+        Female<input type="radio" name="radio" value="Female">
+      </label>
       <br>
       <!----- Checkbox Input ----->
       <label>Select Your Hobbies:
@@ -65,9 +67,9 @@
     <!----- Range Box ----->
     <div class="main-2">
       <label>Select Your Degree:
-        <span>Junior</span>
+        <span><b>Junior</b></span>
         <input type="range" name="degree" id="degree" value="5" min="1" max="10">
-        <span>Senior</span>
+        <span><b>Senior</b></span>
       </label>
       <br>
       <!----- Select Box ----->
@@ -97,7 +99,7 @@
     </div>
     <br>
     <!----- Textarea ----->
-    <fieldset class="f-3"">
+    <fieldset class="field-3"">
       <legend>Write About Yourself:</legend>
       <textarea name=" description" rows="5" cols="50" placeholder="Write Here ..."></textarea>
     </fieldset>
