@@ -1,11 +1,19 @@
-var check = function () {
-  if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
-    document.getElementById('message').style.color = 'green';
-    document.getElementById('message').innerHTML = 'Matching';
+///// JavaScript Code for checking and Confirming Password
+
+const check = function () {
+  if (
+    document.getElementById("password").value ==
+    document.getElementById("confirm_password").value
+  ) {
+    document.getElementById("message").style.color = "green";
+    document.getElementById("message").innerHTML = "Matching";
   } else {
-    document.getElementById('message').style.color = 'red';
-    document.getElementById('message').innerHTML = 'Not Matching';
+    document.getElementById("message").style.color = "red";
+    document.getElementById("message").innerHTML = "Not Matching";
   }
 };
 
 console.log(document.genElementBy);
+
+const form = document.querySelector("form");
+console.log(form);
