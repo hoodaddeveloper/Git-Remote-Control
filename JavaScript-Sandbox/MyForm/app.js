@@ -1,7 +1,10 @@
 ///// JavaScript Code for checking and Confirming Password
 
 const check = function () {
-  if (document.querySelector("#password").value == document.querySelector("#confirm_password").value) {
+  if (
+    document.querySelector("#password").value ==
+    document.querySelector("#confirm_password").value
+  ) {
     document.querySelector("#message").style.color = "green";
     document.querySelector("#message").innerHTML = "Matching!";
   } else {
@@ -18,4 +21,4 @@ const form = document.querySelector("form");
 // form.lastElementChild.remove(); // Removing the last element of the form (reset button)
 
 const btn = document.querySelectorAll("#button");
-btn.forEach(btn => btn.style.background = "orange"); // Changing the background of all the buttons to red
+btn.forEach((btn) => (btn.style.background = "orange")); // Changing the background of all the buttons to red
