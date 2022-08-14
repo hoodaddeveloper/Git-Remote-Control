@@ -59,7 +59,7 @@ legend {
 }
 
 .f-1 {
-  width: 25%;
+  width: 42%;
   margin: auto;
   border: none;
   border-radius: 30px;
@@ -69,7 +69,7 @@ legend {
 }
 
 .f-2 {
-  width: 40%;
+  width: 42%;
   margin: auto;
   border: none;
   border-radius: 30px;
@@ -79,11 +79,18 @@ legend {
 }
 
 .f-3 {
-  width: 35%;
+  width: 42%;
   margin: auto;
   border: none;
   border-radius: 30px;
   background-color: rgb(206, 232, 244);
   box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
   margin-bottom: 15px;
+}
+
+label {
+  padding: 8px 8px;
+  background-color: rgb(206, 232, 244);
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px rgba(0, 81, 148, 0.5);
 }
