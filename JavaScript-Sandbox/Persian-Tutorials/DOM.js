@@ -172,7 +172,10 @@ window.addEventListener("offline", (event) => {
 });
 
 let accordion = document.querySelector(".accordion"); // Get the accordion element.
-Array.accordion.forEach(accordion => {
-
-  }
-)
+Array.from(accordion.children).forEach((wrapper) => {
+  wrapper.querySelector("span").addEventListener("click", e => {
+    let span = e.target;
+    let wrapper = span.parentElement;
+    wrapper.classList.toggle("show");
+  })
+});
