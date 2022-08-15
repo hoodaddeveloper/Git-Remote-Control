@@ -26,3 +26,5 @@ form.lastElementChild.remove(); // Removing the last element of the form (reset 
 btn.forEach(btn => btn.style.background = "orange"); // Changing the background of all the buttons to red */
 
 const form = document.querySelector("form");
+const username = document.querySelector("#username");
+const email = document.querySelector("#email");
