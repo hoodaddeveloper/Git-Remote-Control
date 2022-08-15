@@ -176,7 +176,10 @@ Array.from(accordion.children).forEach((wrapper) => {
   wrapper.querySelector("span").addEventListener("click", (e) => {
     let span = e.target;
     let wrapper = span.parentElement;
+    let div = span.nextElementSibling;
+    console.log(div.scrollHeight);
     wrapper.classList.toggle("show");
+
     Array.from(accordion.children).forEach((w) => {
       if (w != wrapper) {
         w.classList.remove("show");
