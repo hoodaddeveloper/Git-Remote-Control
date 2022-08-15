@@ -179,7 +179,7 @@ Array.from(accordion.children).forEach((wrapper) => {
     let div = span.nextElementSibling;
     wrapper.classList.toggle("show");
 
-    if (wrapper.contains("show")) {
+    if (wrapper.classList.contains("show")) {
       div.style.maxHeight = div.scrollHeight + 30 + "px";
     } else {
       div.style.maxHeight = null;
