@@ -173,6 +173,7 @@ window.addEventListener("offline", (event) => {
 
 let accordion = document.querySelector(".accordion"); // Get the accordion element.
 Array.from(accordion.children).forEach((wrapper) => {
+  div.style.maxHeight = div.scrollHeight + 30 + "px"; // Set the max height of the div element.
   wrapper.querySelector("span").addEventListener("click", (e) => {
     let span = e.target;
     let wrapper = span.parentElement;
@@ -188,6 +189,7 @@ Array.from(accordion.children).forEach((wrapper) => {
     Array.from(accordion.children).forEach((w) => {
       if (w != wrapper) {
         w.classList.remove("show");
+        w.querySelector("div").style.maxHeight = null;
       }
     });
   });
