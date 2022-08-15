@@ -177,8 +177,13 @@ Array.from(accordion.children).forEach((wrapper) => {
     let span = e.target;
     let wrapper = span.parentElement;
     let div = span.nextElementSibling;
-    console.log(div.scrollHeight);
     wrapper.classList.toggle("show");
+
+    if (wrapper.contains("show")) {
+      div.style.maxHeight = div.scrollHeight + 30 + "px";
+    } else {
+      div.style.maxHeight = null;
+    }
 
     Array.from(accordion.children).forEach((w) => {
       if (w != wrapper) {
