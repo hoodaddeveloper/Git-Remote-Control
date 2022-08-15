@@ -31,17 +31,17 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></label>
       <br>
       <!----- Age Input ----->
-      <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+      <label>Your Age: <input type="number" name="age" min="18" max="120" required></label>
       <br>
       <!----- Credit Card Input ----->
-      <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number"
+      <label>Credit Card: <input type="text" name="credit" placeholder="Enter Your Card Number"
           pattern="[0-9]{14,16}" required></label>
       <br>
       <!----- Password Input ----->
       <label>Password: <input type="password" id="password" name="password" placeholder="Enter Your Password"
           minlength="6" maxlength="20" onkeyup="checkPass();" required></label>
       <br>
-      <label>Confirm Password: <input type="password" id="confirm-password" name="confirm-password"
+      <label>onf. Password: <input type="password" id="confirm-password" name="confirm-password"
           placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="checkPass();" required></label>
       <span id='message'></span>
     </div>
@@ -56,7 +56,7 @@
       </label>
       <br>
       <!----- Checkbox Input ----->
-      <label>Select Your Hobbies:
+      <label>Your Hobbies:
         Swimming <input type="checkbox" name="checkbox" value="swimming" checked>
         Jogging <input type="checkbox" name="checkbox" value="jogging">
         Gaming <input type="checkbox" name="checkbox" value="gaming">
@@ -66,7 +66,7 @@
     <br>
     <!----- Range Box ----->
     <div class="main-2">
-      <label>Select Your Degree:
+      <label>Your Degree:
         <span><b>Junior</b></span>
         <input type="range" name="degree" id="degree" value="5" min="1" max="10">
         <span><b>Senior</b></span>
@@ -84,7 +84,7 @@
       </label>
       <br>
       <!----- Datalist ----->
-      <label for="member">What Type Of Member Do You Like To Be?
+      <label for="member">Your Membership Type:
         <input list="membership" id="member" name="member">
         <datalist id="membership">
           <option value="basic"></option>
@@ -95,7 +95,7 @@
       </label>
       <br>
       <!----- Upload File ----->
-      <label>Upload A Profile Picture: <input type="file" name="file" accept="image/*"></label>
+      <label>Upload Profile Picture: <input type="file" name="file" accept="image/*"></label>
     </div>
     <br>
     <!----- Textarea ----->
