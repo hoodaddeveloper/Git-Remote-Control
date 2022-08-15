@@ -178,7 +178,7 @@ Array.from(accordion.children).forEach((wrapper) => {
     let wrapper = span.parentElement;
     wrapper.classList.toggle("show");
     Array.from(accordion.children).forEach((w) => {
-      if (w !== wrapper) {
+      if (w != wrapper) {
         w.classList.remove("show");
       }
     });
