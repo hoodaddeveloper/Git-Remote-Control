@@ -24,19 +24,3 @@ form.lastElementChild.remove(); // Removing the last element of the form (reset 
 
 /* const btn = document.querySelector("#button");
 btn.forEach(btn => btn.style.background = "orange"); // Changing the background of all the buttons to red */
-
-///// JavaScript Code for checking ..........
-const form = document.querySelector("form");
-const username = document.querySelector("#username");
-const email = document.querySelector("#email");
-
-form.addEventlistener("submit", onSubmit);
-
-const onSubmit = (e) => {
-  e.preventDefault();
-  if (username.value === "" || email.value === "") {
-    msg.innerHTML = "ERROR";
-  } else {
-    msg.innerHTML = "OKKK";
-  }
-};
