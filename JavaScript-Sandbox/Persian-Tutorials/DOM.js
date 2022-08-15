@@ -172,8 +172,13 @@ window.addEventListener("offline", (event) => {
 });
 
 let accordion = document.querySelector(".accordion"); // Get the accordion element.
+
 Array.from(accordion.children).forEach((wrapper) => {
-  div.style.maxHeight = div.scrollHeight + 30 + "px"; // Set the max height of the div element.
+  if (wrapper.classList.contains("show")) {
+    wrapper.querySelector("div").style.maxHeight =
+      wrapper.querySelector("div").scrollHeight + 30 + "px";
+  }
+
   wrapper.querySelector("span").addEventListener("click", (e) => {
     let span = e.target;
     let wrapper = span.parentElement;
