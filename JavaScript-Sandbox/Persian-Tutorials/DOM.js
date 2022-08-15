@@ -74,7 +74,7 @@ createNavbar(); // Create the navbar again.
 
 let header = document.querySelector("#header"); // Get the header element.
 
-console.log(header.getAttribute("id")); // Get the id of the header element.
+// console.log(header.getAttribute("id")); // Get the id of the header element.
 header.setAttribute("title", "My Header"); // Set the title of the header element.
 
 let links = document.querySelectorAll("a");
@@ -170,3 +170,9 @@ window.addEventListener("offline", (event) => {
   el.className = "alert";
   el.classList.add("alert-danger");
 });
+
+let accordion = document.querySelector(".accordion"); // Get the accordion element.
+Array.accordion.forEach(accordion => {
+
+  }
+)
