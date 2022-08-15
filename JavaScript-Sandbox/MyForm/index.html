@@ -23,26 +23,26 @@
     <br>
     <!----- Username Input ----->
     <div class="main-1">
-      <label>Username: <input id="username" type="text" name="username" placeholder="Enter Your Username" minlength="4" maxlength="10"
-          pattern="[a-zA-Z0-9]+" required></label>
-      <br>
-      <!----- Credit Card Input ----->
-      <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number"
-          pattern="[0-9]{14,16}" required></label>
-      <br>
-      <!----- Age Input ----->
-      <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+      <label>Username: <input id="username" type="text" name="username" placeholder="Enter Your Username" minlength="4"
+          maxlength="10" pattern="[a-zA-Z0-9]+" required></label>
       <br>
       <!----- Email Input ----->
       <label>Email: <input id="email" type="email" name="email" placeholder="Enter Your Email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></label>
       <br>
+      <!----- Age Input ----->
+      <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+      <br>
+      <!----- Credit Card Input ----->
+      <label>Credit Card Number: <input type="text" name="credit" placeholder="Enter Your Card Number"
+          pattern="[0-9]{14,16}" required></label>
+      <br>
       <!----- Password Input ----->
       <label>Password: <input type="password" id="password" name="password" placeholder="Enter Your Password"
-          minlength="6" maxlength="20" onkeyup="checkpass();" required></label>
+          minlength="6" maxlength="20" onkeyup="checkPass();" required></label>
       <br>
       <label>Confirm Password: <input type="password" id="confirm-password" name="confirm-password"
-          placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="checkpass();" required></label>
+          placeholder="Confirm Your Password" minlength="6" maxlength="20" onkeyup="checkPass();" required></label>
       <span id='message'></span>
     </div>
     <br>
