@@ -225,6 +225,8 @@ scroll.addEventListener("click", (e) => {
   }
 });
 
+///// Scroll2 Codes /////
+
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 500) {
     scroll.classList.add("show");
