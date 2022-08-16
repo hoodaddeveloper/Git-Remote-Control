@@ -212,7 +212,7 @@ let scroll2 = document.querySelector("button.scroll2"); // Get scroll2 element.
 ///// Scroll Codes /////
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 500) {
+  if (window.scrollY > 500 & window.scrollY < 1000) {
     scroll.classList.add("show");
   } else {
     scroll.classList.remove("show");
