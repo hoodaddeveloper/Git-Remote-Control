@@ -122,5 +122,49 @@ console.log(nurseOlynyk2.remainingVacationDays);
 nurseOlynyk2.addCertification('Genetics');
 console.log(nurseOlynyk2.certifications);
 
-/// /// /// /// /// ///
+///// Static Methods /////
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  
+  get name() {
+    return this._name;
+  }
+  
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  
+  static generatePassword() {
+    return Math.floor(Math.random() * 10000);
+  }
+}
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  } 
+  
+  get certifications() {
+    return this._certifications;
+  }
+  
+  addCertification(newCertification) {
+    this.certifications.push(newCertification);
+  }
+}
+
+const nurseOlynyk3 = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+nurseOlynyk3.takeVacationDays(5);
+console.log(nurseOlynyk3.remainingVacationDays);
+nurseOlynyk3.addCertification('Genetics');
+console.log(nurseOlynyk3.certifications);
 
