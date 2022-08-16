@@ -168,3 +168,4 @@ console.log(nurseOlynyk3.remainingVacationDays);
 nurseOlynyk3.addCertification('Genetics');
 console.log(nurseOlynyk3.certifications);
 
+// Continue ...
