@@ -228,15 +228,15 @@ scroll.addEventListener("click", (e) => {
 ///// Scroll2 Codes /////
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 500) {
-    scroll.classList.add("show");
+  if (window.scrollY > 1000) {
+    scroll2.classList.add("show");
   } else {
-    scroll.classList.remove("show");
+    scroll2.classList.remove("show");
   }
 });
 
-scroll.addEventListener("click", (e) => {
-  if (scroll.classList.contains("show")) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+scroll2.addEventListener("click", (e) => {
+  if (scroll2.classList.contains("show")) {
+    document.querySelector("#art").scrollIntoView({ top: 0, behavior: "smooth" });
   }
 });
