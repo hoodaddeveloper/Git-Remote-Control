@@ -210,12 +210,12 @@ let scroll = document.querySelector("#button.scroll"); // Get the scroll element
 
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 300) {
-    document.querySelector("#button.scroll").classList.add("show");
+    scroll.classList.add("show");
   } else {
-    document.querySelector("#button.scroll").classList.remove("show");
+    scroll.classList.remove("show");
   }
 });
 
-butto.addEventListener("click", (e) => {
-  window.scrollTo(0, 0);
-}),
+scroll.addEventListener("click", (e) => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
