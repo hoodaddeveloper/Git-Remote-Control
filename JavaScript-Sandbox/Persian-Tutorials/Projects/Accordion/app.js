@@ -206,10 +206,27 @@ accordions.forEach((accordion) => {
 
 ///// Arrow Codes /////
 
-let scroll = document.querySelector("#button.scroll"); // Get the scroll element.
+let scroll = document.querySelector("button.scroll"); // Get the scroll element.
+let scroll2 = document.querySelector("button.scroll2"); // Get scroll2 element.
+
+///// Scroll Codes /////
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 500) {
+    scroll.classList.add("show");
+  } else {
+    scroll.classList.remove("show");
+  }
+});
+
+scroll.addEventListener("click", (e) => {
+  if (scroll.classList.contains("show")) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 500) {
     scroll.classList.add("show");
   } else {
     scroll.classList.remove("show");
