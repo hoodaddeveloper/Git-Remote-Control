@@ -217,5 +217,7 @@ window.addEventListener("scroll", (e) => {
 });
 
 scroll.addEventListener("click", (e) => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  if (scroll.classList.contains("show")) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 });
