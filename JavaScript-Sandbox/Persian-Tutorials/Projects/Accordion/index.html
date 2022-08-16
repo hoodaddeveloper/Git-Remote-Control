@@ -62,9 +62,10 @@
       padding: 15px;
     }
 
-    .scroll {
+    .scroll,
+    .scroll2 {
       background-image: url("arrow.svg");
-      background-color: red;
+      background-color: orange;
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
@@ -78,8 +79,14 @@
       opacity: 0;
       transition: opacity 0.5s;
     }
+
+    .scroll2.show {
+      background-color: green;
+      left: 20px;
+    }
     
-    .scroll.show {
+    .scroll.show,
+    .scroll2.show {
       cursor: pointer !important;
       opacity: 1;
     }
@@ -312,7 +319,7 @@
     <br><br><br><br>
   </div>
   <button class="scroll"></button>
-  <button class="scroll2"></button>
+  <button class="scroll2.show"></button>
   <script src="app.js"></script>
 </body>
 
