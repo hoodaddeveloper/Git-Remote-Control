@@ -206,6 +206,8 @@ accordions.forEach((accordion) => {
 
 ///// Arrow Codes /////
 
+let scroll = document.querySelector("#button.scroll"); // Get the scroll element.
+
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 300) {
     document.querySelector("#button.scroll").classList.add("show");
@@ -213,3 +215,7 @@ window.addEventListener("scroll", (e) => {
     document.querySelector("#button.scroll").classList.remove("show");
   }
 });
+
+butto.addEventListener("click", (e) => {
+  window.scrollTo(0, 0);
+}),
