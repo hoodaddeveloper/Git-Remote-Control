@@ -203,3 +203,13 @@ accordions.forEach((accordion) => {
     });
   });
 });
+
+///// Arrow Codes /////
+
+window.addEventListener("scroll", e => {
+  if (window.scrollY > 300) {
+    document.querySelector("#button.scroll").classList.add("show");
+  } else {
+    document.querySelector("#button.scroll").classList.remove("show");
+  }
+})

@@ -68,7 +68,8 @@
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
-      opacity: 0.5;
+      opacity: 0;
+      transition: opacity 0.5s;
       border: 0;
       cursor: auto !important;
       width: 45px;
@@ -76,6 +77,11 @@
       position: fixed;
       right: 20px;
       bottom: 20px;
+    }
+
+    .scroll.show {
+      cursor:pointer !important;
+      opacity: 1;
     }
   </style>
 </head>
