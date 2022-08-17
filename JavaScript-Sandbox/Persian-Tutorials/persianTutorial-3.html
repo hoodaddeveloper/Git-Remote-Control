@@ -30,21 +30,18 @@
 
     const names = ["Ali", "Sam", "Reza", "Sara"]; // Create an array
 
-    names.forEach(function (val, index) {
-      document.write(`Value is: ${val} - Index is: ${index}` + "<br>");
-    });
-
+    names.forEach(names1 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}` + "<br>"));
     names.reverse(); // Reverse the array
-
-    names.forEach(function (val, index) {
-      document.write(`Value is: ${val} - Index is: ${index}` + "<br>");
-    });
+    names.forEach(names2 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}` + "<br>"));
 
     ///// Repeating /////
 
     const myArray = new Array("Abbas", "AliAkbar", "Hossein", "Abolfazl");
 
-    myArray.forEach(array = (val, index) => document.write(`Value is: ${val} & Index is: ${index}.`));
+    myArray.forEach(array = (value, index) => document.write(`Value is: ${value} - Index is: ${index}.` + "<br>"));
+    myArray.reverse()
+    myArray.forEach(array = (value, index) => document.write(`Value is: ${value} - Index is: ${index}.` + "<br>"));
+
   </script>
 </body>
 
