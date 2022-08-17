@@ -12,7 +12,7 @@
   <h2 id="hoodad"></h2>
   <script>
     let str = "Your new Text"; // Change the text to "Your new Text"
-    document.querySelector("#hoodad").innerHTML = str;
+    document.querySelector("#hoodad").innerHTML = str.startsWith("Your") ? "Yes" : "No"; // Check if the text starts with "Your"
   </script>
 </body>
 
