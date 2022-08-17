@@ -38,15 +38,21 @@
 
     const myArray = new Array("Abbas", "AliAkbar", "Hossein", "Abolfazl"); // Create a new array
 
-    myArray.forEach(array1 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}.` + "<br>"));
+    myArray.forEach(array1 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}` + "<br>"));
     myArray.reverse() // Reverse the array
-    myArray.forEach(array2 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}.` + "<br>"));
+    myArray.forEach(array2 = (value, index) => document.write(`Value is: ${value} - Index is: ${index}` + "<br>"));
 
     ///// .map() /////
 
-    let ferelden = new map(); // Create a new map
+    let ferelden = new Map(); // Create a new map
     ferelden.set("Abolfazl", "Abbas"); // Add a new key-value pair to the map
-    ferelden.set("Family", {description: "Abbasi"}); // Add a new key-value pair to the map
+    ferelden.set("Family", { description: "Abbasi" }); // Add a new key-value pair to the map
+
+    ///// .some() /////
+
+    let check = (number, index, array) => number >= 10; // Create a function that checks if the number is greater than or equal to 10
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].some(check);
+    document.write(array);
   </script>
 </body>
 
