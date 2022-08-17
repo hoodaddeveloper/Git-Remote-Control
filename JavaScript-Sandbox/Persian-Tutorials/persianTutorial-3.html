@@ -31,7 +31,13 @@
     const names = ["Ali", "Sam", "Reza", "Sara"]; // Create an array
 
     names.forEach(function (val, index) {
-      document.write(`Value is: ${val} - Index is: ${index}` + "<br>")
+      document.write(`Value is: ${val} - Index is: ${index}` + "<br>");
+    });
+
+    names.reverse(); // Reverse the array
+
+    names.forEach(function (val, index) {
+      document.write(`Value is: ${val} - Index is: ${index}` + "<br>");
     });
   </script>
 </body>
