@@ -11,10 +11,12 @@
 <body>
   <h2 id="hoodad1"></h2>
   <h2 id="hoodad2"></h2>
+  <h2 id="hoodad3"></h2>
   <script>
-    let str = "Your new Text"; // Change the text to "Your new Text"
+    let str = "Your new Text " + "<br>"; // Change the text to "Your new Text" and add a line break
     document.querySelector("#hoodad1").innerHTML = str.startsWith("Your") ? "Yes" : "No"; // Check if the text starts with "Your"
     document.querySelector("#hoodad2").innerHTML = str.endsWith("Text") ? "Yes" : "No"; // Check if the text ends with "text"
+    document.querySelector("#hoodad3").innerHTML = str.repeat(4); // Repeat the text 4 times
   </script>
 </body>
 
