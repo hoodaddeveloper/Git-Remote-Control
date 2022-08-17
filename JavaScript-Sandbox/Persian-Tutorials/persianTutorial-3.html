@@ -24,14 +24,14 @@
     message = `Welcome ot ${str2} Site. He is ${age - 3} years old.`; // Template Literals
     document.querySelector("#hoodad4").innerHTML = message; // Welcome ot Hoodad's Site.
     // or:
-    document.write(message); // Welcome ot Hoodad's Site.
+    document.write(message + "<br>"); // Welcome ot Hoodad's Site.
 
     ///// Arrays /////
 
-    const names = ["Ali", "Hoodad", "Reza", "Sara"]; // Create an array
+    const names = ["Ali", "Sam", "Reza", "Sara"]; // Create an array
 
     names.forEach(function (val, index) {
-      console.log(`Value is: ${val}, Index is: ${index}`)
+      document.write(`Value is: ${val} - Index is: ${index}` + "<br>")
     });
   </script>
 </body>
