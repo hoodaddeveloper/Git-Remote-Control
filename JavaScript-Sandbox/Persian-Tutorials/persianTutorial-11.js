@@ -1,4 +1,4 @@
-///// Classes /////
+/// Classes ///
 
 let myPolygon1 = class polygon1 {
   constructor(width, height) {
@@ -43,3 +43,17 @@ class rectangle extends shape {
 
 let rect = new rectangle(35);
 rect.ShowDetails();
+
+/// Objects ///
+
+const obj = {
+  name: "Hoodad",
+  age: 30,
+  isMarried: false,
+  "likes cats": false,
+  isHungry() {
+    console.log(obj.name + " is hungry.");
+  },
+};
+
+obj.isHungry();
