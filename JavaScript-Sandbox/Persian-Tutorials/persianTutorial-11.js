@@ -12,7 +12,7 @@ let myPolygon1 = class polygon1 {
 class polygon2 {
   constructor(width, height) {
     this.width = width;
-    this.hefight = height;
+    this.height = height;
   }
   answer() {
     console.log(`Polygon's width is: ${this.width}.`);
@@ -20,5 +20,5 @@ class polygon2 {
   }
 }
 
-let myPolygon2 = new polygon2(20, 10);
-polygon2.answer();
+let myPolygon2 = new polygon2(20, 40);
+myPolygon2.answer();
