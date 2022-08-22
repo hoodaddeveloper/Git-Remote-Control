@@ -21,3 +21,4 @@ class polygon2 {
 }
 
 let myPolygon2 = new polygon2(20, 10);
+polygon2.answer();
