@@ -81,6 +81,7 @@ function friend() {
 
 let friend_obj = new friend();
 friend_obj.car = "Ford";
+// delete friend_obj.car;
 
 console.log(friend_obj.name);
 console.log(friend_obj.age);
