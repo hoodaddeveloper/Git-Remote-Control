@@ -57,3 +57,13 @@ const obj = {
 };
 
 obj.isHungry();
+
+// Or:
+
+const person = new Object();
+
+person.name = "reza"
+person.age = 43
+person.isMarried = false
+
+console.log(person);
