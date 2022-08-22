@@ -87,3 +87,6 @@ console.log(friend_obj.name);
 console.log(friend_obj.age);
 console.log(friend_obj.email);
 console.log(friend_obj.car);
+
+///  ///
+
