@@ -1,6 +1,6 @@
 ///// Classes /////
 
-let mypolygon1 = class polygon1 {
+let myPolygon1 = class polygon1 {
   constructor(width, height) {
     this.width = width;
     this.height = height;
@@ -14,6 +14,10 @@ class polygon2 {
     this.width = width;
     this.hefight = height;
   }
+  answer() {
+    console.log(`Polygon's width is: ${this.width}.`);
+    console.log(`Polygon's height is: ${this.height}.`);
+  }
 }
 
-mypolygon2 = new polygon2(20, 10)
+let myPolygon2 = new polygon2(20, 10);
