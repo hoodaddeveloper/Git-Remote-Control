@@ -70,3 +70,19 @@ person.site = function () {
 };
 
 console.log(person);
+
+// Or:
+
+function friend() {
+  this.name = "Ali";
+  this.age = 30;
+  this.email = "google.com";
+}
+
+let friend_obj = new friend();
+friend_obj.car = "Ford";
+
+console.log(friend_obj.name);
+console.log(friend_obj.age);
+console.log(friend_obj.email);
+console.log(friend_obj.car);
