@@ -117,11 +117,12 @@
       background-color: #fff;
       opacity: 0;
       visibility: hidden;
+      transition: opacity 0.5s;
     }
 
     .popup.show {
-      opacity: 0;
-      visibility: hidden;
+      opacity: 1;
+      visibility: visible;
     }
 
     .popup h4,
@@ -144,7 +145,7 @@
 </head>
 
 <body>
-  <div class="popup-wrapper show"></div>
+  <div class="popup-wrapper"></div>
   <div class="container">
     <div m-3>
       <h1 id="header" class="btn-success btn">DOM</h1>
