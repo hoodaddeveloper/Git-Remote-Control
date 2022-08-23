@@ -92,8 +92,9 @@ console.log(friend_obj.car);
 
 let personals = ["Hoodad", "Abbas", "Akbar"];
 
-let [CTO, CIO, CEO] = personals;
+// let [CTO, CIO, CEO] = personals;
+let [CTO, , CEO] = personals; // Skips Abbas
 
 console.log(CTO);
-console.log(CIO);
+// console.log(CIO);
 console.log(CEO);
