@@ -97,8 +97,31 @@
       left: 0;
       height: 100%;
       width: 100%;
-      color: rgba(0, 0, 0, 0.5)
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.5);
     }
+
+    .popup {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      border: 1px solid;
+      border-radius: 7px;
+      background-color: #fff;
+    }
+
+    .popup h4 {
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .popup h4 span:after {
+      content:"\00D7";
+      float: right;
+      cursor: pointer;
+    }
+    
   </style>
 </head>
 
