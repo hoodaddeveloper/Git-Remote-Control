@@ -98,6 +98,12 @@
       height: 100%;
       width: 100%;
       z-index: -1;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.5s;
+    }
+
+    .popup-wrapper.show {
+      z-index: 0;
       background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -109,24 +115,36 @@
       border: 1px solid;
       border-radius: 7px;
       background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
     }
 
-    .popup h4 {
+    .popup.show {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .popup h4,
+    .popup div {
       padding: 15px 20px;
       border-bottom: 1px solid #ddd;
     }
 
     .popup h4 span:after {
-      content:"\00D7";
+      content: "\00D7";
       float: right;
       cursor: pointer;
     }
-    
+
+    .popup button {
+      float: right;
+      margin: 15px 20px;
+    }
   </style>
 </head>
 
 <body>
-  <div class="popup-wrapper"></div>
+  <div class="popup-wrapper show"></div>
   <div class="container">
     <div m-3>
       <h1 id="header" class="btn-success btn">DOM</h1>
@@ -148,8 +166,8 @@
           <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente non consectetur unde eos soluta
             repellat veniam totam nisi, necessitatibus odio, voluptatem similique ullam voluptas exercitationem
             consequatur, temporibus vitae magnam culpa.</div>
+          <button class="popup-close btn btn-primary">Close</button>
         </div>
-        <button class="popup-close btn btn-primary">Close</button>
 
         <div class="content">
           <div class="accordion">
