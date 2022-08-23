@@ -88,5 +88,12 @@ console.log(friend_obj.age);
 console.log(friend_obj.email);
 console.log(friend_obj.car);
 
-/// Arrays in ES6 ///
+/// Destructor in ES6 ///
 
+let personals = ["Hoodad", "Abbas", "Akbar"];
+
+let [CTO, CIO, CEO] = personals;
+
+console.log(CTO);
+console.log(CIO);
+console.log(CEO);
