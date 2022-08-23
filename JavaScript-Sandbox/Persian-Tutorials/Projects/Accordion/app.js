@@ -240,3 +240,6 @@ scroll2.addEventListener("click", (e) => {
     document.querySelector("#art").scrollIntoView({ top: 0, behavior: "smooth" });
   }
 });
+
+/// Pop-up Box ///
+
