@@ -261,9 +261,11 @@ if (popupBtn) {
 }
 
 // Closing Pop-Up
-let popupClose = document.querySelectorAll(".popup-close");
+let popupCloses = document.querySelectorAll(".popup-close");
 
-popupClose.addEventListener("click", (e) => {
-  document.querySelector(".popup").classList.remove("show");
-  popupWrapper.classList.remove("show");
+popupCloses.forEach((popupCloses) => {
+  popupCloses.addEventListener("click", (e) => {
+    document.querySelector(".popup").classList.remove("show");
+    popupWrapper.classList.remove("show");
+  });
 });
