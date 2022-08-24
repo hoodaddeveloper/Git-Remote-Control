@@ -249,4 +249,5 @@ let popupBtn = document.querySelector(".popup-btn");
 popupBtn.addEventListener("click", (e) => {
   let popup = popupBtn.nextElementSibling;
   popup.classList.add("show");
+  document.querySelector(".popup-wrapper").classList.add("show");
 });
