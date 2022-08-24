@@ -245,9 +245,16 @@ scroll2.addEventListener("click", (e) => {
 
 /// Pop-up Box ///
 
+// Opening Pop-Up
 let popupBtn = document.querySelector(".popup-btn");
 popupBtn.addEventListener("click", (e) => {
-  let popup = popupBtn.nextElementSibling;
-  popup.classList.add("show");
+  document.querySelector(".popup").classList.add("show");
   document.querySelector(".popup-wrapper").classList.add("show");
+});
+
+// Closing Pop-Up
+let popupClose = document.querySelector(".popup-close");
+popupClose.addEventListener("click", (e) => {
+  document.querySelector(".popup").classList.remove("show");
+  document.querySelector(".popup-wrapper").classList.remove("show");
 });
