@@ -256,20 +256,14 @@ popupBtn.addEventListener("click", (e) => {
 if (popupBtn) {
   // If we click on this Button
   var popupWrapper = document.createElement("div");
-  popupWrapper.Classname = "popup-wrapper";
+  popupWrapper.className = "popup-wrapper";
   document.body.prepend(popupWrapper);
 }
 
 // Closing Pop-Up
-let popupClose = document.querySelector(".popup-close");
-let popupCloseBtn = document.querySelector("popup-closeBtn");
+let popupClose = document.querySelectorAll(".popup-close");
 
 popupClose.addEventListener("click", (e) => {
-  document.querySelector(".popup").classList.remove("show");
-  popupWrapper.classList.remove("show");
-});
-
-popupCloseBtn.addEventListener("click", (e) => {
   document.querySelector(".popup").classList.remove("show");
   popupWrapper.classList.remove("show");
 });
