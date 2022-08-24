@@ -254,7 +254,8 @@ popupBtn.addEventListener("click", (e) => {
 
 // Creating new Element "Popup Wrapper"
 if (popupBtn) {
-  let popupWrapper = document.createElement("div");
+  // If we click on this Button
+  var popupWrapper = document.createElement("div");
   popupWrapper.Classname = "popup-wrapper";
   document.body.prepend(popupWrapper);
 }
