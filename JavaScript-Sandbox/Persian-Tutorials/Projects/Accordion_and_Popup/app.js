@@ -212,7 +212,7 @@ let scroll2 = document.querySelector("button.scroll2"); // Get scroll2 element.
 ///// Scroll Codes /////
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 500 & window.scrollY < 1000) {
+  if ((window.scrollY > 500) & (window.scrollY < 1000)) {
     scroll.classList.add("show");
   } else {
     scroll.classList.remove("show");
@@ -237,9 +237,16 @@ window.addEventListener("scroll", (e) => {
 
 scroll2.addEventListener("click", (e) => {
   if (scroll2.classList.contains("show")) {
-    document.querySelector("#art").scrollIntoView({ top: 0, behavior: "smooth" });
+    document
+      .querySelector("#art")
+      .scrollIntoView({ top: 0, behavior: "smooth" });
   }
 });
 
 /// Pop-up Box ///
 
+let popupBtn = document.querySelector(".popup-btn");
+popupBtn.addEventListener("click", (e) => {
+  let popup = popupBtn.nextElementSibling;
+  popup.classList.add("show");
+});
