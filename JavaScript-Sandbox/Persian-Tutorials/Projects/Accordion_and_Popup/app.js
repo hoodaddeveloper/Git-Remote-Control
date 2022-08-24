@@ -268,4 +268,9 @@ popupCloses.forEach((popupCloses) => {
     document.querySelector(".popup").classList.remove("show");
     popupWrapper.classList.remove("show");
   });
+
+  popupWrapper.addEventListener("click", (e) => {
+    document.querySelector(".popup").classList.remove("show");
+    popupWrapper.classList.remove("show");
+  });
 });
