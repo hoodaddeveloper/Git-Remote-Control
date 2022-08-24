@@ -252,9 +252,23 @@ popupBtn.addEventListener("click", (e) => {
   document.querySelector(".popup-wrapper").classList.add("show");
 });
 
+// Creating new Element "Popup Wrapper"
+if (popupBtn) {
+  let popupWrapper = document.createElement("div");
+  popupWrapper.Classname = "popup-wrapper";
+  document.body.prepend(popupWrapper);
+}
+
 // Closing Pop-Up
 let popupClose = document.querySelector(".popup-close");
+let popupCloseBtn = document.querySelector("popup-closeBtn");
+
 popupClose.addEventListener("click", (e) => {
+  document.querySelector(".popup").classList.remove("show");
+  document.querySelector(".popup-wrapper").classList.remove("show");
+});
+
+popupCloseBtn.addEventListener("click", (e) => {
   document.querySelector(".popup").classList.remove("show");
   document.querySelector(".popup-wrapper").classList.remove("show");
 });
