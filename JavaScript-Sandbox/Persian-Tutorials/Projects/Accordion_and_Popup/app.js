@@ -265,10 +265,10 @@ let popupCloseBtn = document.querySelector("popup-closeBtn");
 
 popupClose.addEventListener("click", (e) => {
   document.querySelector(".popup").classList.remove("show");
-  document.querySelector(".popup-wrapper").classList.remove("show");
+  popupWrapper.classList.remove("show");
 });
 
 popupCloseBtn.addEventListener("click", (e) => {
   document.querySelector(".popup").classList.remove("show");
-  document.querySelector(".popup-wrapper").classList.remove("show");
+  popupWrapper.classList.remove("show");
 });
