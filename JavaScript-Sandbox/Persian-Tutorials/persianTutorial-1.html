@@ -51,13 +51,26 @@
     });
 
     form.username.addEventListener("keyup", e => {
-      username.textContent = e.target.value; // Type Username
+      if (e.target.value) {
+        username.textContent = e.target.value; // Type Username
+      } else {
+        username.innerHTML = `<i>Please write something</i>`;
+      }
     });
 
     form.password.addEventListener("keyup", e => {
-      seePassword.textContent = e.target.value; // See Password
-      password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
+      if (e.target.value) {
+        password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
+        seePassword.textContent = e.target.value; // See Password
+      } else {
+        password.innerHTML = `<i>Please select a Password</i>`;
+        seePassword.innerHTML = `<i>Please select a Password</i>`;
+      }
     });
+
+    // Username Pattern
+    up = /^[a-zA-Z][\w._]{6,23}$/
+    
   </script>
 </body>
 
