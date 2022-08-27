@@ -18,13 +18,14 @@
         <div class="col-md-8 mx-auto">
           <h6>Username: <span id="username"><i>Please write something</i></span></h6>
           <h6>Password: <span id="password"><i>Please select a Password</i></span></h6>
-          <span id="message"></span>
           <hr>
           <form class="form">
             <!-- Form Group for Username -->
             <div class="form-group mb-3">
               <label for="Username" class="mb-1"><b>Username:</b></label>
               <input type="text" name="username" id="Username" class="form-control" placeholder="Username">
+              <span id="message1"></span>
+              <span id="message2"></span>
             </div>
             <!-- Form Group for Password -->
             <div class="form-group">
@@ -46,7 +47,8 @@
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
-    let msg = document.querySelector("#message");
+    let msg1 = document.querySelector("#message1");
+    let msg2 = document.querySelector("#message2");
     let up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
 
     form.addEventListener("submit", e => {
@@ -59,12 +61,12 @@
         if (up.test(e.target.value)) {
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
-          msg.innerHTML = `<i>Valid!</i>`;
-          msg.style.color = "green";
+          msg1.innerHTML = `<i>Username valid!</i>`;
+          msg1.style.color = "green";
         } else {
           e.target.classList.add("is-invalid");
-          msg.innerHTML = `<i>Not Valid!</i>`;
-          msg.style.color = "red";
+          msg2.innerHTML = `<i>Username not valid!</i>`;
+          msg2.style.color = "red";
         }
       } else {
         username.innerHTML = `<i>Please write something</i>`;
