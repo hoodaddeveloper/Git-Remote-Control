@@ -45,7 +45,7 @@
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
-    up = /^[a-zA-Z][\w._]{6,23}$/; // Username Pattern
+    up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
 
     form.addEventListener("submit", e => {
       e.preventDefault();
@@ -56,6 +56,9 @@
         username.textContent = e.target.value; // Type Username
         if (up.test(e.target.value)) {
           e.target.classList.add("is-valid");
+          e.target.classList.remove("is-invalid");
+        } else {
+          e.target.classList.add("is-invalid");
         }
       } else {
         username.innerHTML = `<i>Please write something</i>`;
