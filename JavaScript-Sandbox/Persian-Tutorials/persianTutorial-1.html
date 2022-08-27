@@ -42,13 +42,20 @@
   <script>
     // Preventing Submit Button from submitting by default.
     let form = document.querySelector(".form");
+    let username = document.querySelector("#username");
+    let password = document.querySelector("#password");
+
     form.addEventListener("submit", e => {
       e.preventDefault();
     });
 
     form.username.addEventListener("keyup", e => {
-      console.log(e.target.value);
-    })
+      username.textContent = e.target.value;
+    });
+
+    form.password.addEventListener("keyup", e => {
+      password.textContent = e.target.value;
+    });
   </script>
 </body>
 
