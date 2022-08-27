@@ -18,6 +18,7 @@
         <div class="col-md-8 mx-auto">
           <h6>Username: <span id="username"><i>Please write something</i></span></h6>
           <h6>Password: <span id="password"><i>Please select a Password</i></span></h6>
+          <span id="message"></span>
           <hr>
           <form class="form">
             <!-- Form Group for Username -->
@@ -45,7 +46,8 @@
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
-    up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
+    let msg = document.querySelector("#message");
+    let up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
 
     form.addEventListener("submit", e => {
       e.preventDefault();
@@ -57,8 +59,12 @@
         if (up.test(e.target.value)) {
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
+          msg.innerHTML = `<i>Valid!</i>`;
+          msg.style.color = "green";
         } else {
           e.target.classList.add("is-invalid");
+          msg.innerHTML = `<i>Not Valid!</i>`;
+          msg.style.color = "red";
         }
       } else {
         username.innerHTML = `<i>Please write something</i>`;
