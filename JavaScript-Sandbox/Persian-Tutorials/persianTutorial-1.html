@@ -50,11 +50,11 @@
     });
 
     form.username.addEventListener("keyup", e => {
-      username.textContent = e.target.value;
+      username.textContent = e.target.value; // Type Username
     });
 
     form.password.addEventListener("keyup", e => {
-      password.textContent = e.target.value;
+      password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
     });
   </script>
 </body>
