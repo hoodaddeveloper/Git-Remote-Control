@@ -46,7 +46,8 @@
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
     let up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
-    let pp = 0; // Password Pattern
+    let eu = /^[a-zA-Z][\w._]{5,23}$/; // Evaluate Username
+    let ep = 0; // Evaluate Password
 
     // Submit Button Prevent Default
     form.addEventListener("submit", e => {
@@ -76,14 +77,14 @@
         password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
         seePassword.textContent = e.target.value; // See Password
 
-        pp = 0; // Setting Rules for typing Password
-        pp += /[A-Z]/.test(e.target.value) ? 1 : 0;
-        pp += /[a-z]/.test(e.target.value) ? 1 : 0;
-        pp += /[0-9]/.test(e.target.value) ? 1 : 0;
-        pp += /[\W]/.test(e.target.value) ? 1 : 0;
-        pp += e.target.value >= 6 ? 1 : 0;
+        ep = 0; // Setting Rules for typing Password
+        ep += /[A-Z]/.test(e.target.value) ? 1 : 0;
+        ep += /[a-z]/.test(e.target.value) ? 1 : 0;
+        ep += /[0-9]/.test(e.target.value) ? 1 : 0;
+        ep += /[\W]/.test(e.target.value) ? 1 : 0;
+        ep += e.target.value.length >= 6 ? 1 : 0;
 
-        if (pp === 5) { // Minimun 6 Characters
+        if (ep === 5) { // Minimun 6 Characters
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
         } else {
