@@ -24,13 +24,11 @@
             <div class="form-group mb-3">
               <label for="Username" class="mb-1"><b>Username:</b></label>
               <input type="text" name="username" id="Username" class="form-control" placeholder="Username">
-              <span id="message1"></span>
             </div>
             <!-- Form Group for Password -->
             <div class="form-group">
               <label for="Username" class="mb-1"><b>Password:</b></label>
               <input type="password" name="password" id="Password" class="form-control" placeholder="Password">
-              <span id="message2"></span>
             </div>
             <input type="submit" name="submit" value="submit" class=" mt-3 btn btn-success">
           </form>
@@ -47,8 +45,6 @@
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
-    let msg1 = document.querySelector("#message1");
-    let msg2 = document.querySelector("#message2");
     let up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
 
     form.addEventListener("submit", e => {
@@ -61,11 +57,6 @@
         if (up.test(e.target.value)) {
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
-          msg1.innerHTML = `<i>Username valid!</i>`;
-          msg1.style.color = "green";
-        } else {
-          e.target.classList.add("is-invalid");
-          remove.msg1.innerHTML = `<i>Username valid!</i>`; // FIX THISSSSSSSSSSSSSSSSSSSS
         }
       } else {
         username.innerHTML = `<i>Please write something</i>`;
