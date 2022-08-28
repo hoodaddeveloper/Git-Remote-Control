@@ -40,6 +40,8 @@
   </div>
 
   <script>
+    ///// Scripting a Form using Method: "GET" /////
+    
     // Preventing Submit Button from submitting by default.
     let form = document.querySelector(".form");
     let username = document.querySelector("#username");
@@ -49,7 +51,7 @@
     let eu = false; // Evaluate Username
     let ep = 0; // Evaluate Password
 
-    // Submit Button Codes
+    // Submit Button Codes. If everything is right, then sumbut. Else show "Try Again!"
     form.addEventListener("submit", e => {
       if (!(eu && ep === 5)) {
         e.preventDefault();
@@ -58,7 +60,7 @@
           form.username.classList.add("is-invalid");
           document.querySelector("#submit").value = "Try Again!";
         }
-
+        
         if (ep !== 5) {
           form.password.classList.add("is-invalid");
           document.querySelector("#submit").value = "Try Again!";
