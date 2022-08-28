@@ -75,14 +75,15 @@
       if (e.target.value) {
         password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
         seePassword.textContent = e.target.value; // See Password
-        pp = 0;
+
+        pp = 0; // Setting Rules for typing Password
         pp += /[A-Z]/.test(e.target.value) ? 1 : 0;
         pp += /[a-z]/.test(e.target.value) ? 1 : 0;
         pp += /[0-9]/.test(e.target.value) ? 1 : 0;
         pp += /[\W]/.test(e.target.value) ? 1 : 0;
         pp += e.target.value >= 6 ? 1 : 0;
 
-        if (pp === 5) {
+        if (pp === 5) { // Minimun 6 Characters
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
         } else {
