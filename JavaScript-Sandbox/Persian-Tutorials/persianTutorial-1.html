@@ -57,21 +57,38 @@
     form.username.addEventListener("keyup", e => {
       if (e.target.value) {
         username.textContent = e.target.value; // Type Username
+
         if (up.test(e.target.value)) {
           e.target.classList.add("is-valid");
           e.target.classList.remove("is-invalid");
+        } else {
+          e.target.classList.add("is-invalid");
         }
+
       } else {
         username.innerHTML = `<i>Please write something</i>`;
       }
     });
-    
+
     // Password Events
     form.password.addEventListener("keyup", e => {
       if (e.target.value) {
         password.textContent = "*".repeat(e.target.value.length); // Type Password as Stars
         seePassword.textContent = e.target.value; // See Password
-        pp = 
+        pp = 0;
+        pp += /[A-Z]/.test(e.target.value) ? 1 : 0;
+        pp += /[a-z]/.test(e.target.value) ? 1 : 0;
+        pp += /[0-9]/.test(e.target.value) ? 1 : 0;
+        pp += /[\W]/.test(e.target.value) ? 1 : 0;
+        pp += e.target.value >= 6 ? 1 : 0;
+
+        if (pp === 5) {
+          e.target.classList.add("is-valid");
+          e.target.classList.remove("is-invalid");
+        } else {
+          e.target.classList.add("is-invalid");
+        }
+
       } else {
         password.innerHTML = `<i>Please select a Password</i>`;
         seePassword.innerHTML = `<i>Please select a Password</i>`;
