@@ -46,7 +46,7 @@
     let password = document.querySelector("#password");
     let seePassword = document.querySelector("#see-password");
     let up = /^[a-zA-Z][\w._]{5,23}$/; // Username Pattern
-
+    // Submit Button Prevent Default
     form.addEventListener("submit", e => {
       e.preventDefault();
     });
