@@ -118,5 +118,4 @@ for (s of arr) {
   console.log(s); // Print "Hoodad", "Ali", "Hossein", "Samad"
 }
 
-
 // Continue ...
