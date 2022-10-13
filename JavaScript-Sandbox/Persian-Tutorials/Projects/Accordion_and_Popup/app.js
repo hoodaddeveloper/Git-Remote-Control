@@ -237,9 +237,7 @@ window.addEventListener("scroll", (e) => {
 
 scroll2.addEventListener("click", (e) => {
   if (scroll2.classList.contains("show")) {
-    document
-      .querySelector("#art")
-      .scrollIntoView({ top: 0, behavior: "smooth" });
+    document.querySelector("#art").scrollIntoView({ top: 0, behavior: "smooth" });
   }
 });
 
