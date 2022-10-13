@@ -23,7 +23,7 @@
     }
 
     p {
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     .theme div {
@@ -35,24 +35,31 @@
       border: 1px solid #555;
     }
 
-    .light {
+    .Light {
       background: #fff;
       color: #000;
     }
 
-    .dark {
+    .Dark {
       background: #444;
       color: #fff;
     }
 
-    .yellow {
+    .Yellow {
       background: rgb(250, 236, 132);
       color: #000;
     }
 
-    .green {
+    .Green {
       background: rgb(156, 247, 164);
       color: #000;
+    }
+
+    span {
+      margin-left: 5px;
+      border: 1px solid;
+      padding: 2px;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -61,11 +68,12 @@
   <h1>THEME COLOR CHANGE</h1>
   <!-- Color themes -->
   <div class="theme">
-    <div data-color="light" style="background-color:#fff"></div>
-    <div data-color="dark" style="background-color:#000"></div>
-    <div data-color="yellow" style="background-color:rgb(250, 236, 132)"></div>
-    <div data-color="green" style="background-color:rgb(156, 247, 164)"></div>
+    <div data-color="Light" style="background-color:#fff"></div>
+    <div data-color="Dark" style="background-color:#000"></div>
+    <div data-color="Yellow" style="background-color:rgb(250, 236, 132)"></div>
+    <div data-color="Green" style="background-color:rgb(156, 247, 164)"></div>
   </div>
+  <span id="selection">Default</span>
   <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis dignissimos vel sit beatae
     atque dolore debitis eos non et iste incidunt nobis natus. Eaque nobis voluptatibus modi vero iusto!
     Aspernatur in repudiandae animi facere delectus veniam perspiciatis repellat voluptate ut iste quidem dolorem non
@@ -90,7 +98,6 @@
     ullam.
     Quas necessitatibus, ad beatae voluptate cum magni minus sunt quidem repellendus aut et totam corporis quibusdam
     minima temporibus rerum, laborum a accusantium, quo eius architecto optio dolor ut cumque! Voluptates.</p>
-  <h4>Theme: <span id="selection">default</span></h4>
 
   <!-- JavaScript codes -->
   <script>
