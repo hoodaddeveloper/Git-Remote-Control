@@ -91,10 +91,17 @@
     Quas necessitatibus, ad beatae voluptate cum magni minus sunt quidem repellendus aut et totam corporis quibusdam
     minima temporibus rerum, laborum a accusantium, quo eius architecto optio dolor ut cumque! Voluptates.</p>
 
-    <!-- JavaScript codes -->
+  <!-- JavaScript codes -->
   <script>
+    let theme = document.querySelector('.theme');
 
-  </script>  
+    Array.from(theme.children).forEach(theme => {
+      theme.addEventListener("click", e => {
+        let color = e.target.dataset.color
+        document.body.className = color;
+      })
+    })
+  </script>
 
 </body>
 
