@@ -209,7 +209,7 @@ accordions.forEach((accordion) => {
 let scroll = document.querySelector("button.scroll"); // Get the scroll element.
 let scroll2 = document.querySelector("button.scroll2"); // Get scroll2 element.
 
-///// Scroll Codes /////
+///// Scroll 1 Codes /////
 
 window.addEventListener("scroll", (e) => {
   if ((window.scrollY > 500) & (window.scrollY < 1000)) {
@@ -225,7 +225,7 @@ scroll.addEventListener("click", (e) => {
   }
 });
 
-///// Scroll2 Codes /////
+///// Scroll 2 Codes /////
 
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 1000) {
