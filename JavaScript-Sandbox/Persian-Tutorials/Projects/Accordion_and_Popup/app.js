@@ -281,11 +281,11 @@ let span2 = document.querySelector(".span2");
 let span3 = document.querySelector(".span3");
 let span4 = document.querySelector(".span4");
 let span5 = document.querySelector(".span5");
-let span6 = document.querySelector(".span5");
-let span7 = document.querySelector(".span5");
-let span8 = document.querySelector(".span5");
-let span9 = document.querySelector(".span5");
-let span10 = document.querySelector(".span5");
+let span6 = document.querySelector(".span6");
+let span7 = document.querySelector(".span7");
+let span8 = document.querySelector(".span8");
+let span9 = document.querySelector(".span9");
+let span10 = document.querySelector(".span10");
 
 Array.from(theme.children).forEach((theme) => {
   theme.addEventListener("click", (e) => {
