@@ -116,6 +116,7 @@ Array.from(theme.children).forEach((theme) => {
     document.body.className = color;
     selection.textContent = color;
     title.style.color = "black";
+    selection.style.color = "black";
   });
 });
 
