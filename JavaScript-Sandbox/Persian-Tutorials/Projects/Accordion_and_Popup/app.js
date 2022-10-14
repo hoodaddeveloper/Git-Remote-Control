@@ -272,3 +272,6 @@ popupCloses.forEach((popupCloses) => {
     popupWrapper.classList.remove("show");
   });
 });
+
+// Codes for changing themes
+
