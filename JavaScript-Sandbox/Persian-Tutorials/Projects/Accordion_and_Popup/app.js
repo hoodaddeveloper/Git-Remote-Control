@@ -276,7 +276,7 @@ popupCloses.forEach((popupCloses) => {
 // Codes for changing themes
 let theme = document.querySelector(".theme");
 let selection = document.querySelector("#selection");
-let span = document.querySelectorAll("#accordion-element");
+let span = document.getElementsByClassName("accordion-element");
 
 Array.from(theme.children).forEach((theme) => {
   theme.addEventListener("click", (e) => {
