@@ -108,12 +108,16 @@ function removeFromLocalStorage(task) {
 ///// JavaScript codes for changing themes
 let theme = document.querySelector(".theme");
 let selection = document.querySelector("#selection");
+let title = document.querySelector(".title");
+let banner = document.querySelector("#page-banner");
 
 Array.from(theme.children).forEach(theme => {
   theme.addEventListener("click", e => {
     let color = e.target.dataset.color;
     document.body.className = color;
     selection.textContent = color;
+    title.style.color = "black";
+    banner.style.backgroundColor = "gray";
   });
 });
 
