@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <title>Book List</title>
 </head>
+
 <body>
   <div id="container">
     <!----- Header ----->
     <header>
       <div id="page-banner">
+        <!----- Color themes ----->
+        <div class="theme">
+          <div data-color="Light" style="background-color:#fff"></div>
+          <div data-color="Dark" style="background-color:#000"></div>
+          <div data-color="Yellow" style="background-color:rgb(250, 236, 132)"></div>
+          <div data-color="Green" style="background-color:rgb(156, 247, 164)"></div>
+        </div>
+        <span id="selection">Default</span>
         <h1 class="title">My Booklist</h1>
         <form id="search-books">
           <input type="text" placeholder="Search Books..." />
@@ -45,7 +55,7 @@
     <!----- Form ----->
     <form id="hide">
       <label>Hide Books</label>
-      <input type="checkbox"/>
+      <input type="checkbox" />
     </form>
     <!----- Clear ----->
     <div class="clear"></div>
@@ -58,4 +68,5 @@
   <!----- Script ----->
   <script src="app.js"></script>
 </body>
+
 </html>

@@ -157,9 +157,10 @@ h2 {
   height: 20px;
   width: 20px;
   float: left;
-  margin-right: 5px;
+  margin-left: 9px;
   cursor: pointer;
   border: 1px solid #555;
+  border-radius: 5px;
 }
 
 .Light {
@@ -182,8 +183,8 @@ h2 {
   color: #000;
 }
 
-span {
-  margin-left: 5px;
+#selection {
+  margin-left: 10px;
   border: 1px solid;
   padding: 2px;
   border-radius: 5px;
