@@ -274,4 +274,6 @@ popupCloses.forEach((popupCloses) => {
 });
 
 // Codes for changing themes
+let theme = document.querySelector(".theme");
+let selection = document.querySelector("#selection");
 
