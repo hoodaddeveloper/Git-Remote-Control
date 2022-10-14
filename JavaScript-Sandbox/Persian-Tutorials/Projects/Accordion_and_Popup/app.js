@@ -277,3 +277,10 @@ popupCloses.forEach((popupCloses) => {
 let theme = document.querySelector(".theme");
 let selection = document.querySelector("#selection");
 
+Array.from(theme.children).forEach((theme) => {
+  theme.addEventListener("click", (e) => {
+    let color = e.target.dataset.color;
+    document.body.className = color;
+    selection.textContent = color;
+  });
+});
