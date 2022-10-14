@@ -276,13 +276,31 @@ popupCloses.forEach((popupCloses) => {
 // Codes for changing themes
 let theme = document.querySelector(".theme");
 let selection = document.querySelector("#selection");
-let span = document.getElementsByClassName("accordion-element");
+let span1 = document.querySelector(".span1");
+let span2 = document.querySelector(".span2");
+let span3 = document.querySelector(".span3");
+let span4 = document.querySelector(".span4");
+let span5 = document.querySelector(".span5");
+let span5 = document.querySelector(".span5");
+let span5 = document.querySelector(".span5");
+let span5 = document.querySelector(".span5");
+let span5 = document.querySelector(".span5");
+let span5 = document.querySelector(".span5");
 
 Array.from(theme.children).forEach((theme) => {
   theme.addEventListener("click", (e) => {
     let color = e.target.dataset.color;
     document.body.className = color;
     selection.textContent = color;
-    span.style.color = "black";
+    span1.style.color = "black";
+    span2.style.color = "black";
+    span3.style.color = "black";
+    span4.style.color = "black";
+    span5.style.color = "black";
+    span5.style.color = "black";
+    span5.style.color = "black";
+    span5.style.color = "black";
+    span5.style.color = "black";
+    span5.style.color = "black";
   });
 });
