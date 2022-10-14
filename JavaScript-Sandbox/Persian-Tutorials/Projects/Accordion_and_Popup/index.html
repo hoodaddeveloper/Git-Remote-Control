@@ -141,6 +141,43 @@
       float: right;
       margin: 15px 20px;
     }
+
+    /* CSS codes for color themes */
+    .theme div {
+      height: 20px;
+      width: 20px;
+      float: left;
+      margin-right: 5px;
+      cursor: pointer;
+      border: 1px solid #555;
+    }
+
+    .Light {
+      background: #fff;
+      color: #000;
+    }
+
+    .Dark {
+      background: #444;
+      color: #fff;
+    }
+
+    .Yellow {
+      background: rgb(250, 236, 132);
+      color: #000;
+    }
+
+    .Green {
+      background: rgb(156, 247, 164);
+      color: #000;
+    }
+
+    span {
+      margin-left: 5px;
+      border: 1px solid;
+      padding: 2px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 
@@ -148,6 +185,13 @@
   <div class="container">
     <div m-3>
       <h1 id="header" class="btn-success btn">DOM</h1>
+      <div class="theme">
+        <div data-color="Light" style="background-color:#fff"></div>
+        <div data-color="Dark" style="background-color:#000"></div>
+        <div data-color="Yellow" style="background-color:rgb(250, 236, 132)"></div>
+        <div data-color="Green" style="background-color:rgb(156, 247, 164)"></div>
+      </div>
+      <span id="selection">Default</span>
       <div class="content">
         <p>My First Paragraph!</p>
         <ul>
