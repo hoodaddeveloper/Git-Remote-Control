@@ -76,7 +76,7 @@
     <div data-color="Green" style="background-color:rgb(156, 247, 164)"></div>
   </div>
   <span id="selection">Default</span>
-  
+
   <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis dignissimos vel sit beatae
     atque dolore debitis eos non et iste incidunt nobis natus. Eaque nobis voluptatibus modi vero iusto!
     Aspernatur in repudiandae animi facere delectus veniam perspiciatis repellat voluptate ut iste quidem dolorem non
@@ -102,16 +102,8 @@
     Quas necessitatibus, ad beatae voluptate cum magni minus sunt quidem repellendus aut et totam corporis quibusdam
     minima temporibus rerum, laborum a accusantium, quo eius architecto optio dolor ut cumque! Voluptates.</p>
 
-  <!-- Saving data to local storage:
-
-  localStorage.setItem("firstname", "Hoodad")
-  localStorage.setItem("lastname", "Khafas")
-  localStorage.setItem("age", 27)
-
-  -->
-
-  <!-- JavaScript codes for changing themes -->
   <script>
+    /// JavaScript codes for changing themes ///
     let theme = document.querySelector(".theme");
     let selection = document.querySelector("#selection");
 
@@ -122,6 +114,11 @@
         selection.textContent = color;
       });
     });
+
+    /// Saving data to local storage ///
+    localStorage.setItem("firstname", "Hoodad")
+    localStorage.setItem("lastname", "Khafas")
+    localStorage.setItem("age", 27)
   </script>
 
 </body>
