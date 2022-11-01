@@ -103,17 +103,6 @@
     minima temporibus rerum, laborum a accusantium, quo eius architecto optio dolor ut cumque! Voluptates.</p>
 
   <script>
-    /// Person object ///
-    let person = {
-      firstname: "Hoodad",
-      lastname: "Khafas",
-      age: 27,
-      access: true
-    };
-
-    /// Creating string ///
-    person.JSON.stringify(person);
-
     /// JavaScript codes for changing themes ///
     let theme = document.querySelector(".theme");
     let selection = document.querySelector("#selection");
@@ -127,6 +116,15 @@
     });
 
     /// Saving data to local storage ///
+    let person = {
+      firstname: "Hoodad",
+      lastname: "Khafas",
+      age: 27,
+      access: true
+    };
+
+    /// Creating string ///
+    person.JSON.stringify(person);
     localStorage.setItem("firstname", "Hoodad");
     localStorage.setItem("lastname", "Khafas");
     localStorage.setItem("age", 27);
