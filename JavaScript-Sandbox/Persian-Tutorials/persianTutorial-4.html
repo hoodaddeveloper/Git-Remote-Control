@@ -107,6 +107,9 @@
     let theme = document.querySelector(".theme");
     let selection = document.querySelector("#selection");
 
+    
+    let selectedTheme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "Light";
+
     Array.from(theme.children).forEach(theme => {
       theme.addEventListener("click", e => {
         let color = e.target.dataset.color;
