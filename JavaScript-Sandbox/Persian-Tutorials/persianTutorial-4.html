@@ -109,15 +109,19 @@
 
     /// If a theme is selected, set that theme already. If not, then set the light theme as default.
     let selectedTheme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "Light";
+    document.body.className = selectedTheme;
 
     Array.from(theme.children).forEach(theme => {
       theme.addEventListener("click", e => {
         let color = e.target.dataset.color;
         document.body.className = color;
         selection.textContent = color;
+        /// Saving theme to local storage ///
+        localStorage.setItem
       });
     });
 
+    /*
     /// Saving data to local storage ///
     let person = {
       firstname: "Hoodad",
@@ -135,6 +139,7 @@
     let firstname = localStorage.getItem("firstname");
     let lastname = localStorage.getItem("lastname");
     let age = localStorage.getItem("age");
+    */
   </script>;
 
 </body>
