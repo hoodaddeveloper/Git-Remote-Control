@@ -107,7 +107,7 @@
     let theme = document.querySelector(".theme");
     let selection = document.querySelector("#selection");
 
-    
+    /// If a theme is selected, set that theme already. If not, then set the light theme as default.
     let selectedTheme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "Light";
 
     Array.from(theme.children).forEach(theme => {
