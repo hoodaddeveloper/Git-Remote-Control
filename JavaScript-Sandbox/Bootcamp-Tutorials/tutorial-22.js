@@ -232,7 +232,3 @@ let cookBeanSouffle = () => {
 };
 
 module.exports = cookBeanSouffle;
-
-
-/// /// /// /// ///
-
