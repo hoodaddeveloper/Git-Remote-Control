@@ -45,7 +45,6 @@ const order = [
   ["bags", 2],
 ];
 
-// Write your code below:
 const handleSuccess = (resolvedValue) => {
   console.log(resolvedValue);
 };
@@ -55,3 +54,24 @@ const handleFailure = (rejectReason) => {
 };
 
 checkInventory(order).then(handleSuccess, handleFailure);
+
+/// /// /// /// ///
+
+const { checkInventory } = require("./library.js");
+
+const order2 = [
+  ["sunglasses", 1],
+  ["bags", 2],
+];
+
+const handleSuccess2 = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+const handleFailure2 = (rejectReason) => {
+  console.log(rejectReason);
+};
+
+checkInventory(order).then(handleSuccess).catch(handleFailure);
+
+/// /// /// /// ///
