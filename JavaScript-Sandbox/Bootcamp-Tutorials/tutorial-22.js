@@ -292,3 +292,59 @@ module.exports = { cookBeans, steamBroccoli, cookRice, bakeChicken };
 
 /// /// /// /// ///
 
+let {
+  cookBeans2,
+  steamBroccoli2,
+  cookRice2,
+  bakeChicken2,
+} = require("./library.js");
+
+// Write your code below:
+async function serveDinnerAgain() {
+  let foodArray = await Promise.all([
+    steamBroccoli(),
+    cookRice(),
+    bakeChicken(),
+    cookBeans(),
+  ]);
+
+  console.log(
+    `Dinner is served. We're having ${foodArray[0]}, ${foodArray[1]}, ${foodArray[2]}, and ${foodArray[3]}.`
+  );
+}
+
+serveDinnerAgain();
+
+let cookBeans2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("beans");
+    }, 1000);
+  });
+};
+
+let steamBroccoli2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("broccoli");
+    }, 1000);
+  });
+};
+
+let cookRice2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("rice");
+    }, 1000);
+  });
+};
+
+let bakeChicken2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("chicken");
+    }, 1000);
+  });
+};
+
+module.exports = { cookBeans, steamBroccoli, cookRice, bakeChicken };
