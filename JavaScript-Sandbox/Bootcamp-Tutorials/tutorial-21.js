@@ -35,3 +35,23 @@ setTimeout(usingSTO, 100);
 
 // Keep the line below as the last line of code:
 console.log("This is the last line of code in app.js.");
+
+/// /// /// /// ///
+
+const { checkInventory } = require("./library.js");
+
+const order = [
+  ["sunglasses", 1],
+  ["bags", 2],
+];
+
+// Write your code below:
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+const handleFailure = (rejectReason) => {
+  console.log(rejectReason);
+};
+
+checkInventory(order).then(handleSuccess, handleFailure);
