@@ -234,3 +234,38 @@ const renderJsonResponse3 = (response) => {
   responseField.innerHTML = `<pre>${rawJson}</pre>`;
 };
 
+// Information to reach API
+const url5 = "https://api.datamuse.com/words?";
+const queryParams = "rel_jja=";
+
+// Selecting page elements
+const inputField5 = document.querySelector("#input");
+const submit5 = document.querySelector("#submit");
+const responseField5 = document.querySelector("#responseField");
+
+// Asynchronous function
+// Code goes here
+const getSuggestions5 = async () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  try {
+    const response = await fetch(endpoint, { cache: "no-cache" });
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      renderResponse(jsonResponse);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// Clear previous results and display results to webpage
+const displaySuggestions5 = (event) => {
+  event.preventDefault();
+  while (responseField.firstChild) {
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener("click", displaySuggestions);
