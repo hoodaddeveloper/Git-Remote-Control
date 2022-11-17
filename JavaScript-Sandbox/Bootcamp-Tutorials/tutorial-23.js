@@ -148,16 +148,16 @@ const displayShortUrl3 = (event) => {
 shortenButton3.addEventListener("click", displayShortUrl);
 
 // Information to reach API
-const apiKey = "<Your API Key>";
-const url = "https://api.rebrandly.com/v1/links";
+const apiKey4 = "<Your API Key>";
+const url4 = "https://api.rebrandly.com/v1/links";
 
 // Some page elements
-const inputField = document.querySelector("#input");
-const shortenButton = document.querySelector("#shorten");
-const responseField = document.querySelector("#responseField");
+const inputField4 = document.querySelector("#input");
+const shortenButton4 = document.querySelector("#shorten");
+const responseField4 = document.querySelector("#responseField");
 
 // Asynchronous functions
-const shortenUrl = () => {
+const shortenUrl4 = () => {
   const urlToShorten = inputField.value;
   const data = JSON.stringify({ destination: urlToShorten });
 
@@ -194,4 +194,43 @@ const displayShortUrl2 = (event) => {
   shortenUrl();
 };
 
-shortenButton.addEventListener("click", displayShortUrl);
+shortenButton4.addEventListener("click", displayShortUrl);
+
+// Manipulates responseField to render a formatted and appropriate message
+const renderResponse3 = (res) => {
+  // Displays either message depending on results
+  if (res.errors) {
+    responseField.innerHTML =
+      "<p>Sorry, couldn't format your URL.</p><p>Try again.</p>";
+  } else {
+    responseField.innerHTML = `<p>Your shortened url is: </p><p> ${res.shortUrl} </p>`;
+  }
+};
+
+// Manipulates responseField to render an unformatted response
+const renderRawResponse3 = (res) => {
+  // Displays either message depending on results
+  if (res.errors) {
+    responseField.innerHTML =
+      "<p>Sorry, couldn't format your URL.</p><p>Try again.</p>";
+  } else {
+    // Adds line breaks for JSON
+    let structuredRes = JSON.stringify(res).replace(/,/g, ", \n");
+    structuredRes = `<pre>${structuredRes}</pre>`;
+    responseField.innerHTML = `${structuredRes}`;
+  }
+};
+
+// Renders the JSON that was returned when the Promise from fetch resolves.
+const renderJsonResponse3 = (response) => {
+  // Creates an empty object to store the JSON in key-value pairs
+  let rawJson = {};
+  for (let key in response) {
+    rawJson[key] = response[key];
+  }
+  // Converts JSON into a string and adding line breaks to make it easier to read
+  rawJson = JSON.stringify(rawJson).replace(/,/g, ", \n");
+  // Manipulates responseField to show the returned JSON.
+  responseField.innerHTML = `<pre>${rawJson}</pre>`;
+};
+
