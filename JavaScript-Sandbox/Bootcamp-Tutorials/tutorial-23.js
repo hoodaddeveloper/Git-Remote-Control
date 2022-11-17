@@ -88,3 +88,26 @@ const renderJsonResponse = (res) => {
   // Manipulates responseField to show the returned JSON.
   responseField.innerHTML = `<pre>${rawJson}</pre>`;
 };
+
+// Information to reach API
+const apiKey = "<Your API Key>";
+const url = "https://api.rebrandly.com/v1/links";
+
+// Some page elements
+const inputField2 = document.querySelector("#input");
+const shortenButton2 = document.querySelector("#shorten");
+const responseField2 = document.querySelector("#responseField");
+
+// Asynchronous functions
+const shortenUrl = () => {};
+
+// Clear page and call Asynchronous functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while (responseField.firstChild) {
+    responseField.removeChild(responseField.firstChild);
+  }
+  shortenUrl();
+};
+
+shortenButton.addEventListener("click", displayShortUrl);
