@@ -91,7 +91,7 @@ const renderJsonResponse = (res) => {
 
 // Information to reach API
 const apiKey = "<Your API Key>";
-const url = "https://api.rebrandly.com/v1/links";
+const url2 = "https://api.rebrandly.com/v1/links";
 
 // Some page elements
 const inputField2 = document.querySelector("#input");
@@ -110,4 +110,4 @@ const displayShortUrl = (event) => {
   shortenUrl();
 };
 
-shortenButton.addEventListener("click", displayShortUrl);
+shortenButton2.addEventListener("click", displayShortUrl);
