@@ -111,3 +111,38 @@ const displayShortUrl = (event) => {
 };
 
 shortenButton2.addEventListener("click", displayShortUrl);
+
+// Information to reach API
+const apiKey3 = "<Your API Key>";
+const url3 = "https://api.rebrandly.com/v1/links";
+
+// Some page elements
+const inputField3 = document.querySelector("#input");
+const shortenButton3 = document.querySelector("#shorten");
+const responseField3 = document.querySelector("#responseField");
+
+// Asynchronous functions
+const shortenUrl3 = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({ destination: urlToShorten });
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+      apikey: apiKey,
+    },
+    body: data,
+  });
+};
+
+// Clear page and call AJAX functions
+const displayShortUrl3 = (event) => {
+  event.preventDefault();
+  while (responseField.firstChild) {
+    responseField.removeChild(responseField.firstChild);
+  }
+  shortenUrl();
+};
+
+shortenButton.addEventListener("click", displayShortUrl);
