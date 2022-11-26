@@ -17,8 +17,30 @@
       display: inherit;
     }
 
+    .container1 {
+      direction: rtl;
+    }
+
+    .container2 {
+      direction: ltr;
+    }
+
     .child1 {
-      background-color:lightgreen;
+      background-color: lightgreen;
+      width: 100px;
+      height: 200px;
+    }
+
+    .child2 {
+      background-color: lightblue;
+      width: 100px;
+      height: 200px;
+    }
+
+    .child3 {
+      background-color: lightgoldenrodyellow;
+      width: 100px;
+      height: 200px;
     }
   </style>
 </head>
@@ -31,10 +53,16 @@
     <button>ENTER</button>
   </div>
 
-  <div>
+  <div class="container1">
     <div class="child1"></div>
     <div class="child2"></div>
     <div class="child3"></div>
+  </div>
+
+  <div class="container2">
+    <div class="child4"></div>
+    <div class="child5"></div>
+    <div class="child6"></div>
   </div>
 </body>
 
