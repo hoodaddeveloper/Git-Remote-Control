@@ -103,8 +103,7 @@ console.log(CEO);
 
 // 1. Template Literals:
 
-console.log("String text line 1\n" +
-"String text line 2");
+console.log("String text line 1\n" + "String text line 2");
 // "String text line 1
 // String text line 2"
 
@@ -121,4 +120,5 @@ console.log("Fifteen is " + (a + b) + " and not " + (2 * a + b) + ".");
 
 let c = 5;
 let d = 10;
-console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`)
+console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+
