@@ -98,3 +98,27 @@ let [CTO, , CEO] = personals; // Skips Abbas
 console.log(CTO);
 // console.log(CIO);
 console.log(CEO);
+
+// Five JS clean syntaxes
+
+// 1. Template Literals:
+
+console.log("String text line 1\n" +
+"String text line 2");
+// "String text line 1
+// String text line 2"
+
+console.log(`String text line 1
+String text line 2`);
+// "String text line 1
+// String text line 2"
+
+let a = 5;
+let b = 10;
+console.log("Fifteen is " + (a + b) + " and not " + (2 * a + b) + ".");
+// "Fifteen is 15 and
+// not 20."
+
+let c = 5;
+let d = 10;
+console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`)
