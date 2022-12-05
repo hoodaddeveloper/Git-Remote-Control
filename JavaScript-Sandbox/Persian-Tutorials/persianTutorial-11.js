@@ -121,4 +121,15 @@ console.log("Fifteen is " + (a + b) + " and not " + (2 * a + b) + ".");
 let c = 5;
 let d = 10;
 console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+// "Fifteen is 15 and
+// not 20."
 
+// 2. for...of
+
+const iterable = [10, 20, 30];
+
+for (const value of iterable) {
+  console.log(value);
+}
+
+// 10 20 30
