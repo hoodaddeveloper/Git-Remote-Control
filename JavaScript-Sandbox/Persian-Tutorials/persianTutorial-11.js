@@ -131,5 +131,19 @@ const iterable = [10, 20, 30];
 for (const value of iterable) {
   console.log(value);
 }
-
 // 10 20 30
+
+for (const i in iterable) {
+  console.log(i);
+}
+
+// 1 2 3
+
+// 3. Destructuring
+
+const foo = ["one", "two", "three"];
+
+const [red, green, yellow] = foo;
+console.log(red); // one
+console.log(green); // two
+console.log(yellow); // three
