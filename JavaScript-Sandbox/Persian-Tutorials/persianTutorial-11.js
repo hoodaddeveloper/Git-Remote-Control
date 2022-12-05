@@ -147,3 +147,10 @@ const [red, green, yellow] = foo;
 console.log(red); // one
 console.log(green); // two
 console.log(yellow); // three
+
+let one, two, three;
+
+[one, two, three] = [red, green, yellow];
+console.log(one);
+console.log(two);
+console.log(three);
